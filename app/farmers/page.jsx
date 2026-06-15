@@ -118,7 +118,7 @@ export const metadata = {
     title: "Founding Farmers | CHARTER",
     description:
       "The people writing the first Charter for regenerative meat farming in Britain.",
-    images: [{ url: "/assets/og-charter.png" }]
+    images: [{ url: "/og-charter.png" }]
   }
 };
 

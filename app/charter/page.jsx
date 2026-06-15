@@ -27,7 +27,7 @@ export const metadata = {
     title: "The Charter | CHARTER",
     description:
       "A founding document for a measurable, farmer owned standard for regenerative meat.",
-    images: [{ url: "/assets/og-charter.png" }]
+    images: [{ url: "/og-charter.png" }]
   }
 };
 

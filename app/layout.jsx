@@ -22,16 +22,16 @@ export const metadata = {
     template: "%s | CHARTER"
   },
   description:
-    "A farmer owned company building the first outcomes based standard for regenerative meat. Measured in the field. Visible on the pack.",
+    "The new standard for British regenerative meat, defined by the farmers doing the work.",
   openGraph: {
     title: "CHARTER | The Future Standard For Regenerative Meat",
     description:
-      "A farmer owned company building a measurable, transparent standard for regenerative meat.",
+      "The new standard for British regenerative meat, defined by the farmers doing the work.",
     url: "https://charterfarms.co.uk",
     siteName: "CHARTER",
     images: [
       {
-        url: "/assets/og-charter.png",
+        url: "/og-charter.png",
         width: 1200,
         height: 630,
         alt: "CHARTER regenerative farming with brand wordmark"
@@ -43,8 +43,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "CHARTER | The Future Standard For Regenerative Meat",
-    description: "Measured in the field. Visible on the pack.",
-    images: ["/assets/og-charter.png"]
+    description: "The new standard for British regenerative meat, defined by the farmers doing the work.",
+    images: ["/og-charter.png"]
   }
 };
 

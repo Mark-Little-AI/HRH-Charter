@@ -63,7 +63,7 @@ export const metadata = {
     title: "The Living Certificate | CHARTER",
     description:
       "Most food labels tell you what a farmer says they did. The Living Certificate shows what actually happened.",
-    images: [{ url: "/assets/og-charter.png" }]
+    images: [{ url: "/og-charter.png" }]
   }
 };
 
