@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CHARTER — Field Notes</title>
+<meta name="description" content="Field Notes from Charter — plain-English writing on regenerative farming, soil, cattle and the record behind the food." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../charter-home.css" />
+<style>
+  .blog-head{ padding:104px 0 8px; }
+  .blog-head .inner{ max-width:var(--container); margin:0 auto; padding:0 40px; }
+  .blog-head h1{ font-family:'Jost'; font-weight:600; color:var(--navy); font-size:clamp(40px,5.4vw,84px); line-height:1; margin:18px 0 0; }
+
+  /* featured */
+  .feature{ display:grid; grid-template-columns:1.05fr 1fr; gap:56px; max-width:var(--container); margin:48px auto 0; align-items:center; }
+  .feature .shot{ aspect-ratio:4/3.2; overflow:hidden; background:var(--earth); border:1px solid var(--line); }
+  .feature .shot img{ width:100%; height:100%; object-fit:cover; }
+  .feature h2{ font-family:'Jost'; font-weight:600; color:var(--navy); font-size:clamp(28px,3vw,48px); line-height:1.04; margin:18px 0 0; }
+  .feature .excerpt{ font-family:'Spectral',serif; font-size:18px; line-height:1.6; color:var(--taupe); margin:22px 0 0; max-width:50ch; }
+  .byline{ display:flex; align-items:center; gap:13px; margin-top:24px; }
+  .byline .av{ width:40px; height:40px; border-radius:50%; object-fit:cover; flex:none; background:var(--earth); border:1px solid var(--line); }
+  .byline .who{ font-family:'Jost'; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:var(--navy); }
+  .byline .who span{ display:block; color:var(--taupe-soft); letter-spacing:0.1em; margin-top:3px; }
+
+  /* notes grid */
+  .notes{ display:grid; grid-template-columns:repeat(3,1fr); gap:40px; max-width:var(--container); margin:50px auto 0; }
+  .note .shot{ aspect-ratio:4/3; overflow:hidden; background:var(--earth); border:1px solid var(--line); }
+  .note .shot img{ width:100%; height:100%; object-fit:cover; transition:transform .9s cubic-bezier(.2,.6,.2,1); }
+  .note:hover .shot img{ transform:scale(1.04); }
+  .note .meta{ display:flex; align-items:center; gap:10px; margin-top:18px; font-family:'Jost'; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:var(--taupe-soft); }
+  .note .meta::before{ content:''; width:6px; height:6px; background:var(--clay); transform:rotate(45deg); }
+  .note h3{ font-family:'Jost'; font-weight:500; color:var(--navy); font-size:21px; line-height:1.16; margin:12px 0 0; }
+  .note p{ font-family:'Spectral',serif; font-size:15.5px; line-height:1.55; color:var(--taupe); margin:11px 0 0; }
+  .note .byline{ margin-top:18px; }
+  .note .byline .av{ width:34px; height:34px; }
+  .note .byline .who{ font-size:11px; }
+
+  @media (max-width:860px){
+    .feature{ grid-template-columns:1fr; gap:28px; }
+    .notes{ grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ════════ HEADER ════════ -->
+<header class="site-head" data-screen-label="Header">
+  <div class="head-row">
+    <a class="wordmark-logo" href="../index.html"><img src="../assets/charter-wordmark.png" alt="Charter" /></a>
+    <nav class="head-nav" aria-label="Primary">
+      <a href="../living-certificate.html">Living Certificate</a>
+      <a href="../index.html#farmers">Farmers</a>
+      <a href="../products.html">Shop</a>
+      <a href="index.html" aria-current="page">Blog</a>
+    </nav>
+    <div class="head-util">
+      <a class="acct" href="#account" aria-label="Account">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c0-3.6 3.1-6 7-6s7 2.4 7 6"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ════════ HEADER BLOCK ════════ -->
+<section class="blog-head" data-screen-label="Field Notes">
+  <div class="inner">
+    <span class="eyebrow">Blog</span>
+    <h1>Field Notes</h1>
+  </div>
+</section>
+
+<!-- ════════ FEATURED ════════ -->
+<section class="band tight" data-screen-label="Featured">
+  <article class="feature">
+    <a class="shot" href="proof-from-the-ground-up.html" aria-label="Read: Regenerative farming practices">
+      <img src="../assets/blog/regen-somerset.png" alt="Cattle grazing across rolling Somerset pasture" />
+    </a>
+    <div>
+      <span class="kicker">Field Notes</span>
+      <h2>Latest Regenerative Farming Trends in Somerset</h2>
+      <div class="byline">
+        <img class="av" src="../assets/giles-hayward.png" alt="Giles Hayward" />
+        <div class="who">Giles Hayward<span>Author</span></div>
+      </div>
+      <p class="excerpt">A plain-English look at how soil, grass, cattle and records can work together — and why measuring outcomes, not intentions, changes what good farming is worth.</p>
+      <a class="link-u" style="margin-top:28px;" href="proof-from-the-ground-up.html">Read the note</a>
+    </div>
+  </article>
+</section>
+
+<!-- ════════ MORE NOTES ════════ -->
+<section class="band earth tight" data-screen-label="More notes">
+  <div class="sec-head">
+    <span class="kicker">More field notes</span>
+    <h2 class="h-caps" style="margin-top:18px;font-size:clamp(26px,2.2vw,38px);">From the farms</h2>
+  </div>
+  <div class="notes">
+    <a class="note" href="#">
+      <div class="shot"><img src="../assets/blog/soil-health.png" alt="Seedlings in dark soil at sunrise" /></div>
+      <div class="meta">Soil &middot; 6 min read</div>
+      <h3>What we actually measure when we measure soil</h3>
+      <p>Organic matter, structure, life in the ground. The numbers behind a healthy field.</p>
+      <div class="byline">
+        <img class="av" src="../assets/blog/thomas-slattery.png" alt="Thomas Slattery" />
+        <div class="who">Thomas Slattery<span>Author</span></div>
+      </div>
+    </a>
+    <a class="note" href="#">
+      <div class="shot"><img src="../assets/blog/whole-animal.png" alt="Beef carcasses hanging in a chill room" /></div>
+      <div class="meta">Beef &middot; 5 min read</div>
+      <h3>Whole animal, and why a butcher thinks in carcasses</h3>
+      <p>Where value sits across the animal, and how using more of it changes the maths for a farm.</p>
+      <div class="byline">
+        <img class="av" src="../assets/farmers/caroline-grindrod.png" alt="Caroline Grindrod" />
+        <div class="who">Caroline Grindrod<span>Author</span></div>
+      </div>
+    </a>
+    <a class="note" href="#">
+      <div class="shot"><img src="../assets/products/scanning-product.png" alt="Scanning a Charter pack" /></div>
+      <div class="meta">The record &middot; 4 min read</div>
+      <h3>What happens when you scan the pack and blockchain immutability</h3>
+      <p>The evidence that travels with the food, and who checks it before it reaches you.</p>
+      <div class="byline">
+        <img class="av" src="../assets/blog/henry-rowlands.png" alt="Henry Rowlands" />
+        <div class="who">Henry Rowlands<span>Author</span></div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ════════ FOOTER ════════ -->
+<footer class="site-foot" data-screen-label="Footer">
+  <div class="foot-main">
+    <div class="foot-brand">
+      <a class="wordmark-logo" href="../index.html"><img src="../assets/charter-wordmark.png" alt="Charter" /></a>
+      <div class="strap">One field at a time.</div>
+    </div>
+    <div class="foot-right">
+      <nav class="foot-links">
+        <a href="#contact">Contact</a>
+        <a href="index.html">Blog</a>
+        <a href="#">Design assets</a>
+        <a href="#">Terms and conditions</a>
+        <a href="#">Privacy</a>
+      </nav>
+      <div class="foot-social">
+        <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.4 21v-7.5h2.52l.38-2.93H13.4V8.7c0-.85.24-1.43 1.45-1.43h1.55V4.66c-.27-.04-1.2-.12-2.26-.12-2.24 0-3.77 1.37-3.77 3.88v2.16H7.86v2.93h2.51V21h3.03z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.6H4.2V20h2.74V8.6zM5.57 4.2a1.59 1.59 0 100 3.18 1.59 1.59 0 000-3.18zM20 20v-6.3c0-3.37-1.8-4.93-4.2-4.93-1.93 0-2.8 1.06-3.28 1.81V8.6H9.78V20h2.74v-6.06c0-.32.02-.64.12-.87.25-.64.84-1.3 1.83-1.3 1.3 0 1.82.98 1.82 2.43V20H20z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="foot-legal"><span>&copy; 2026 CHARTER</span></div>
+</footer>
+
+</body>
+</html>
