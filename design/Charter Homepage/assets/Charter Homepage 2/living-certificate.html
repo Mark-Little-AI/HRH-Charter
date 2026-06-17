@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CHARTER — The Living Certificate</title>
+<meta name="description" content="Proof, not promise. The Living Certificate is an annual record of what actually changes on each Charter farm — soil, biodiversity, nutrient density and eating quality — measured, verified and published." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="charter-home.css" />
+<style>
+  /* ── Living Certificate — page-specific ── */
+  .lc-hero{ padding:118px 0 92px; }
+  .lc-hero .inner{ max-width:var(--container); margin:0 auto; padding:0 40px; text-align:center; }
+  .lc-hero h1{ font-family:'Jost'; font-weight:600; color:var(--navy); font-size:clamp(44px,6vw,92px); line-height:1.02; margin:22px 0 0; }
+  .lc-hero .stand{ font-family:'Spectral',serif; font-size:clamp(19px,1.7vw,24px); line-height:1.46; color:var(--navy); max-width:40ch; margin:26px auto 0; }
+  .lc-hero .ctas{ display:flex; gap:34px; justify-content:center; margin-top:36px; }
+
+  /* editorial two-column (heading left, prose right) */
+  .ed-block{ display:grid; grid-template-columns:0.82fr 1.18fr; gap:64px; max-width:var(--container); margin:0 auto; align-items:start; }
+  .ed-head{ position:sticky; top:110px; }
+  .ed-head .kicker{ margin-bottom:18px; }
+  .ed-body p{ font-family:'Spectral',serif; font-size:18px; line-height:1.62; color:var(--taupe); margin:0 0 1.15em; max-width:62ch; }
+  .ed-body p:last-child{ margin-bottom:0; }
+  .ed-body p.emph{ color:var(--navy); font-weight:500; font-size:clamp(20px,1.8vw,25px); line-height:1.3; margin-top:1.3em; }
+  .ed-body p strong{ color:var(--navy); font-weight:600; }
+
+  .pillars{ display:grid; grid-template-columns:repeat(2,1fr); gap:50px 44px; max-width:var(--container); margin:54px auto 0; }
+  .pillar .shot{ aspect-ratio:16/10; overflow:hidden; background:var(--earth); border:1px solid var(--line); }
+  .pillar .shot img{ width:100%; height:100%; object-fit:cover; }
+  .pillar h3{ font-family:'Jost'; font-weight:500; text-transform:uppercase; letter-spacing:0.1em; font-size:15px; color:var(--navy); margin:22px 0 0; display:flex; align-items:center; gap:12px; }
+  .pillar h3::before{ content:''; width:7px; height:7px; background:var(--clay); transform:rotate(45deg); flex:none; }
+  .pillar p{ font-family:'Spectral',serif; font-size:16.5px; line-height:1.58; color:var(--taupe); margin:13px 0 0; }
+
+  .steps{ display:grid; grid-template-columns:repeat(4,1fr); gap:0; max-width:var(--container); margin:48px auto 0; border-top:1px solid var(--line); }
+  .step{ padding:32px 28px 6px 28px; border-left:1px solid var(--line); }
+  .step:first-child{ border-left:none; padding-left:0; }
+  .step .n{ font-family:'Jost'; font-weight:500; font-size:13px; letter-spacing:0.2em; color:var(--clay); }
+  .step h4{ font-family:'Jost'; font-weight:500; text-transform:uppercase; letter-spacing:0.08em; font-size:14px; color:var(--navy); margin:15px 0 0; }
+  .step p{ font-family:'Spectral',serif; font-size:15px; line-height:1.5; color:var(--taupe); margin:10px 0 0; }
+
+  .closing{ text-align:center; }
+  .closing .stack{ font-family:'Spectral',serif; font-size:19px; line-height:1.7; color:var(--taupe); margin:0 auto; max-width:54ch; }
+  .closing .quote{ font-family:'Spectral',serif; font-weight:500; font-size:clamp(28px,3.4vw,48px); line-height:1.14; color:var(--navy); max-width:18ch; margin:34px auto 0; }
+  .closing .ctas{ display:flex; gap:34px; justify-content:center; margin-top:34px; }
+
+  @media (max-width:900px){
+    .ed-block{ grid-template-columns:1fr; gap:34px; }
+    .ed-head{ position:static; }
+    .pillars{ grid-template-columns:1fr; }
+    .steps{ grid-template-columns:1fr 1fr; }
+    .step{ border-left:none; padding:28px 0 6px; }
+    .lc-hero .ctas,.closing .ctas{ flex-direction:column; align-items:center; gap:18px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ════════ HEADER ════════ -->
+<header class="site-head" data-screen-label="Header">
+  <div class="head-row">
+    <a class="wordmark-logo" href="index.html"><img src="assets/charter-wordmark.png" alt="Charter" /></a>
+    <nav class="head-nav" aria-label="Primary">
+      <a href="living-certificate.html" aria-current="page">Living Certificate</a>
+      <a href="index.html#farmers">Farmers</a>
+      <a href="index.html#shop">Shop</a>
+      <a href="blog/index.html">Blog</a>
+    </nav>
+    <div class="head-util">
+      <a class="acct" href="#account" aria-label="Account">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c0-3.6 3.1-6 7-6s7 2.4 7 6"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ════════ HERO ════════ -->
+<section class="lc-hero" data-screen-label="Hero">
+  <div class="inner">
+    <span class="eyebrow" style="margin-bottom:0;">The Living Certificate</span>
+    <h1>Proof, not promise.</h1>
+    <p class="stand">Most food labels tell you how a farm is supposed to operate. The Living Certificate was created because we were more interested in what actually changes over time.</p>
+    <div class="ctas">
+      <a class="link-u" href="#how">See how it works</a>
+      <a class="link-u" href="index.html#farmers">Meet the farmers</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ THE PROBLEM ════════ -->
+<section class="band earth tight" data-screen-label="The problem">
+  <div class="ed-block">
+    <div class="ed-head">
+      <span class="kicker">The problem</span>
+      <h2 class="h-caps">Why existing labels are not enough</h2>
+    </div>
+    <div class="ed-body">
+      <p>Organic was once a meaningful distinction. Over time, as adoption increased and standards proliferated, it became harder for consumers to distinguish between the exceptional and the merely compliant. Regenerative agriculture is now heading towards the same problem.</p>
+      <p>Most food labels are built around process. If a farm follows a prescribed set of practices, it receives the label. The difficulty is that two farms can follow the same process and produce very different outcomes. One may improve biodiversity, build healthier soil and produce more nutrient dense food year after year, while another may show little measurable improvement at all.</p>
+      <p class="emph">The label cannot tell the difference. We think it should.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ AN OUTCOMES BASED APPROACH (FT block) ════════ -->
+<section class="band" data-screen-label="Outcomes approach">
+  <div class="ft-block">
+    <div class="col">
+      <span class="kicker">The Living Certificate</span>
+      <h2 class="h-caps">An outcomes based approach</h2>
+      <p class="dek">An annual record of what is happening on each participating farm. Rather than rewarding a farm for following a process, it measures the outcomes that process produces, and records how they change over time.</p>
+    </div>
+    <div class="media figure">
+      <div class="ft-figure"><img src="assets/products/scanning-product.png" alt="Scanning a Charter pack to open its Living Certificate" /><div class="scrim"></div><div class="ghost">Evidence</div></div>
+    </div>
+    <div class="col">
+      <div class="rail">
+        <h4>Make improvement visible</h4>
+        <ul class="shiftlist">
+          <li>Better soil health is recorded</li>
+          <li>Rising biodiversity is visible</li>
+          <li>Changes in nutrient density are shown</li>
+          <li>The claim moves only when the evidence does</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ WHAT IT MEASURES — four pillars ════════ -->
+<section class="band earth" id="measured" data-screen-label="What it measures">
+  <div class="sec-head">
+    <span class="kicker">What it measures</span>
+    <h2 class="h-caps" style="margin-top:20px;font-size:clamp(28px,2.4vw,42px);">The four pillars</h2>
+  </div>
+  <div class="pillars">
+    <article class="pillar">
+      <div class="shot"><img src="assets/farmers/caroline-grindrod.png" alt="Farmers with cattle on the hill" /></div>
+      <h3>Soil Health</h3>
+      <p>Healthy food begins with healthy soil, yet most food labels say remarkably little about the condition of the land itself. The Living Certificate tracks how each farm is improving the biological foundation everything else depends on.</p>
+    </article>
+    <article class="pillar">
+      <div class="shot"><img src="assets/farmers/farmer-1.png" alt="Highland cattle above the loch" /></div>
+      <h3>Biodiversity</h3>
+      <p>A working farm should support more life, not less. Independent ecological assessments help measure how habitats, species richness and biodiversity are changing over time.</p>
+    </article>
+    <article class="pillar">
+      <div class="shot"><img src="assets/products/whole-animal.png" alt="Beef cuts on the bench" /></div>
+      <h3>Nutrient Density</h3>
+      <p>Food should nourish. Independent laboratory analysis measures what is actually present in the beef, helping create one of the first datasets of its kind for British grass fed production.</p>
+    </article>
+    <article class="pillar">
+      <div class="shot"><img src="assets/farmers/munros.png" alt="Highland cattle being fed" /></div>
+      <h3>Eating Quality</h3>
+      <p>The beef should be as impressive on the plate as it is in the field. Independent assessment helps measure flavour, tenderness and overall eating quality, so quality is experienced as well as recorded.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ════════ HOW IT WORKS ════════ -->
+<section class="band" id="how" data-screen-label="How it works">
+  <div class="ed-block">
+    <div class="ed-head">
+      <span class="kicker">How it works</span>
+      <h2 class="h-caps">Measured. Verified. Published.</h2>
+    </div>
+    <div class="ed-body">
+      <p>Each participating farm documents its farming system throughout the year, including breed, grazing management, forage and finishing practices. Independent specialists then measure the relevant outcomes using recognised methodologies, after which the results are reviewed, verified and linked directly to the individual farm and production batch.</p>
+      <p class="emph">A record that grows alongside the farm itself, creating a transparent history of improvement that consumers can access directly from the pack.</p>
+    </div>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="n">01</div><h4>Farm</h4><p>Breed, grazing, forage and finishing documented through the year.</p></div>
+    <div class="step"><div class="n">02</div><h4>Measurement</h4><p>Independent specialists measure each outcome using recognised methods.</p></div>
+    <div class="step"><div class="n">03</div><h4>Verification</h4><p>Results are reviewed and linked to the individual farm and batch.</p></div>
+    <div class="step"><div class="n">04</div><h4>Published</h4><p>The record is accessible directly from the pack.</p></div>
+  </div>
+</section>
+
+<!-- ════════ THE CHARTER (FT block) ════════ -->
+<section class="band earth tight" data-screen-label="The Charter">
+  <div class="ft-block">
+    <div class="col">
+      <span class="kicker">The Charter</span>
+      <h2 class="h-caps">It sits on firm foundations</h2>
+      <p class="dek">The Living Certificate did not appear in isolation. It sits on foundations established by the Charter, a public commitment written by farmers, butchers, land stewards and practitioners who have spent years working to improve outcomes in the field.</p>
+      <a class="link-u" style="margin-top:8px;" href="#">Read the Charter</a>
+    </div>
+    <div class="media figure">
+      <div class="ft-figure"><img src="assets/products/new-standard.png" alt="Cattle grazing at sunrise" /><div class="scrim"></div><div class="ghost">The<br/>Record</div></div>
+    </div>
+    <div class="col">
+      <div class="rail">
+        <h4>Principles and progress</h4>
+        <ul class="shiftlist">
+          <li>The Charter sets out the principles</li>
+          <li>The Living Certificate measures progress against them</li>
+          <li>New farms commit to the same standards</li>
+          <li>And help strengthen them over time</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ WHY IT MATTERS / CLOSING ════════ -->
+<section class="band closing" data-screen-label="Why it matters">
+  <span class="eyebrow" style="margin-bottom:26px;">Why it matters</span>
+  <p class="stack">For decades, many of the farmers producing the greatest long term value for society have received little recognition for doing so. Improvements in soil health, biodiversity and food quality rarely appear on a payslip, despite requiring years of work and stewardship. The Living Certificate exists because those improvements should count for something — not as a marketing claim, nor a theoretical exercise, but as a visible, measurable record of what has actually been achieved.</p>
+  <p class="quote">Food you can trust, from land you can name.</p>
+  <div class="ctas">
+    <a class="link-u" href="index.html#shop">Shop Charter</a>
+    <a class="link-u" href="index.html#farmers">Meet the farmers</a>
+  </div>
+</section>
+
+<!-- ════════ FOOTER ════════ -->
+<footer class="site-foot" data-screen-label="Footer">
+  <div class="foot-main">
+    <div class="foot-brand">
+      <a class="wordmark-logo" href="index.html"><img src="assets/charter-wordmark.png" alt="Charter" /></a>
+      <div class="strap">One field at a time.</div>
+    </div>
+    <div class="foot-right">
+      <nav class="foot-links">
+        <a href="#contact">Contact</a>
+        <a href="blog/index.html">Blog</a>
+        <a href="#">Design assets</a>
+        <a href="#">Terms and conditions</a>
+        <a href="#">Privacy</a>
+      </nav>
+      <div class="foot-social">
+        <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.4 21v-7.5h2.52l.38-2.93H13.4V8.7c0-.85.24-1.43 1.45-1.43h1.55V4.66c-.27-.04-1.2-.12-2.26-.12-2.24 0-3.77 1.37-3.77 3.88v2.16H7.86v2.93h2.51V21h3.03z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.6H4.2V20h2.74V8.6zM5.57 4.2a1.59 1.59 0 100 3.18 1.59 1.59 0 000-3.18zM20 20v-6.3c0-3.37-1.8-4.93-4.2-4.93-1.93 0-2.8 1.06-3.28 1.81V8.6H9.78V20h2.74v-6.06c0-.32.02-.64.12-.87.25-.64.84-1.3 1.83-1.3 1.3 0 1.82.98 1.82 2.43V20H20z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="foot-legal"><span>&copy; 2026 CHARTER</span></div>
+</footer>
+
+</body>
+</html>

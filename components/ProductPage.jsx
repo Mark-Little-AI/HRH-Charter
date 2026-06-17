@@ -3,12 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useContext, useState } from "react";
-import { CartContext } from "@/components/SiteShell";
+import { LaunchSignupContext } from "@/components/SiteShell";
 import { ProductCard } from "@/components/ProductCard";
 
 export function ProductPage({ product, related }) {
   const [quantity, setQuantity] = useState(1);
-  const { setCartCount } = useContext(CartContext);
+  const { openLaunchSignup } = useContext(LaunchSignupContext);
 
   return (
     <div className="product-page">
@@ -26,7 +26,7 @@ export function ProductPage({ product, related }) {
             <span>{quantity}</span>
             <button onClick={() => setQuantity((value) => value + 1)}>+</button>
           </div>
-          <button className="underlined-button" onClick={() => setCartCount((count) => count + quantity)}>
+          <button className="underlined-button" onClick={openLaunchSignup}>
             Add to cart
           </button>
         </div>

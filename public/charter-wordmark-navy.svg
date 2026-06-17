@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="120" viewBox="0 0 640 120" role="img" aria-labelledby="title">
+  <title id="title">CHARTER</title>
+  <defs>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&amp;display=swap");
+    </style>
+  </defs>
+  <text
+    x="320"
+    y="86"
+    text-anchor="middle"
+    font-family="'Cormorant Garamond', Georgia, 'Palatino Linotype', serif"
+    font-size="94"
+    font-weight="600"
+    fill="#1E2D3D"
+    letter-spacing="17"
+  >CHARTER</text>
+</svg>

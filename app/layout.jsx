@@ -18,7 +18,7 @@ const spectral = Spectral({
 export const metadata = {
   metadataBase: new URL("https://charterfarms.co.uk"),
   title: {
-    default: "CHARTER | The Future Standard For Regenerative Meat",
+    default: "CHARTER | BETTER BEEF",
     template: "%s | CHARTER"
   },
   description:
@@ -42,9 +42,19 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "CHARTER | The Future Standard For Regenerative Meat",
+    title: "CHARTER | BETTER BEEF",
     description: "The new standard for British regenerative meat, defined by the farmers doing the work.",
     images: ["/og-charter.png"]
+  },
+  icons: {
+    icon: [
+      {
+        url: "/charter-nib.svg",
+        type: "image/svg+xml"
+      }
+    ],
+    shortcut: "/charter-nib.svg",
+    apple: "/charter-nib.svg"
   }
 };
 

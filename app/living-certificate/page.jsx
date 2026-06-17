@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { LaunchSignupButton } from "@/components/LaunchSignupTrigger";
 
 const pillarCards = [
   {
@@ -82,7 +83,7 @@ export default function LivingCertificatePage() {
             Every Charter farm is measured annually for the outcomes that matter: soil health, biodiversity, and nutrient density. The results are independently verified, permanently recorded, and linked directly to the food you buy.
           </p>
           <div className="lc-actions">
-            <Link className="underlined-button" href="#four-pillars">See the proof</Link>
+            <LaunchSignupButton className="underlined-button">See the proof</LaunchSignupButton>
             <Link className="underlined-button" href="#founding-farmers">Meet the farmers</Link>
           </div>
         </div>

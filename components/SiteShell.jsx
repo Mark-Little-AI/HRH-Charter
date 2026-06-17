@@ -1,80 +1,162 @@
 "use client";
 
 import Link from "next/link";
-import { createContext, useState } from "react";
+import { usePathname } from "next/navigation";
+import { createContext, useCallback, useEffect, useState } from "react";
+import { LaunchSignupPopup, hasDismissedLaunchPopup, markLaunchPopupDismissed } from "@/components/LaunchSignupPopup";
 
 function Wordmark() {
+  const returnHome = (event) => {
+    if (window.location.pathname !== "/") return;
+
+    event.preventDefault();
+    window.history.replaceState(null, "", "/");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <Link href="/" className="wordmark" aria-label="CHARTER home">
-      <span>CHARTER</span>
-      <i aria-hidden="true" />
-      <small>One field at a time</small>
+    <Link href="/" className="wordmark" aria-label="CHARTER home" onClick={returnHome}>
+      <img src="/charter-wordmark-navy.svg" alt="CHARTER" />
     </Link>
   );
 }
 
 export function SiteShell({ children }) {
+  const pathname = usePathname();
   const [cartCount, setCartCount] = useState(0);
   const [modal, setModal] = useState(null);
+  const [launchSignupOpen, setLaunchSignupOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showHeaderLogo, setShowHeaderLogo] = useState(false);
 
-  const openSignup = () => setModal("We launch later this year. To stay in the loop, sign up below.");
+  const openLaunchSignup = useCallback(() => {
+    setLaunchSignupOpen(true);
+  }, []);
+
+  const closeLaunchSignup = useCallback(() => {
+    markLaunchPopupDismissed();
+    setLaunchSignupOpen(false);
+  }, []);
+
   const openContact = () => setModal("Please email info@charterfarms.co.uk");
+  const openDesignAssets = () => setModal("Design assets will be available later this year.");
+
+  useEffect(() => {
+    if (hasDismissedLaunchPopup()) return;
+
+    const timer = window.setTimeout(() => {
+      setLaunchSignupOpen(true);
+    }, 900);
+
+    return () => window.clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const updateHeaderLogo = () => {
+      if (pathname !== "/") {
+        setShowHeaderLogo(true);
+        return;
+      }
+
+      const heroLogo = document.querySelector(".hero-wordmark");
+      const heroLogoBottom = heroLogo
+        ? heroLogo.getBoundingClientRect().bottom + window.scrollY
+        : window.innerHeight * 0.72;
+
+      setShowHeaderLogo(window.scrollY > heroLogoBottom);
+    };
+
+    if (pathname === "/") {
+      setShowHeaderLogo(false);
+      requestAnimationFrame(updateHeaderLogo);
+    } else {
+      updateHeaderLogo();
+    }
+
+    window.addEventListener("scroll", updateHeaderLogo, { passive: true });
+    window.addEventListener("resize", updateHeaderLogo);
+
+    return () => {
+      window.removeEventListener("scroll", updateHeaderLogo);
+      window.removeEventListener("resize", updateHeaderLogo);
+    };
+  }, [pathname]);
 
   return (
     <>
-      <header className="site-header">
+      <header className={showHeaderLogo ? "site-header has-header-logo" : "site-header"}>
         <button className="menu-toggle" onClick={() => setMenuOpen((value) => !value)} aria-expanded={menuOpen}>
           Menu
         </button>
-        <nav className={menuOpen ? "primary-nav primary-nav-left is-open" : "primary-nav primary-nav-left"} aria-label="Primary navigation">
-          <Link href="/products" onClick={() => setMenuOpen(false)}>Shop</Link>
-          <Link href="/farmers" onClick={() => setMenuOpen(false)}>Farmers</Link>
-        </nav>
-        <Wordmark />
-        <nav className={menuOpen ? "primary-nav primary-nav-right is-open" : "primary-nav primary-nav-right"} aria-label="Secondary navigation">
+        <div className="header-wordmark" aria-hidden={!showHeaderLogo}>
+          <Wordmark />
+        </div>
+        <nav className={menuOpen ? "primary-nav is-open" : "primary-nav"} aria-label="Primary navigation">
           <Link href="/living-certificate" onClick={() => setMenuOpen(false)}>Living Certificate</Link>
+          <Link href="/farmers" onClick={() => setMenuOpen(false)}>Farmers</Link>
+          <Link href="/products" onClick={() => setMenuOpen(false)}>Shop</Link>
           <Link href="/blog" onClick={() => setMenuOpen(false)}>Blog</Link>
         </nav>
-        <button className="account-button" onClick={openSignup} aria-label="Sign in">
-          <span aria-hidden="true" />
+        <button className="account-button" onClick={openLaunchSignup} aria-label="Sign in">
+          <svg aria-hidden="true" viewBox="0 0 28 28" focusable="false">
+            <circle cx="14" cy="7" r="4" />
+            <path d="M5 26c0-7.2 3.8-11 9-11s9 3.8 9 11" />
+            <path d="M3 27h22" />
+          </svg>
         </button>
       </header>
-      <CartContext.Provider value={{ cartCount, setCartCount }}>
-        <main>{children}</main>
-      </CartContext.Provider>
-      <Footer openSignup={openSignup} openContact={openContact} />
+      <LaunchSignupContext.Provider value={{ openLaunchSignup }}>
+        <CartContext.Provider value={{ cartCount, setCartCount }}>
+          <main>{children}</main>
+        </CartContext.Provider>
+      </LaunchSignupContext.Provider>
+      <Footer openSignup={openLaunchSignup} openContact={openContact} openDesignAssets={openDesignAssets} />
       {modal ? <Modal message={modal} onClose={() => setModal(null)} /> : null}
+      <LaunchSignupPopup open={launchSignupOpen} onClose={closeLaunchSignup} />
     </>
   );
 }
 
 export const CartContext = createContext({ cartCount: 0, setCartCount: () => {} });
+export const LaunchSignupContext = createContext({ openLaunchSignup: () => {} });
 
-function Footer({ openSignup, openContact }) {
+function Footer({ openSignup, openContact, openDesignAssets }) {
   return (
     <footer className="site-footer">
-      <div>
+      <div className="footer-brand">
         <Wordmark />
-        <p>Food you can trust, from land you can name.</p>
+        <p>One field at a time.</p>
       </div>
-      <NewsletterForm compact />
-      <nav aria-label="Footer navigation">
-        <Link href="/products">Products</Link>
-        <Link href="/living-certificate">Living Certificate</Link>
-        <Link href="/farmers">Farmers</Link>
-        <Link href="/blog">Blog</Link>
-        <button onClick={openContact}>Contact</button>
-      </nav>
-      <div className="footer-socials" aria-label="Social links">
-        <button onClick={openSignup}>Instagram</button>
-        <button onClick={openSignup}>Facebook</button>
-        <button onClick={openSignup}>LinkedIn</button>
+      <div className="footer-right">
+        <nav aria-label="Footer navigation">
+          <button onClick={openContact}>Contact</button>
+          <Link href="/blog">Blog</Link>
+          <button onClick={openDesignAssets}>Design assets</button>
+          <Link href="/terms">Terms and Conditions</Link>
+          <Link href="/privacy">Privacy</Link>
+        </nav>
+        <div className="footer-socials" aria-label="Social links">
+          <button onClick={openSignup} aria-label="Facebook">
+            <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+              <path d="M14.2 8.2h2.5V4.4c-.4-.1-1.9-.2-3.5-.2-3.5 0-5.9 2.1-5.9 6v3.4H3.5v4.2h3.8V24h4.7v-6.2h3.7l.6-4.2H12v-3c0-1.2.4-2.4 2.2-2.4Z" />
+            </svg>
+          </button>
+          <button onClick={openSignup} aria-label="Instagram">
+            <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+              <rect x="4" y="4" width="16" height="16" rx="4" />
+              <circle cx="12" cy="12" r="3.8" />
+              <circle cx="16.8" cy="7.2" r="0.9" />
+            </svg>
+          </button>
+          <button onClick={openSignup} aria-label="LinkedIn">
+            <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+              <path d="M5 9h4v11H5zM7 4.2a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4ZM11.2 9h3.8v1.6c.6-1 1.8-1.9 3.7-1.9 3.8 0 4.6 2.5 4.6 5.8V20h-4v-5c0-1.2 0-2.8-1.8-2.8s-2 1.3-2 2.7V20h-4.1z" />
+            </svg>
+          </button>
+        </div>
       </div>
       <div className="footer-legal">
         <span>© 2026 CHARTER</span>
-        <Link href="/privacy">Privacy</Link>
-        <Link href="/terms">Terms</Link>
       </div>
     </footer>
   );
