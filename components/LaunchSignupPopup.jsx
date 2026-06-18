@@ -108,7 +108,7 @@ export function LaunchSignupPopup({ open, onClose }) {
             <h2 id="launch-popup-title">Launching late 2026.</h2>
             <div id="launch-popup-copy" className="launch-popup-copy">
               <p>We’re building Charter to help establish a new standard for regenerative meat farming in the UK.</p>
-              <p>If you’d like to follow our progress, join the mailing list below. We’ll share occasional updates as we build.</p>
+              <p>If you’d like to follow our progress, join the mailing list below. We’ll share occasional updates as we go.</p>
               <p>Thank you for your support.</p>
               <p>Together, we can help create a more transparent, trusted and accountable food system.</p>
             </div>
