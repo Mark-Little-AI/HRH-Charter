@@ -4014,3 +4014,175 @@ p + p {
     letter-spacing: 0.18em;
   }
 }
+
+/* ── Living Certificate — styled to match the home page system ── */
+.lc-hero-v2 {
+  min-height: clamp(460px, 74vh, 640px);
+  display: grid;
+  align-items: center;
+}
+.lc-hero-v2 > .lc-hero-inner-v2 {
+  position: relative;
+  z-index: 1;
+  width: min(100%, var(--max));
+  margin: 0 auto;
+  padding: 0 clamp(1.2rem, 4vw, 3rem);
+}
+.lc-hero-v2 .kicker { color: #ecc9b6; }
+.lc-hero-v2 .h-caps { color: #fff; max-width: 16ch; }
+.lc-hero-sub {
+  max-width: 48ch;
+  margin: 20px 0 30px;
+  color: rgba(247, 245, 239, 0.92);
+  font-family: var(--font-spectral), Georgia, serif;
+  font-size: clamp(18px, 1.6vw, 22px);
+  line-height: 1.5;
+}
+.lc-hero-v2 .hero-shop-button { margin-left: 0; margin-right: 0; }
+
+/* four-pillar grid — reuses .ft-figure / .pname / .pdesc from the home system */
+.home-below .measure-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 30px;
+  max-width: var(--container);
+  margin: 48px auto 0;
+  padding: 0 40px;
+}
+.home-below .mcard {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.home-below .mcard .ft-figure {
+  position: relative;
+  width: 100%;
+  min-height: 0;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  background: var(--bone);
+}
+.home-below .mcard .ft-figure img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} /* next/image fill already does this; kept for safety */
+.home-below .mcard .scrim { display: none; }
+.home-below .mcard .pname { margin-top: 20px; }
+.home-below .mcard .pdesc { margin-top: 8px; }
+@media (max-width: 1020px) { .home-below .measure-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .home-below .measure-grid { grid-template-columns: 1fr; padding: 0 18px; } }
+
+/* ── Subpage hero (shared by Farmers + Living Certificate) ── */
+.sub-hero {
+  min-height: clamp(460px, 74vh, 640px);
+  display: grid;
+  align-items: center;
+}
+.sub-hero > .sub-hero-inner {
+  position: relative;
+  z-index: 1;
+  width: min(100%, var(--max));
+  margin: 0 auto;
+  padding: 0 clamp(1.2rem, 4vw, 3rem);
+}
+.sub-hero .kicker { color: #ecc9b6; }
+.sub-hero .lc-kicker-rust { color: var(--clay); }
+.sub-hero .h-caps { color: #fff; max-width: 18ch; }
+.sub-hero-sub {
+  max-width: 52ch;
+  margin: 20px 0 30px;
+  color: rgba(247, 245, 239, 0.92);
+  font-family: var(--font-spectral), Georgia, serif;
+  font-size: clamp(18px, 1.6vw, 22px);
+  line-height: 1.5;
+}
+.sub-hero .hero-shop-button { margin-left: 0; margin-right: 0; }
+
+/* ── Founding-group grid — reuses the home .fcard farmer-card design ── */
+.home-below .fgrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 34px;
+  max-width: var(--container);
+  margin: 4px auto 0;
+  padding: 0 40px;
+}
+.home-below .fgrid .fcard .frame img {
+  position: absolute;
+  inset: 0;
+} /* next/image fill already does this */
+.interest-wrap {
+  max-width: var(--container);
+  margin: 36px auto 0;
+  padding: 0 40px;
+}
+@media (max-width: 1020px) {
+  .home-below .fgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .home-below .fgrid { grid-template-columns: 1fr; padding: 0 18px; }
+  .interest-wrap { padding: 0 18px; }
+}
+
+/* Fast-turn polish overrides */
+.home-below .rail p.rail-intro {
+  display: block;
+  margin: 0 0 28px !important;
+}
+
+.blog-section-title {
+  margin: 0;
+  color: var(--navy);
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-size: clamp(34px, 4.2vw, 64px);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.06;
+  text-transform: none;
+  text-wrap: balance;
+}
+
+@media (max-width: 760px) {
+  .hero.hero-institutional {
+    min-height: min(740px, 76svh);
+  }
+
+  .hero.hero-institutional > img {
+    object-position: 50% center;
+  }
+
+  .hero.hero-institutional .hero-copy-investor {
+    min-height: min(740px, 76svh);
+  }
+
+  .hero.hero-institutional .home-hero-title {
+    margin-top: clamp(7.5rem, 27svh, 12rem);
+  }
+
+  .shop-hero-image {
+    transform: scale(1.28);
+    transform-origin: center center;
+  }
+
+  .home-below .carousel-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero.hero-institutional {
+    min-height: min(700px, 74svh);
+  }
+
+  .hero.hero-institutional .hero-copy-investor {
+    min-height: min(700px, 74svh);
+  }
+
+  .hero.hero-institutional .home-hero-title {
+    margin-top: clamp(7rem, 25svh, 11rem);
+  }
+}

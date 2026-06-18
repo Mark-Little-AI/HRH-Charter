@@ -1,119 +1,127 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const measurementPillars = [
-  {
-    title: "Farming System",
-    text: "Breed, diet, grazing rotation, liveweights and finishing protocol."
-  },
-  {
-    title: "Farm Biodiversity",
-    text: "Independent ecological assessment of habitats, species richness and biodiversity outcomes."
-  },
-  {
-    title: "Eating Quality",
-    text: "Carcass and eating-quality assessment, including flavour, tenderness and overall eating experience."
-  },
-  {
-    title: "Nutrient Density",
-    text: "Laboratory testing to understand what is actually in the food."
-  },
-  {
-    title: "Traceability",
-    text: "A tamper-resistant record linking farm, animal, processor, test data and final product."
-  }
+const measured = [
+  ["Farming System", "Breed, diet, grazing rotation and finishing."],
+  ["Farm Biodiversity", "Independent ecological assessment."],
+  ["Eating Quality", "Flavour, tenderness and experience."],
+  ["Nutrient Density", "What is actually in the food."],
+  ["Traceability", "Farm, animal, processor, test, pack."]
 ];
 
-const foundingProfiles = [
+const commitment = [
+  ["Measured outcomes", "Soil, biodiversity, nutrient density."],
+  ["Independent verification", "Assessed in the field, every year."],
+  ["Proof on the pack", "A record that travels with the food."]
+];
+
+// Image-to-farm pairing matches the home page carousel.
+const foundingGroup = [
   {
-    image: "/assets/library/farmer-4.png",
-    name: "Belmont Farms",
-    location: "Bristol",
-    person: "Eric Heath",
-    role: "Lead applicant · Natural capital and ecology",
-    body: "Belmont Farms is the lead applicant and an English farming business helping coordinate the measurement, reporting and verification methodology across the founding farms.",
+    image: "/assets/charter-home/farmers/farmer-6.png",
+    region: "Bristol",
+    farm: "Belmont Farms",
+    name: "Eric Heath",
+    role: "Lead applicant · Natural capital & ecology",
+    status: "Living Certificate coming soon",
+    who: "Eric Heath",
     quote:
-      "We have spent years trying to show that farming well creates value beyond the carcass. The Charter gives us a way to measure that value properly.",
-    status: "Living Certificate coming soon"
+      "We’ve spent years showing that good farming creates value well beyond the carcass. The Charter is the first thing that actually measures it."
   },
   {
-    image: "/assets/library/farmer-1.png",
-    name: "Dunmaglass Estate",
-    location: "Inverness-shire",
-    role: "Scottish founding farm · Trial partner",
-    body: "Dunmaglass Estate is one of the Scottish founding farms helping test the Charter framework on real land, with real cattle, under real farming conditions.",
+    image: "/assets/charter-home/farmers/caroline-grindrod.png",
+    region: "South Lakeland",
+    farm: "Roots of Nature",
+    name: "Caroline Grindrod",
+    role: "Regenerative farming mentor · Trial partner",
+    status: "Living Certificate coming soon",
+    who: "Caroline Grindrod",
     quote:
-      "Regenerative farming has to be judged in the field, not in a boardroom. If the land is improving, the standard should be able to show it.",
-    status: "Living Certificate coming soon"
+      "Look after the soil and the wildlife, and the farm looks after itself. The trick is being able to prove it."
   },
   {
-    image: "/assets/library/farmer-5.png",
-    name: "Edinvale Farm",
-    location: "Moray",
-    person: "Jock Gibson",
-    role: "Nuffield Scholar · Macbeths Butchery · Eating quality lead",
-    body: "Jock Gibson brings farming, butchery and eating-quality expertise to the founding Charter group. His work helps connect how cattle are raised with how the beef actually eats.",
+    image: "/assets/charter-home/farmers/eric-heath.png",
+    region: "Moray",
+    farm: "Edinvale Farm",
+    name: "Jock Gibson",
+    role: "Nuffield Scholar · Macbeths Butchery · Eating quality",
+    status: "Living Certificate coming soon",
+    who: "Jock Gibson",
     quote:
-      "Britain talks a lot about beef, but we still don't properly reward eating quality. If the food tastes better, and the farming system is better, that should count.",
-    status: "Living Certificate coming soon"
+      "Britain produces some of the highest quality beef in the world but doesn’t fairly reward farmers. Charter is finally changing that."
   },
   {
-    image: "/assets/library/farmer-2.png",
-    name: "Rothiemurchus Estate",
-    location: "Cairngorms",
-    person: "James Grant",
+    image: "/assets/charter-home/farmers/farmer-4.png",
+    region: "Cairngorms",
+    farm: "Rothiemurchus Estate",
+    name: "James Grant",
     role: "Farm shop · Kitchen · Consumer demonstration",
-    body: "Rothiemurchus brings a direct connection between land, food and the people eating it. The estate's farm shop and kitchen help demonstrate how the Charter can be made visible to consumers.",
+    status: "Living Certificate coming soon",
+    who: "James Grant",
     quote:
-      "People want to know where their food comes from. The Charter helps us go one step further and show what that food is doing for the land.",
-    status: "Living Certificate coming soon"
+      "People want to know where their food comes from. We can go one further, and show them what it’s doing for the land."
   },
   {
-    image: "/assets/library/farmer-6.png",
-    name: "Balnagowen and Aberarder Estates",
-    location: "Scotland",
-    role: "Additional Scottish trial sites",
-    body: "Balnagowen and Aberarder Estates contribute additional Scottish trial sites, helping test the Charter across different land types, systems and farming conditions.",
+    image: "/assets/charter-home/farmers/farmer-1.png",
+    region: "Inverness-shire",
+    farm: "Dunmaglass Estate",
+    name: "Scottish founding farm",
+    role: "Trial partner",
+    status: "Living Certificate coming soon",
+    who: "Dunmaglass Estate",
     quote:
-      "No two farms are the same. That is exactly why the Living Certificate matters. It records the reality of each place.",
-    status: "Living Certificate coming soon"
+      "Regenerative farming is judged in the field, not the boardroom. If the land’s improving, the record should show it."
   },
   {
-    image: "/assets/library/farmer-7.png",
-    name: "Highland Regenerative Hubs Ltd",
-    location: "Scotland",
-    role: "Technology and coordination partner",
-    body: "Highland Regenerative Hubs coordinates the shared data platform, Edacious testing logistics and Chainparency integration, helping turn field-level evidence into a usable Living Certificate.",
+    image: "/assets/charter-home/farmers/farmer-8.png",
+    region: "Scotland",
+    farm: "Balnagowen & Aberarder",
+    name: "Additional trial sites",
+    role: "Testing across land types & systems",
+    status: "Living Certificate coming soon",
+    who: "Balnagowen & Aberarder",
     quote:
-      "The point is simple: the evidence should travel with the food. If we make a claim, people should be able to see what sits behind it.",
-    status: "Technology partner"
+      "No two farms are the same. That’s exactly why the record has to tell the truth about each one."
   },
   {
-    image: "/assets/library/farmer-8.png",
-    name: "Munro's of Dingwall",
-    location: "Dingwall",
-    role: "Strategic processing partner",
-    body: "Munro's of Dingwall processes the trial animals and conventional comparators under identical slaughter conditions, allowing fairer comparison between farming systems.",
+    image: "/assets/charter-home/farmers/munros.png",
+    region: "Dingwall",
+    farm: "Munro’s of Dingwall",
+    name: "Strategic processing partner",
+    role: "Identical slaughter conditions for fair comparison",
+    status: "Processing partner",
+    who: "Munro’s of Dingwall",
     quote:
-      "If you want proper evidence, you need proper controls. Processing everything consistently gives the data a stronger backbone.",
-    status: "Processing partner"
+      "If you want proper evidence, you need proper controls. Doing it the same way every time gives the data a backbone."
   },
   {
-    image: "/assets/farmer-4.png",
-    name: "Douglas Bowden-Smith, SAOS",
-    location: "Scotland",
+    image: "/assets/charter-home/farmers/hrh.png",
+    region: "Scotland",
+    farm: "Highland Regenerative Hubs",
+    name: "Technology & coordination",
+    role: "Shared data platform · testing logistics",
+    status: "Technology partner",
+    who: "Highland Regenerative Hubs",
+    quote:
+      "The evidence should travel with the food. Make a claim, and let people see what sits behind it."
+  },
+  {
+    image: "/assets/charter-home/farmers/saos.png",
+    region: "Scotland",
+    farm: "Scottish Agriculture Organisation Society",
+    name: "Douglas Bowden-Smith",
     role: "ADOPT Project Facilitator",
-    body: "Douglas Bowden-Smith supports cross-farm data collection, quarterly reporting and dissemination, helping the founding group keep the project rigorous and useful.",
+    status: "Project partner",
+    who: "Douglas Bowden-Smith",
     quote:
-      "This only works if the data is collected properly and shared clearly. The Charter needs to be practical enough for farmers and credible enough for the market.",
-    status: "Project facilitator"
+      "Collect the data properly, share it clearly — practical enough for farmers, credible enough for the market."
   }
 ];
 
 export const metadata = {
   title: "Founding Farmers",
   description:
-    "Meet the founding farmers and partners helping write Charter's outcomes-based standard for regenerative meat farming in Britain.",
+    "Meet the founding farmers and partners writing Charter's outcomes-based standard for regenerative meat farming in Britain.",
   openGraph: {
     title: "Founding Farmers | CHARTER",
     description:
@@ -122,173 +130,207 @@ export const metadata = {
   }
 };
 
-function QuoteBlock({ children }) {
-  return (
-    <blockquote className="farmers-quote">
-      <p>{children}</p>
-    </blockquote>
-  );
-}
-
-function MeasurementPillarCard({ title, text }) {
-  return (
-    <article className="measurement-card">
-      <span aria-hidden="true" />
-      <h3>{title}</h3>
-      <p>{text}</p>
-    </article>
-  );
-}
-
-function FarmerProfileCard({ profile, index }) {
-  return (
-    <article className={index % 2 ? "farmer-profile is-reversed" : "farmer-profile"}>
-      <div className="farmer-profile-image">
-        <Image src={profile.image} alt={`${profile.name} portrait`} fill sizes="(max-width: 900px) 100vw, 46vw" />
-      </div>
-      <div className="farmer-profile-copy">
-        <p className="eyebrow">{profile.location}</p>
-        <h3>{profile.name}</h3>
-        {profile.person ? <p className="farmer-person">{profile.person}</p> : null}
-        <p className="farmer-role">{profile.role}</p>
-        <p>{profile.body}</p>
-        <QuoteBlock>{profile.quote}</QuoteBlock>
-        <span className="coming-soon" aria-disabled="true">
-          {profile.status}
-        </span>
-      </div>
-    </article>
-  );
-}
-
-function CTASection() {
-  return (
-    <section className="farmers-cta-section">
-      <div className="farmers-cta-image">
-        <Image src="/assets/library/farmer-3.png" alt="Founding farmers with cattle in upland pasture" fill sizes="(max-width: 900px) 100vw, 50vw" />
-      </div>
-      <div className="farmers-cta-copy">
-        <p className="eyebrow">Next cohort</p>
-        <h2>Interested in joining the next cohort?</h2>
-        <p>We are looking for farmers who are already rebuilding soil, biodiversity and food quality — and who want the evidence to count.</p>
-        <p>If you are finishing cattle agroecologically on grass and forage, or working toward that system, we would like to hear from you.</p>
-        <div className="lc-actions">
-          <Link className="square-button" href="#contact">Find out more</Link>
-          <Link className="underlined-button" href="#contact">Contact Charter</Link>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 export default function FarmersPage() {
   return (
-    <>
-      <section className="farmers-hero">
-        <Image src="/assets/library/farmer-3.png" alt="Farmers standing with cattle on British upland pasture" fill priority sizes="100vw" />
-        <div className="farmers-hero-copy">
-          <p className="eyebrow">Founding Farmers</p>
-          <h1>The people writing the Charter.</h1>
-          <p className="farmers-subheadline">
-            A group of farmers, butchers, land stewards and technical partners are coming together to define a new standard for regenerative meat farming in Britain.
+    <div className="home-below">
+      {/* HERO */}
+      <section className="hero sub-hero">
+        <Image
+          src="/assets/library/farmer-3.png"
+          alt="Founding farmers with cattle on British upland pasture"
+          fill
+          priority
+          sizes="100vw"
+        />
+        <div className="sub-hero-inner">
+          <span className="kicker">Founding Farmers</span>
+          <h1 className="h-caps">The people writing the Charter</h1>
+          <p className="sub-hero-sub">
+            A group of farmers, butchers, land stewards and technical partners,
+            coming together to define a new standard for regenerative meat
+            farming in Britain. Measurable, living and shaped by those doing
+            the work.
           </p>
-          <p>
-            The Charter will set out what good looks like — not as a marketing claim, but as a measurable, living standard. It will be anchored in the genesis block of the blockchain infrastructure behind the Living Certificate, so the founding principles cannot be quietly rewritten later.
-          </p>
-          <div className="lc-actions">
-            <Link className="underlined-button" href="/living-certificate">Read about the Living Certificate</Link>
-            <Link className="underlined-button" href="#founding-group">Meet the founding group</Link>
+          <Link className="hero-shop-button" href="#group">
+            Meet the founding group
+          </Link>
+        </div>
+      </section>
+
+      {/* INTRO + WHAT GETS MEASURED */}
+      <section className="band">
+        <div className="ft-block">
+          <div className="col">
+            <span className="kicker">Built from the ground up</span>
+            <h2 className="h-caps">A British standard, written in the field</h2>
+            <p className="dek">
+              The founding group spans beef farmers from the Highlands, Moray, the Cairngorms,
+              Bristol and beyond.
+            </p>
+            <p className="dek">
+              They’re here because the current system doesn’t reward what makes
+              agroecological farming valuable. The Charter changes that, not
+              with louder claims but with <strong>verifiable evidence</strong>.
+            </p>
+          </div>
+          <div className="media figure">
+            <div className="ft-figure">
+              <Image
+                src="/assets/charter-home/products/new-standard.png"
+                alt="Cattle grazing at sunrise on regenerative pasture"
+                fill
+                sizes="(max-width: 1020px) 100vw, 42vw"
+              />
+              <div className="scrim" />
+              <div className="ghost">
+                From the
+                <br />
+                Ground Up
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="rail">
+              <h4>What gets measured</h4>
+              <ul className="small-list">
+                {measured.map(([title, detail]) => (
+                  <li key={title}>
+                    <b>{title}</b> {detail}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="farmers-intro">
-        <div>
-          <p className="eyebrow">Built from the ground up</p>
-          <h2>A British standard, built from the ground up.</h2>
+      {/* FOUNDING GROUP */}
+      <section className="band earth" id="group">
+        <div className="farmers-head">
+          <div>
+            <span className="kicker">The signatories</span>
+            <h2 className="h-caps">Farmers and partners</h2>
+          </div>
+          <p className="lede">
+            Shaped by the people doing the work. As new farms join, they commit
+            to the same standards and help strengthen them over time.
+          </p>
         </div>
-        <div className="lc-copy-stack">
-          <p>This starts in Scotland, but it is not only a Scottish project.</p>
-          <p>The founding group includes farms and partners from the Highlands, Moray, the Cairngorms, Bristol and other parts of the UK.</p>
-          <p>They are coming together because the current system does not reward what makes agroecological farming valuable. It does not properly measure biodiversity, soil health, nutrient density, eating quality or traceability.</p>
-          <p>The Charter exists to change that.</p>
-          <p>Not with louder claims.</p>
-          <p>With better evidence.</p>
-          <QuoteBlock>
-            Every farm is different. The standard should be strong enough to measure outcomes, and flexible enough to respect the land itself.
-          </QuoteBlock>
-        </div>
-      </section>
-
-      <section className="measurement-section">
-        <div className="section-heading">
-          <p className="eyebrow">What gets measured</p>
-          <h2>Each farm, on its own terms.</h2>
-        </div>
-        <div className="measurement-grid">
-          {measurementPillars.map((pillar) => (
-            <MeasurementPillarCard key={pillar.title} {...pillar} />
+        <div className="fgrid">
+          {foundingGroup.map((farmer) => (
+            <article className="fcard" key={farmer.farm}>
+              <div className="frame">
+                <Image
+                  src={farmer.image}
+                  alt={`${farmer.who} — ${farmer.farm}`}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1020px) 50vw, 33vw"
+                />
+                <div className="photo-scrim" />
+                <div className="quote">
+                  <div className="qmark">&ldquo;</div>
+                  <p>{farmer.quote}</p>
+                  <div className="who">{farmer.who}</div>
+                </div>
+              </div>
+              <div className="meta">
+                <div className="region script">{farmer.region}</div>
+                <div className="farm">{farmer.farm}</div>
+                <div className="name">{farmer.name}</div>
+                <div className="role">{farmer.role}</div>
+                <div className="status">{farmer.status}</div>
+              </div>
+            </article>
           ))}
         </div>
       </section>
 
-      <section className="founding-group" id="founding-group">
-        <div className="section-heading">
-          <p className="eyebrow">Founding group</p>
-          <h2>Farmers and partners</h2>
-        </div>
-        <div className="farmer-profile-list">
-          {foundingProfiles.map((profile, index) => (
-            <FarmerProfileCard key={profile.name} profile={profile} index={index} />
-          ))}
+      {/* NEXT COHORT */}
+      <section className="band">
+        <div className="ft-block">
+          <div className="col">
+            <span className="kicker">Next cohort</span>
+            <h2 className="h-caps">Interested in joining?</h2>
+            <p className="dek">
+              We’re looking for farmers already practising regenerative farming
+              and who want to be rewarded fairly for it.
+            </p>
+            <p className="dek">
+              If you’re finishing cattle agroecologically on grass and forage,
+              or working toward it, we’d like to hear from you.
+            </p>
+          </div>
+          <div className="media figure">
+            <div className="ft-figure">
+              <Image
+                src="/assets/cow-2.png"
+                alt="Cattle on species-rich upland pasture"
+                fill
+                sizes="(max-width: 1020px) 100vw, 42vw"
+              />
+              <div className="scrim" />
+              <div className="ghost">
+                Join the
+                <br />
+                Charter
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="rail">
+              <h4>The commitment</h4>
+              <ul className="small-list">
+                {commitment.map(([title, detail]) => (
+                  <li key={title}>
+                    <b>{title}</b> {detail}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <Link className="link-u" href="#register" style={{ marginTop: "28px" }}>
+              Register your interest
+            </Link>
+          </div>
         </div>
       </section>
 
-      <section className="farmers-genesis-section">
-        <p className="eyebrow">Genesis block</p>
-        <h2>Written into the first block.</h2>
-        <div className="lc-short-lines">
-          <p>The founding Charter will be anchored in the genesis block of the blockchain infrastructure behind the Living Certificate.</p>
-          <p>That means the original principles, founding farms and core standard are part of the permanent record.</p>
-          <p>The standard can evolve.</p>
-          <p>The founding commitment cannot disappear.</p>
+      {/* REGISTER INTEREST */}
+      <section className="band earth" id="register">
+        <div className="sec-head">
+          <span className="kicker">Register interest</span>
+          <h2 className="h-caps">Tell us about your farm</h2>
+          <p className="home-first-drop-copy">
+            A few details to start the conversation — we’ll follow up directly.
+          </p>
         </div>
-        <QuoteBlock>The Charter is not a badge. It is the starting line.</QuoteBlock>
-        <Link className="underlined-button" href="/living-certificate">Learn how the Living Certificate works</Link>
-      </section>
-
-      <CTASection />
-
-      <section className="interest-form-section" id="contact">
-        <div>
-          <p className="eyebrow">Register interest</p>
-          <h2>Tell us about your farm.</h2>
-          <p>This form can be wired up later. For now, it gives us the right shape for farmer interest.</p>
+        <div className="interest-wrap">
+          <form className="interest-form">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" autoComplete="name" />
+            </label>
+            <label>
+              <span>Farm / organisation</span>
+              <input type="text" name="organisation" />
+            </label>
+            <label>
+              <span>Location</span>
+              <input type="text" name="location" autoComplete="address-level2" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" autoComplete="email" />
+            </label>
+            <label className="interest-form-wide">
+              <span>Tell us briefly about your farming system</span>
+              <textarea name="farming-system" rows="6" />
+            </label>
+            <button className="square-button" type="button">
+              Submit interest
+            </button>
+          </form>
         </div>
-        <form className="interest-form">
-          <label>
-            <span>Name</span>
-            <input type="text" name="name" autoComplete="name" />
-          </label>
-          <label>
-            <span>Farm / organisation</span>
-            <input type="text" name="organisation" />
-          </label>
-          <label>
-            <span>Location</span>
-            <input type="text" name="location" autoComplete="address-level2" />
-          </label>
-          <label>
-            <span>Email</span>
-            <input type="email" name="email" autoComplete="email" />
-          </label>
-          <label className="interest-form-wide">
-            <span>Tell us briefly about your farming system</span>
-            <textarea name="farming-system" rows="6" />
-          </label>
-          <button className="square-button" type="button">Submit interest</button>
-        </form>
       </section>
-    </>
+    </div>
   );
 }

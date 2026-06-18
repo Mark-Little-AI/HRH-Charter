@@ -176,7 +176,7 @@ export default function HomePage() {
           <div className="ft-block">
             <div className="col">
               <span className="kicker">Why Charter exists</span>
-              <h2 className="h-caps">A new standard for regenerative meat</h2>
+              <h2 className="h-caps">Rewarding What Matters</h2>
               <p className="dek">The farmers doing the most for their land and livestock are rarely the ones rewarded for it.</p>
               <p className="dek">Charter is setting a new standard for regenerative meat farming, assessing both how a farm operates and what it produces.</p>
               <p className="dek">For the first time, they are rewarded not only for the food they produce, but for improving soil health, supporting wildlife and increasing nutrient density.</p>
@@ -280,7 +280,7 @@ export default function HomePage() {
               <div className="ft-figure">
                 <img src={`${assetBase}/products/scanning-product.png`} alt="Scanning a Charter pack to open its Living Certificate, beside branded packs and boxes" />
                 <div className="scrim" />
-                <div className="ghost">Full<br />Traceability</div>
+                <div className="ghost">Real-time<br />Traceability</div>
               </div>
             </Link>
             <div className="col">

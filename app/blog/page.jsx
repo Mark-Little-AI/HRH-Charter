@@ -21,7 +21,7 @@ const notes = [
     image: "/assets/charter-home/blog/whole-animal.png",
     alt: "Beef carcasses hanging in a chill room",
     meta: "Beef · 5 min read",
-    title: "Whole animal, and why a butcher thinks in carcasses",
+    title: "Whole animal and why a butcher thinks in carcasses",
     excerpt: "Where value sits across the animal, and how using more of it changes the maths for a farm.",
     avatar: "/assets/charter-home/farmers/caroline-grindrod.png",
     author: "Caroline Grindrod"
@@ -31,7 +31,7 @@ const notes = [
     image: "/assets/charter-home/products/scanning-product.png",
     alt: "Scanning a Charter pack",
     meta: "The record · 4 min read",
-    title: "What happens when you scan the pack and blockchain immutability",
+    title: "How blockchain immutability supports Charter's mission",
     excerpt: "The evidence that travels with the food, and who checks it before it reaches you.",
     avatar: "/assets/charter-home/blog/henry-rowlands.png",
     author: "Henry Rowlands"
@@ -69,7 +69,7 @@ export default function BlogPage() {
       <section className="blog-band earth tight" data-screen-label="More notes">
         <div className="sec-head">
           <span className="kicker">More field notes</span>
-          <h2 className="h-caps">From the farms</h2>
+          <h2 className="blog-section-title">From the farms</h2>
         </div>
         <div className="blog-notes">
           {notes.map((note) => (
