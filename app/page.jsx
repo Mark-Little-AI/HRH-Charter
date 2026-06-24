@@ -146,10 +146,16 @@ export default function HomePage() {
   return (
     <>
       <section className="hero hero-institutional">
-        <Image src="/assets/cow-hero-3.png" alt="Highland cow in a Scottish landscape" fill priority sizes="100vw" />
+        <Image
+          src="/assets/cow-hero-3-optimized.jpg"
+          alt="Highland cow in a Scottish landscape"
+          fill
+          priority
+          quality={86}
+          sizes="100vw"
+        />
         <div className="hero-copy hero-copy-investor" aria-labelledby="home-hero-title">
           <div className="hero-title-block">
-            <img className="hero-wordmark hero-wordmark-image" src="/charter-wordmark.svg" alt="CHARTER" />
             <h1 id="home-hero-title" className="home-hero-title">
               Better Farmers. Better Land. Better Beef.
             </h1>
