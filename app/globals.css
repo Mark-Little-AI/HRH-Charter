@@ -97,7 +97,7 @@ p + p {
   top: 0;
   z-index: 20;
   display: grid;
-  grid-template-columns: minmax(190px, 1fr) auto;
+  grid-template-columns: 1fr auto;
   align-items: center;
   gap: clamp(1rem, 2vw, 2.5rem);
   min-height: 78px;
@@ -105,6 +105,10 @@ p + p {
   border-bottom: 1px solid var(--line);
   background: rgba(247, 245, 239, 0.92);
   backdrop-filter: blur(18px);
+}
+
+.mobile-header-wordmark {
+  display: none;
 }
 
 .header-wordmark {
@@ -145,12 +149,32 @@ p + p {
   position: absolute;
   left: 50%;
   top: 50%;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  width: min(84vw, 1100px);
+  transform: translate(-50%, -50%);
+}
+
+.site-header .primary-nav > * {
+  justify-self: center;
+}
+
+.nav-wordmark {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: clamp(4rem, 8.5vw, 10rem);
-  width: min(76vw, 1120px);
-  transform: translate(-50%, -50%);
+}
+
+.nav-wordmark .wordmark,
+.mobile-header-wordmark .wordmark {
+  min-width: 0;
+}
+
+.nav-wordmark .wordmark img {
+  width: clamp(9rem, 13vw, 14rem);
 }
 
 .primary-nav a,
@@ -266,6 +290,7 @@ p + p {
 
 .account-button {
   position: relative;
+  grid-column: 2;
   justify-self: end;
   width: 48px;
   height: 48px;
@@ -380,7 +405,7 @@ p + p {
 
 .home-hero-title {
   max-width: none;
-  margin-top: clamp(4.2rem, 8.5vw, 7.2rem);
+  margin-top: 0;
   color: var(--stone);
   font-family: var(--font-jost), system-ui, sans-serif;
   font-size: clamp(1.9rem, 3.6vw, 4.2rem);
@@ -393,13 +418,13 @@ p + p {
 }
 
 .hero-title-block {
-  align-self: start;
+  align-self: center;
   justify-self: center;
   width: 100%;
-  padding-top: clamp(1rem, 3svh, 2.6rem);
+  padding-top: clamp(6rem, 16svh, 11rem);
   padding-inline: clamp(1.5rem, 4vw, 4.5rem);
   overflow: visible;
-  transform: translateX(clamp(-2.5rem, -2.5vw, -1.5rem));
+  transform: none;
 }
 
 .home-hero-title span {
@@ -421,7 +446,7 @@ p + p {
 
 .hero-shop-button {
   min-height: 50px;
-  margin: clamp(1rem, 2vw, 1.5rem) auto 0;
+  margin: clamp(0.7rem, 1.3vw, 1.05rem) auto 0;
   border: 1px solid rgba(247, 245, 239, 0.72);
   background: rgba(247, 245, 239, 0.9);
   color: var(--navy);
@@ -437,6 +462,10 @@ p + p {
 
 .hero-shop-button:hover {
   background: var(--bone);
+}
+
+.hero-institutional .hero-title-block .hero-shop-button {
+  margin-top: clamp(2.4rem, 4vw, 3.6rem);
 }
 
 .hero-title-block .hero-proof-line {
@@ -2339,8 +2368,19 @@ p + p {
     grid-template-columns: auto 1fr auto;
   }
 
+  .mobile-header-wordmark {
+    display: flex;
+    grid-column: 2;
+    justify-self: center;
+  }
+
+  .mobile-header-wordmark .wordmark img {
+    width: clamp(9rem, 38vw, 12rem);
+  }
+
   .menu-toggle {
     display: inline-flex;
+    grid-column: 1;
   }
 
   .site-header .primary-nav {
@@ -2358,8 +2398,16 @@ p + p {
     transform: none;
   }
 
+  .site-header .primary-nav .nav-wordmark {
+    display: none;
+  }
+
   .site-header .primary-nav.is-open {
     display: flex;
+  }
+
+  .account-button {
+    grid-column: 3;
   }
 
   .primary-nav-right.is-open {
@@ -2528,7 +2576,7 @@ p + p {
 
   .home-hero-title {
     max-width: 100%;
-    margin-top: clamp(10rem, 36svh, 18rem);
+    margin-top: 0;
     font-size: clamp(2rem, 9vw, 3.25rem);
     letter-spacing: 0;
     line-height: 1.02;
@@ -2539,7 +2587,7 @@ p + p {
     width: min(100%, 520px);
     padding-left: 0.85rem;
     padding-right: 0.85rem;
-    padding-top: clamp(1.2rem, 5svh, 3rem);
+    padding-top: clamp(8rem, 26svh, 14rem);
     transform: none;
   }
 
@@ -2568,6 +2616,10 @@ p + p {
     min-height: 46px;
     margin-top: 1rem;
     padding: 0.7rem 1.2rem;
+  }
+
+  .hero-institutional .hero-title-block .hero-shop-button {
+    margin-top: clamp(1.9rem, 6vw, 2.6rem);
   }
 
   .hero-support-block {
@@ -2645,6 +2697,7 @@ p + p {
   .hero-title-block {
     padding-left: 0.7rem;
     padding-right: 0.7rem;
+    padding-top: clamp(7rem, 24svh, 12rem);
   }
 
   .hero-wordmark,
@@ -2659,7 +2712,7 @@ p + p {
   }
 
   .home-hero-title {
-    margin-top: clamp(9rem, 33svh, 15.5rem);
+    margin-top: 0;
     font-size: clamp(1.8rem, 8.4vw, 2.5rem);
   }
 }
@@ -4160,7 +4213,7 @@ p + p {
   }
 
   .hero.hero-institutional .home-hero-title {
-    margin-top: clamp(7.5rem, 27svh, 12rem);
+    margin-top: 0;
   }
 
   .shop-hero-image {
@@ -4183,6 +4236,6 @@ p + p {
   }
 
   .hero.hero-institutional .home-hero-title {
-    margin-top: clamp(7rem, 25svh, 11rem);
+    margin-top: 0;
   }
 }
