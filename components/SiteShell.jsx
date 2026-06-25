@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { createContext, useCallback, useEffect, useState } from "react";
 import { LaunchSignupPopup, hasDismissedLaunchPopup, markLaunchPopupDismissed } from "@/components/LaunchSignupPopup";
 
@@ -22,12 +21,10 @@ function Wordmark() {
 }
 
 export function SiteShell({ children }) {
-  const pathname = usePathname();
   const [cartCount, setCartCount] = useState(0);
   const [modal, setModal] = useState(null);
   const [launchSignupOpen, setLaunchSignupOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [showHeaderLogo, setShowHeaderLogo] = useState(false);
 
   const openLaunchSignup = useCallback(() => {
     setLaunchSignupOpen(true);
@@ -46,54 +43,26 @@ export function SiteShell({ children }) {
 
     const timer = window.setTimeout(() => {
       setLaunchSignupOpen(true);
-    }, 900);
+    }, 15000);
 
     return () => window.clearTimeout(timer);
   }, []);
 
-  useEffect(() => {
-    const updateHeaderLogo = () => {
-      if (pathname !== "/") {
-        setShowHeaderLogo(true);
-        return;
-      }
-
-      const heroLogo = document.querySelector(".hero-wordmark");
-      const heroLogoBottom = heroLogo
-        ? heroLogo.getBoundingClientRect().bottom + window.scrollY
-        : window.innerHeight * 0.72;
-
-      setShowHeaderLogo(window.scrollY > heroLogoBottom);
-    };
-
-    if (pathname === "/") {
-      setShowHeaderLogo(false);
-      requestAnimationFrame(updateHeaderLogo);
-    } else {
-      updateHeaderLogo();
-    }
-
-    window.addEventListener("scroll", updateHeaderLogo, { passive: true });
-    window.addEventListener("resize", updateHeaderLogo);
-
-    return () => {
-      window.removeEventListener("scroll", updateHeaderLogo);
-      window.removeEventListener("resize", updateHeaderLogo);
-    };
-  }, [pathname]);
-
   return (
     <>
-      <header className={showHeaderLogo ? "site-header has-header-logo" : "site-header"}>
+      <header className="site-header">
         <button className="menu-toggle" onClick={() => setMenuOpen((value) => !value)} aria-expanded={menuOpen}>
           Menu
         </button>
-        <div className="header-wordmark" aria-hidden={!showHeaderLogo}>
+        <div className="mobile-header-wordmark">
           <Wordmark />
         </div>
         <nav className={menuOpen ? "primary-nav is-open" : "primary-nav"} aria-label="Primary navigation">
           <Link href="/living-certificate" onClick={() => setMenuOpen(false)}>Living Certificate</Link>
           <Link href="/farmers" onClick={() => setMenuOpen(false)}>Farmers</Link>
+          <div className="nav-wordmark">
+            <Wordmark />
+          </div>
           <Link href="/products" onClick={() => setMenuOpen(false)}>Shop</Link>
           <Link href="/blog" onClick={() => setMenuOpen(false)}>Blog</Link>
         </nav>
