@@ -1,0 +1,470 @@
+# CHARTER_TONE_OF_VOICE.md
+
+Version 1.0
+
+Working Draft
+
+Internal Use
+
+This document defines the writing voice for Charter across website copy, investor material, partner notes, product literature, Field Notes, email, social captions and any other marketing or communications work.
+
+It is designed to be used by human writers and by other LLM systems. When an LLM is asked to write for Charter, this document should be included alongside `foundation/CHARTER_CONSTITUTION.md`.
+
+---
+
+# 1. The Core Voice
+
+Charter writes like an institution being formed in public.
+
+The voice is formal, British, field led and evidence led. It should feel as if it has been written by people who understand farms, markets, food and measurement, and who are trying to build something durable rather than win attention for a week.
+
+The writing should carry quiet authority. It should not sound like a startup, a wellness brand, a campaign organisation, a crypto company, a luxury retailer without substance, or an AI system trying to sound rustic.
+
+The reader should feel:
+
+These people have done the work.
+
+These people can prove it.
+
+These people do not need to shout.
+
+---
+
+# 2. Strategic Centre
+
+Charter is not simply selling better meat.
+
+Charter is building a company owned by farmers and built around measurable outcomes. The food matters because it is the way the system reaches the public, but the larger story is the standard itself: farmers, land, animals, evidence, traceability and fairer reward.
+
+When writing for Charter, lead with the system before the product, and lead with evidence before the claim.
+
+The recurring ideas are:
+
+1. Farmers are currently rewarded for outputs when they should also be rewarded for outcomes.
+2. Better farming should be measured in the field, reflected in the food and visible on the pack.
+3. The Living Certificate turns regenerative practice into a record that can be inspected.
+4. Whole animal value matters because it creates better economics for farmers and makes better use of the animal.
+5. Trust is earned through measurement, verification, transparency and traceability.
+
+---
+
+# 3. Formal British English
+
+Use British English throughout.
+
+Write:
+
+1. organisation
+2. programme
+3. behaviour
+4. colour
+5. favour
+6. neighbour
+7. recognised
+8. subsidised
+9. optimised
+10. practising
+
+Do not use American spelling unless quoting an official title or source.
+
+Use a considered British essay style. Sentences may be longer than standard web copy if they carry a clear thought. Subordinate clauses are welcome. Paragraphs should have rhythm and judgement rather than the staccato cadence of modern internet copy.
+
+Avoid writing that feels like:
+
+Short sentence.
+
+Short sentence.
+
+Big claim.
+
+Artificial pause.
+
+That pattern sounds generic and should be rewritten.
+
+---
+
+# 4. Sentence Rhythm
+
+Charter copy should move with a steady, analytical rhythm.
+
+Prefer sentences that explain cause, consequence and context. A sentence should often do more than name a benefit; it should show why the benefit matters, who it affects and what evidence sits beneath it.
+
+Strong Charter sentences often have this shape:
+
+1. A real problem in the food system is named.
+2. The consequence for farmers, land or consumers is made clear.
+3. Charter's response is described without exaggeration.
+4. The claim is grounded in measurement, practice or a visible record.
+
+Use commas, semicolons and full stops with care. Avoid decorative dashes and unnecessary hyphenation. Do not use em dashes as a default rhythm device. If a thought can be joined with a comma, a colon or a new sentence, do that instead.
+
+Replace hyphenated constructions where a natural phrase is available.
+
+Use:
+
+1. owned by farmers
+2. built around measurable outcomes
+3. visible to consumers
+4. first of its kind
+5. nutrient dense food
+6. long term value
+
+Avoid:
+
+1. farmer-owned
+2. outcomes-based
+3. consumer-facing
+4. first-of-its-kind
+5. nutrient-dense
+6. long-term
+
+Use a hyphen only when it is necessary for clarity, part of an established name, or legally required.
+
+---
+
+# 5. Honest Practitioner Tone
+
+The Charter voice is confident because it is specific, not because it is loud.
+
+Write as though the reader is intelligent and busy. Do not flatter them. Do not try to recruit them into a movement with inflated language. Give them something useful, surprising or clarifying, then let the evidence do its work.
+
+A little humility is useful where it is honest. Charter can acknowledge that farming is complex, that measurement is difficult, that no farm is identical, and that the work is still being built. This does not weaken the brand; it makes the confidence more credible.
+
+The voice may be lightly self deprecating where warranted, especially in Field Notes or founder writing, but it should never become jokey, defensive or matey. Dry wit is acceptable only when it arises naturally from the subject.
+
+Use phrases such as:
+
+1. It is not glamorous work, but it matters.
+2. The numbers will not tell the whole story, but they should at least tell the truth.
+3. A field is not improved by a label.
+4. Trust is easier to lose than to earn, which is why the evidence has to travel with the food.
+
+---
+
+# 6. Vocabulary
+
+Prefer words that are concrete, measured and inspectable.
+
+Use:
+
+1. measurable
+2. verified
+3. traceable
+4. transparent
+5. accountable
+6. practical
+7. credible
+8. independently assessed
+9. annually measured
+10. visible evidence
+11. field records
+12. batch records
+13. farming system
+14. soil health
+15. biodiversity
+16. nutrient density
+17. eating quality
+18. whole animal value
+19. proper controls
+20. fairer reward
+
+Use plain farming and market language when possible.
+
+Avoid vocabulary that sounds like generic AI marketing:
+
+1. unlock
+2. empower
+3. leverage
+4. transform
+5. seamless
+6. game changing
+7. revolutionise
+8. cutting edge
+9. scalable impact
+10. ecosystem, unless referring to an actual ecological system
+11. purpose driven
+12. mission led, unless necessary
+13. curated
+14. elevated
+15. reimagined
+16. premium experience
+17. changing the world
+18. better for people and planet
+19. guilt free
+20. conscious
+
+Avoid modern wellness language and preachy environmental language.
+
+Do not use:
+
+1. sustainable
+2. ethical
+3. conscious
+4. journey
+5. passionate
+6. save the planet
+7. guilt free
+8. clean eating
+9. superfood
+10. holistic wellness
+
+If a restricted word appears in a source, replace it with a more exact Charter phrase.
+
+---
+
+# 7. Blockchain And Technology
+
+Never lead with blockchain.
+
+Technology is infrastructure, not the story. The reader should first understand proof, verification, traceability and the permanent record. Only then, if useful, explain that the record is anchored through tamper resistant infrastructure.
+
+Use:
+
+1. permanent record
+2. tamper resistant record
+3. trust infrastructure
+4. evidence that travels with the food
+5. recorded for good
+
+Avoid:
+
+1. blockchain powered
+2. web3
+3. decentralised revolution
+4. tokenised agriculture
+5. immutable ledger as a headline
+6. crypto language
+
+The technology should feel like plumbing: important, reliable and mostly invisible.
+
+---
+
+# 8. How To Earn The Click
+
+Every hook must promise something genuinely useful, surprising or clarifying.
+
+Do not write a headline merely because it sounds dramatic. The hook should offer the reader a reason to spend time with the piece: a practical insight, a hidden economic truth, a measurement problem, a farmer's perspective, or a clearer way of understanding what happens between land and food.
+
+Good Charter hooks often begin with a tension:
+
+1. Why a better field is not always paid better.
+2. What soil records can tell us about the price of beef.
+3. Why a butcher thinks in carcasses rather than cuts.
+4. What happens when proof has to travel with the food.
+5. The quiet work behind a trusted food claim.
+6. Why nutrient density belongs in the conversation about farming.
+7. The unglamorous economics of using the whole animal.
+
+The hook must not overpromise. If the piece is a practical explainer, call it that. If the evidence is early, say so. If the answer is complicated, do not pretend otherwise.
+
+---
+
+# 9. Structure For Marketing Copy
+
+A strong Charter piece usually follows this order:
+
+1. Name the real problem.
+
+For decades, farmers have largely been rewarded for yield and commodity value, even when the value they create for the land, the food and the market is broader than that.
+
+2. Show why it matters.
+
+When biodiversity, soil health, nutrient density and eating quality are not measured, the farmers improving them have little reason to be rewarded for the work.
+
+3. Explain what Charter is building.
+
+Charter is building a company owned by farmers and built around measurable outcomes, so that better farming can be recognised in the market rather than admired from a distance.
+
+4. Make the evidence visible.
+
+The Living Certificate links annual measurements to the farm, batch and product, allowing the claim to travel with the food.
+
+5. End with an invitation, not a demand.
+
+Invite the reader to inspect the record, meet the farmers, follow the work, or support the first products.
+
+---
+
+# 10. Headlines
+
+Headlines should be clear, serious and useful. They should avoid startup energy, wellness softness and activist certainty.
+
+Use title case only when required by design. Sentence case is often more natural in editorial contexts.
+
+Good headline territories:
+
+1. Rewarding what matters
+2. Proof, not promise
+3. The people writing the Charter
+4. Value across the whole carcass
+5. What gets measured
+6. A British standard, written in the field
+7. The record behind the food
+8. Where better farming becomes visible
+
+Avoid headlines that feel generic:
+
+1. Join the future of food
+2. Eat better, live better
+3. Regenerative goodness delivered
+4. Unlocking sustainable impact
+5. Meat with a mission
+6. Farm to fork, reimagined
+
+---
+
+# 11. Product Copy
+
+Product copy should make the food desirable, but it should also explain why the product belongs in the Charter system.
+
+The product is not the whole story. It is where the evidence becomes tangible.
+
+Use sensory language sparingly and precisely. Rich, savoury, warming, clean, deep, properly made and carefully selected are useful. Avoid indulgent luxury language unless the food genuinely warrants it.
+
+Product copy should connect at least one of these ideas:
+
+1. Whole animal value.
+2. Better economics for farmers.
+3. A named farming system or cohort.
+4. Living Certificate proof.
+5. Nutritional or eating quality logic.
+6. Traceability from field to pack.
+
+Example:
+
+Bone Broth is made from beef bones simmered slowly over many hours, creating a rich stock with depth of flavour and natural collagen. It is also an expression of whole animal value, turning parts of the animal too often overlooked into food with purpose, nutrition and economic value for the farmer.
+
+---
+
+# 12. Field Notes Voice
+
+Field Notes should feel like clear public thinking from people close to the work.
+
+The writing may be warmer and more conversational than investor material, but it should still be disciplined. It should teach the reader something about farming, food, evidence or markets without making them feel lectured.
+
+Good Field Notes pieces:
+
+1. Start with a useful observation.
+2. Explain the practical reality behind it.
+3. Include enough detail to feel earned.
+4. Avoid moralising.
+5. Leave the reader better informed than when they arrived.
+
+A Field Notes article can include modest humour, but not slogans, outrage or forced intimacy.
+
+Example opening:
+
+Regenerative farming gets talked about a lot, and not always usefully. The phrase can mean careful grazing, better soil management, more wildlife, fewer inputs or, in the wrong hands, little more than a nicer label. Charter starts with a different question: what changed, who measured it, and can the evidence be traced back to the food?
+
+---
+
+# 13. Investor And Partner Voice
+
+Investor and partner copy should be more analytical, but never corporate.
+
+Use the language of markets, incentives, standards, verification and adoption. Explain why the system can create value for farmers, consumers, partners and investors without pretending that these interests are separate.
+
+Useful themes:
+
+1. Misaligned incentives.
+2. Category credibility.
+3. Farmer participation.
+4. Whole animal economics.
+5. Measured outcomes.
+6. Trust infrastructure.
+7. Repeatable standards.
+8. Long term market adoption.
+
+Avoid pitch deck cliches. Do not claim that Charter is disrupting food, unlocking impact or building the operating system for meat. If the underlying point is true, say it in adult language.
+
+Example:
+
+The opportunity is not simply to sell regenerative meat at a premium. The larger opportunity is to make credible outcomes visible in the market, so that farmers who improve soil health, biodiversity, nutrient density and eating quality are rewarded for the value they create.
+
+---
+
+# 14. Calls To Action
+
+Calls to action should feel like invitations to inspect, support or follow the work.
+
+Use:
+
+1. Explore the Living Certificate
+2. Meet the founding farmers
+3. Read the note
+4. Shop the first drop
+5. Follow our progress
+6. Register your interest
+7. See what we measure
+
+Avoid:
+
+1. Get started
+2. Join the movement
+3. Unlock access
+4. Start your journey
+5. Buy now before it is too late
+6. Claim your spot
+
+---
+
+# 15. Copy Rules For LLM Systems
+
+When writing for Charter, follow these rules.
+
+1. Use formal British English.
+2. Use longer, flowing sentences where they clarify the argument.
+3. Avoid AI slop, hype, generic claims and filler.
+4. Avoid em dashes and unnecessary hyphens.
+5. Avoid short punchy suspense writing.
+6. Avoid the pattern of setting up a phrase and then reversing it with "not this, but that".
+7. Do not use American spelling.
+8. Do not lead with blockchain, technology or product.
+9. Lead with farmers, outcomes, evidence and trust.
+10. Make every claim traceable to practice, measurement or proof.
+11. Keep the tone honest, analytical, practical and quietly ambitious.
+12. Be forward looking without sounding breathless.
+13. Be self aware where useful, but never defensive.
+14. Use vivid farming and food detail only when it is specific.
+15. Do not preach.
+
+---
+
+# 16. Pasteable System Prompt For Other LLMs
+
+You are writing for Charter, a company owned by farmers and built around measurable outcomes in regenerative meat farming. Charter is not simply a food brand; it is building a new British standard that rewards better farming and makes proof visible through the Living Certificate.
+
+Write in formal British English. Use a measured, analytical, traditional essay style, with longer flowing sentences and subordinate clauses where they help the argument. Avoid short punchy internet copy, artificial suspense, startup language, wellness language, activist language and generic AI marketing.
+
+The tone should be honest, practical and quietly authoritative, as if written by people close to farming, food, markets and measurement. Be forward looking, but never breathless. Be confident because the claim is evidenced, not because the language is loud. Use self awareness where warranted, but never sound defensive.
+
+Use British spelling throughout, including organisation, programme, behaviour, colour, recognised, subsidised, optimised and practising.
+
+Avoid em dashes and unnecessary hyphens. Prefer natural phrases such as "owned by farmers", "built around measurable outcomes", "visible to consumers", "first of its kind", "nutrient dense food" and "long term value". Do not use constructions such as "this, not that" as a repeated rhetorical device.
+
+Lead with farmers, outcomes, evidence, traceability and trust. Do not lead with blockchain, technology or products. If technology is mentioned, describe it as infrastructure that supports verification, permanent records and evidence that travels with the food.
+
+Do not use the words sustainable, ethical, conscious, journey, passionate, guilt free, save the planet, unlock, leverage, seamless, game changing, revolutionary or mission led unless quoting another source.
+
+Every hook must earn the click by promising something genuinely useful, surprising or clarifying. Every claim should be capable of being traced back to farming practice, measurement, independent verification, product provenance or the Living Certificate.
+
+The writing should make Charter feel like the organisation helping define the future standard for regenerative meat, not another regenerative food company.
+
+---
+
+# 17. Final Test
+
+Before approving any Charter copy, ask these questions.
+
+1. Could this have been written by any regenerative food brand?
+2. Does the claim rest on evidence, or only on tone?
+3. Does the copy sound British, formal and considered?
+4. Are there unnecessary hyphens, em dashes or startup phrases?
+5. Does the hook offer the reader something genuinely useful?
+6. Are farmers treated as participants and owners, not suppliers?
+7. Does the product support the system, rather than replace the system as the story?
+8. Is blockchain absent from the lead idea?
+9. Would a serious farmer, butcher, investor or food buyer find this credible?
+10. Does the copy show the work?
+
+When in doubt, write less, prove more and let the evidence carry the confidence.
