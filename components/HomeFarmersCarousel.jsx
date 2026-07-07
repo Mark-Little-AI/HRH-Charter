@@ -42,7 +42,7 @@ export function HomeFarmersCarousel({ farmers }) {
         {farmers.map((farmer) => (
           <article className="fcard" key={`${farmer.farm}-${farmer.name}`}>
             <div className="frame">
-              <img src={farmer.image} alt={farmer.alt} />
+              <img className={farmer.imageClassName ?? undefined} src={farmer.image} alt={farmer.alt} />
               <div className="photo-scrim" />
               <div className="quote">
                 <div className="qmark">&ldquo;</div>
