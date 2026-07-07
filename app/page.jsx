@@ -148,7 +148,7 @@ export default function HomePage() {
         <div className="hero-copy hero-copy-investor" aria-labelledby="home-hero-title">
           <div className="hero-title-block">
             <h1 id="home-hero-title" className="home-hero-title">
-              The Fifth Quarter, Revalued.
+              The Fifth Quarter, revalued.
             </h1>
             <p className="hero-subheadline">
               Creating more value from every regenerative animal and the overlooked cuts that deserve a place on the plate.
