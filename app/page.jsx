@@ -148,10 +148,10 @@ export default function HomePage() {
         <div className="hero-copy hero-copy-investor" aria-labelledby="home-hero-title">
           <div className="hero-title-block">
             <h1 id="home-hero-title" className="home-hero-title">
-              The new standard for British regenerative meat, defined by those doing the work.
+              The Fifth Quarter, Revalued.
             </h1>
             <p className="hero-subheadline">
-              Starting with the fifth quarter: bone broth, bull shot, biltong and the overlooked parts of the animal that can create more value from every carcass.
+              Creating more value from every regenerative animal and the overlooked cuts that deserve a place on the plate.
             </p>
             <Link className="hero-shop-button" href="/products">Shop Now</Link>
           </div>
