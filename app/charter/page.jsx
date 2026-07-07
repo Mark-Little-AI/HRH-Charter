@@ -38,7 +38,7 @@ export default function CharterPage() {
         <p className="eyebrow">The Charter</p>
         <h1>A founding document for measurable farming.</h1>
         <p>
-          The Charter is the public commitment beneath the Living Certificate. It is not a certification badge or a campaign line. It is the standard against which Charter farms, products and claims are expected to stand.
+          The Charter is the public commitment beneath Our Standard. It is not a certification badge or a campaign line. It is the standard against which Charter farms, products and claims are expected to stand.
         </p>
       </section>
 
@@ -49,7 +49,7 @@ export default function CharterPage() {
         </div>
         <div className="editorial-copy">
           <p>The founding Charter is being written with farmers, processors, scientists, butchers and land stewards. Its purpose is simple: define a British standard for regenerative meat that can be measured in practice, not merely described in principle.</p>
-          <p>The document will be permanently anchored in the genesis block of the Living Certificate infrastructure. The standard can improve as the evidence improves, but the founding commitment remains visible.</p>
+          <p>The standard can improve as the evidence improves, but the founding commitment remains visible: useful in a field, credible in a market and clear enough for the person buying the food.</p>
           <blockquote>
             <p>A standard has to be useful in a field, credible in a market and clear enough for the person buying the food.</p>
           </blockquote>
@@ -73,13 +73,13 @@ export default function CharterPage() {
       </section>
 
       <section className="lc-final-cta">
-        <p className="eyebrow">Living Certificate</p>
+        <p className="eyebrow">Our Standard</p>
         <h2>Where the Charter becomes visible.</h2>
         <p className="large-copy">
-          The Living Certificate turns the Charter into an evidence record for each farm and product.
+          Our Standard connects the Charter to an evidence record for each farm, batch and product.
         </p>
         <div className="lc-actions">
-          <Link className="underlined-button" href="/living-certificate">Explore The Living Certificate</Link>
+          <Link className="underlined-button" href="/living-certificate">Explore Our Standard</Link>
           <Link className="underlined-button" href="/farmers">Meet The Founding Farmers</Link>
         </div>
       </section>

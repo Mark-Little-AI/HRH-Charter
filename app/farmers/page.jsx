@@ -23,18 +23,18 @@ const foundingGroup = [
     farm: "Belmont Farms",
     name: "Eric Heath",
     role: "Lead applicant · Natural capital & ecology",
-    status: "Living Certificate coming soon",
+    status: "Founding farm",
     who: "Eric Heath",
     quote:
-      "We’ve spent years showing that good farming creates value well beyond the carcass. The Charter is the first thing that actually measures it."
+      "We’ve spent years showing that good farming creates value well beyond the carcass. The Charter is the first thing that helps make it visible."
   },
   {
     image: "/assets/charter-home/farmers/caroline-grindrod.png",
     region: "South Lakeland",
     farm: "Roots of Nature",
     name: "Caroline Grindrod",
-    role: "Regenerative farming mentor · Trial partner",
-    status: "Living Certificate coming soon",
+    role: "Regenerative farming mentor · Methodology partner",
+    status: "Methodology partner",
     who: "Caroline Grindrod",
     quote:
       "Look after the soil and the wildlife, and the farm looks after itself. The trick is being able to prove it."
@@ -45,7 +45,7 @@ const foundingGroup = [
     farm: "Edinvale Farm",
     name: "Jock Gibson",
     role: "Nuffield Scholar · Macbeths Butchery · Eating quality",
-    status: "Living Certificate coming soon",
+    status: "Founding farm",
     who: "Jock Gibson",
     quote:
       "Britain produces some of the highest quality beef in the world but doesn’t fairly reward farmers. Charter is finally changing that."
@@ -56,7 +56,7 @@ const foundingGroup = [
     farm: "Rothiemurchus Estate",
     name: "James Grant",
     role: "Farm shop · Kitchen · Consumer demonstration",
-    status: "Living Certificate coming soon",
+    status: "Founding farm",
     who: "James Grant",
     quote:
       "People want to know where their food comes from. We can go one further, and show them what it’s doing for the land."
@@ -67,7 +67,7 @@ const foundingGroup = [
     farm: "Dunmaglass Estate",
     name: "Scottish founding farm",
     role: "Trial partner",
-    status: "Living Certificate coming soon",
+    status: "Founding farm",
     who: "Dunmaglass Estate",
     quote:
       "Regenerative farming is judged in the field, not the boardroom. If the land’s improving, the record should show it."
@@ -78,7 +78,7 @@ const foundingGroup = [
     farm: "Balnagowen & Aberarder",
     name: "Additional trial sites",
     role: "Testing across land types & systems",
-    status: "Living Certificate coming soon",
+    status: "Founding farm",
     who: "Balnagowen & Aberarder",
     quote:
       "No two farms are the same. That’s exactly why the record has to tell the truth about each one."

@@ -8,13 +8,13 @@ const farmers = [
   {
     image: `${assetBase}/farmers/farmer-6.png`,
     alt: "Eric Heath of Belmont Farms",
-    quote: "We’ve spent years showing that good farming creates value well beyond the carcass. The Living Certificate is the first thing that actually measures it.",
+    quote: "We’ve spent years showing that good farming creates value well beyond the carcass. Our Standard is the first thing that actually measures it.",
     who: "Eric Heath",
     region: "Bristol",
     farm: "Belmont Farms",
     name: "Eric Heath",
     role: "Lead applicant · Natural capital & ecology",
-    status: "Living Certificate coming soon"
+    status: ""
   },
   {
     image: `${assetBase}/farmers/caroline-grindrod.png`,
@@ -24,8 +24,8 @@ const farmers = [
     region: "South Lakeland",
     farm: "Roots of Nature",
     name: "Caroline Grindrod",
-    role: "Regenerative farming mentor · Trial partner",
-    status: "Living Certificate coming soon"
+    role: "Regenerative farming mentor · Methodology partner",
+    status: ""
   },
   {
     image: `${assetBase}/farmers/eric-heath.png`,
@@ -36,7 +36,7 @@ const farmers = [
     farm: "Edinvale Farm",
     name: "Jock Gibson",
     role: "Nuffield Scholar · Macbeths Butchery · Eating quality",
-    status: "Living Certificate coming soon"
+    status: ""
   },
   {
     image: `${assetBase}/farmers/farmer-4.png`,
@@ -47,7 +47,7 @@ const farmers = [
     farm: "Rothiemurchus Estate",
     name: "James Grant",
     role: "Farm shop · Kitchen · Consumer demonstration",
-    status: "Living Certificate coming soon"
+    status: ""
   },
   {
     image: `${assetBase}/farmers/farmer-1.png`,
@@ -58,7 +58,7 @@ const farmers = [
     farm: "Dunmaglass Estate",
     name: "Scottish founding farm",
     role: "Trial partner",
-    status: "Living Certificate coming soon"
+    status: ""
   },
   {
     image: `${assetBase}/farmers/farmer-8.png`,
@@ -69,7 +69,7 @@ const farmers = [
     farm: "Balnagowen & Aberarder",
     name: "Additional trial sites",
     role: "Testing across land types & systems",
-    status: "Living Certificate coming soon"
+    status: ""
   },
   {
     image: `${assetBase}/farmers/munros.png`,
@@ -113,7 +113,7 @@ const products = [
     alt: "Charter Bone Broth kraft pouch",
     href: "/products",
     packClassName: "pack-shot-pouch",
-    description: "Made from beef bones simmered slowly over many hours, creating a rich stock with depth of flavour and natural collagen. Simple, nourishing food, made properly."
+    description: "Made from beef bones simmered slowly over many hours, creating a rich stock with depth of flavour, natural collagen and a better use for fifth-quarter value."
   },
   {
     name: "Bull Shot",
@@ -121,7 +121,7 @@ const products = [
     alt: "Charter Bull Shot kraft box",
     href: "/products",
     packClassName: "pack-shot-box",
-    description: "A savoury beef drink made from slow-cooked stock. Warming, restorative and surprisingly satisfying, whether enjoyed on its own or as part of a meal."
+    description: "A savoury beef drink made from slow-cooked stock. Warming, restorative and built from the same fifth-quarter logic behind Charter."
   },
   {
     name: "Biltong",
@@ -129,17 +129,8 @@ const products = [
     alt: "Charter Biltong kraft pouch",
     href: "/products",
     packClassName: "pack-shot-pouch",
-    description: "Air-dried beef with a firm bite and deep, savoury flavour. Made from carefully selected cuts and prepared slowly, allowing the quality of the meat to speak for itself."
+    description: "Air-dried beef with a firm bite and deep, savoury flavour. Made as part of a wider commitment to value more of every animal."
   }
-];
-
-const measuredItems = [
-  ["Farming System", "Breed, diet, grazing and finishing."],
-  ["Biodiversity", "Independently assessed, in the field."],
-  ["Soil Health", "Whether the ground is getting better."],
-  ["Nutrient Density", "What’s actually in the food."],
-  ["Eating Quality", "Flavour and tenderness, measured."],
-  ["Traceability", "Farm, animal, processor, test, pack."]
 ];
 
 export default function HomePage() {
@@ -157,10 +148,10 @@ export default function HomePage() {
         <div className="hero-copy hero-copy-investor" aria-labelledby="home-hero-title">
           <div className="hero-title-block">
             <h1 id="home-hero-title" className="home-hero-title">
-              Better Farmers. Better Land. Better Beef.
+              The new standard for British regenerative meat, defined by those doing the work.
             </h1>
             <p className="hero-subheadline">
-              The new standard for British regenerative meat, defined by those doing the work.
+              Starting with the fifth quarter: bone broth, bull shot, biltong and the overlooked parts of the animal that can create more value from every carcass.
             </p>
             <Link className="hero-shop-button" href="/products">Shop Now</Link>
           </div>
@@ -222,30 +213,30 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="band" data-screen-label="Whole Animal Whole Value">
+        <section className="band" data-screen-label="Fifth Quarter Whole Value">
           <div className="ft-block">
             <div className="col body-col">
-              <span className="kicker">Nose to tail</span>
-              <h2 className="h-caps">Value across the whole carcass</h2>
-              <p>The traditional beef trade is built around a small number of premium cuts, while much of the animal is overlooked.</p>
-              <p>This wastes valuable farming resources and leaves significant nutritional value unrealised. Charter takes a whole animal approach, creating value from every part of the animal.</p>
-              <p>From tallow and marrow to fat and offal, we make full use of its nutritional richness rather than letting it go to waste.</p>
+              <span className="kicker">Fifth Quarter</span>
+              <h2 className="h-caps">Value from the overlooked parts of the carcass</h2>
+              <p>Charter starts with the fifth quarter: the bones, fat, marrow, offal and other valuable parts of the animal too often treated as byproducts.</p>
+              <p>These parts carry nutritional, culinary and economic value. Used properly, they create better returns from the same animal without asking farmers to produce more.</p>
+              <p>Bone broth, bull shot and biltong are the first expressions of that approach: products that turn overlooked value into something useful, traceable and commercially viable.</p>
             </div>
             <div className="media figure">
               <div className="ft-figure">
                 <img src={`${assetBase}/products/whole-animal.png`} alt="Beef cuts laid out — from prime steaks to mince, marrow and offal" />
                 <div className="scrim" />
-                <div className="ghost">Whole<br />Animal</div>
+                <div className="ghost">Fifth<br />Quarter</div>
               </div>
             </div>
             <div className="col">
-              <p className="stand">When the whole animal is valued, farmers are rewarded more fairly, more nourishing food reaches consumers, and the food system becomes stronger and more resilient for everyone it supports.</p>
+              <p className="stand">When the fifth quarter is valued properly, farmers are rewarded more fairly, more nourishing food reaches consumers, and fewer useful parts of the animal disappear into low-value channels.</p>
               <div className="flow">
                 <div className="node"><span>One Animal</span></div>
                 <div className="conn" />
-                <div className="node"><span>Every Part Valued</span></div>
+                <div className="node"><span>Fifth Quarter Valued</span></div>
                 <div className="conn" />
-                <div className="node"><span>More Farmer Value</span></div>
+                <div className="node"><span>Better Farmer Returns</span></div>
               </div>
             </div>
           </div>
@@ -253,9 +244,9 @@ export default function HomePage() {
 
         <section className="band earth" id="shop" data-screen-label="The First Drop">
           <div className="sec-head">
-            <span className="kicker">What Better Beef Tastes Like</span>
+            <span className="kicker">The Fifth Quarter</span>
             <h2 className="h-caps">The First Drop</h2>
-            <p className="home-first-drop-copy">These are the first products to carry the Charter. Rich in flavour, naturally nutrient dense and made from parts of the animal too often overlooked,<br />they demonstrate what becomes possible when farmers are rewarded for outcomes rather than outputs.</p>
+            <p className="home-first-drop-copy">The first Charter products begin with the fifth quarter: parts of the animal that are nutrient-rich, useful and too often undervalued.<br />Bone broth, bull shot and biltong show how overlooked value can become better food, better economics and clearer proof for consumers.</p>
           </div>
           <div className="prod-grid">
             {products.map((product) => (
@@ -273,34 +264,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="band" id="certificate" data-screen-label="Living Certificate">
-          <div className="ft-block">
-            <div className="col">
-              <span className="kicker">Proof, not promise</span>
-              <h2 className="h-caps">The Living Certificate</h2>
-              <p className="dek">Through a Living Certificate awarded on measurable outcomes, Charter ensures participating farmers are fairly recognised for regenerative practices.</p>
-              <p className="dek">Every Charter product carries a living record of what happened on the farm, creating a transparent way to track improvements in soil health and nutrient density over time.</p>
-              <p className="dek">By scanning the Living Certificate, you can connect directly to the farm and see the impact behind the food you buy.</p>
-            </div>
-            <Link className="media figure" href="/living-certificate" aria-label="Explore the Living Certificate">
-              <div className="ft-figure">
-                <img src={`${assetBase}/products/scanning-product.png`} alt="Scanning a Charter pack to open its Living Certificate, beside branded packs and boxes" />
-                <div className="scrim" />
-                <div className="ghost">Real-time<br />Traceability</div>
-              </div>
-            </Link>
-            <div className="col">
-              <div className="rail">
-                <h4>What’s measured</h4>
-                <ul className="small-list">
-                  {measuredItems.map(([title, text]) => (
-                    <li key={title}><b>{title}</b> {text}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
 
         <section className="band slim earth" id="newsletter" data-screen-label="Newsletter">
           <div className="nl">

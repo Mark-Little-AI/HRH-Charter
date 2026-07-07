@@ -2,37 +2,54 @@ import Image from "next/image";
 import Link from "next/link";
 
 const pillars = [
-  { title: "Soil Health", image: "/assets/living-certificate/soil-health-principles-clean.png", alt: "Soil health principles diagram",
-    body: "Indicators of soil improvement tracked over time, the biological foundation of better food." },
-  { title: "Biodiversity", image: "/assets/living-certificate/biodiversity-diagram.png", alt: "Biodiversity diagram showing genetic, species and ecosystem diversity",
-    body: "Independent ecological assessment of habitats, species richness and resilience." },
-  { title: "Nutrient Density", image: "/assets/living-certificate/nutrient-density-lab.png", alt: "Meat sample being tested in a laboratory",
-    body: "Laboratory testing of what is actually in the food. A first-of-its-kind dataset for British grass-fed beef." },
-  { title: "Eating Quality", image: "/assets/living-certificate/eating-quality-plate.png", alt: "Sliced beef served on a plate",
-    body: "Independent assessment of flavour, tenderness and the overall experience on the plate." }
+  {
+    title: "Soil Health",
+    image: "/assets/living-certificate/soil-health-principles-clean.png",
+    alt: "Soil health principles diagram",
+    body: "Indicators of soil improvement tracked over time, forming the biological foundation beneath the claim."
+  },
+  {
+    title: "Biodiversity",
+    image: "/assets/living-certificate/biodiversity-diagram.png",
+    alt: "Biodiversity diagram showing genetic, species and ecosystem diversity",
+    body: "Ecological assessment of habitats, species richness and resilience, connected to the farm itself."
+  },
+  {
+    title: "Nutrient Density",
+    image: "/assets/living-certificate/nutrient-density-lab.png",
+    alt: "Meat sample being tested in a laboratory",
+    body: "Laboratory testing used to understand what is actually in the food and how that changes over time."
+  },
+  {
+    title: "Eating Quality",
+    image: "/assets/living-certificate/eating-quality-plate.png",
+    alt: "Sliced beef served on a plate",
+    body: "Assessment of flavour, tenderness and the experience on the plate, because a standard has to matter to the person eating the food."
+  }
 ];
 
 const steps = [
-  ["Farm", "Breed, grazing, forage and finishing documented through the year."],
-  ["Independent measurement", "Biodiversity, nutrient density and eating quality, by specialists."],
-  ["Verification", "Results reviewed and linked to the farm and batch."],
-  ["Permanent record", "Anchored to a tamper-resistant ledger."]
+  ["Methodology", "The Living Certificate methodology is built by Caroline Grindrod of Roots of Nature."],
+  ["Farm evidence", "Breed, grazing, forage, biodiversity, soil and product evidence are gathered through the year."],
+  ["Review", "Results are reviewed and connected to the farm, batch and product."],
+  ["Consumer proof", "Charter helps the evidence travel to consumers through product, pack and traceability."]
 ];
 
 const foundingFarms = [
+  ["Roots of Nature", "Methodology lead · Caroline Grindrod"],
   ["Belmont Farms", "Bristol"],
   ["Dunmaglass Estate", "Inverness-shire"],
   ["Edinvale Farm", "Moray"]
 ];
 
 export const metadata = {
-  title: "Living Certificate",
+  title: "Our Standard",
   description:
-    "Proof, not promise. The Living Certificate measures soil health, biodiversity and nutrient density on Charter farms — every year, independently verified.",
+    "Charter is the consumer face of the Living Certificate: British regenerative meat with proof on the pack. The methodology is built by Caroline Grindrod of Roots of Nature, supported by Charter.",
   openGraph: {
-    title: "The Living Certificate | CHARTER",
+    title: "Our Standard | CHARTER",
     description:
-      "Most food labels tell you what a farmer says they did. The Living Certificate shows what actually happened.",
+      "The Living Certificate methodology is built by Caroline Grindrod of Roots of Nature and supported by Charter as the consumer-facing route to market.",
     images: [{ url: "/og-charter.png" }]
   }
 };
@@ -40,27 +57,25 @@ export const metadata = {
 export default function LivingCertificatePage() {
   return (
     <div className="home-below">
-      {/* HERO */}
       <section className="hero sub-hero">
         <Image src="/assets/scanning-product.png" alt="A Charter pack being scanned to reveal its provenance record" fill priority sizes="100vw" />
         <div className="sub-hero-inner">
-          <span className="kicker lc-kicker-rust">The Living Certificate</span>
-          <h1 className="h-caps">Proof, not promise.</h1>
+          <span className="kicker lc-kicker-rust">Our Standard</span>
+          <h1 className="h-caps">Proof on the pack.</h1>
           <p className="sub-hero-sub">
-            Most labels tell you what a farmer says they did. The Living Certificate shows what
-            actually happened, measured every year, independently verified and recorded for good.
+            Charter is the consumer face of the Living Certificate — British regenerative meat, with the proof on the pack.
           </p>
-          <Link className="hero-shop-button" href="#measured">See what we measure</Link>
+          <Link className="hero-shop-button" href="#methodology">How it works</Link>
         </div>
       </section>
 
-      {/* THE PROBLEM */}
-      <section className="band">
+      <section className="band" id="methodology">
         <div className="ft-block">
           <div className="col">
-            <span className="kicker">The problem</span>
-            <h2 className="h-caps">Most labels reward process, not proof</h2>
-            <p className="dek">A farm can tick every approved box and still have degraded soil. Another can rebuild biodiversity and nutrient density through regenerative farming best practices and be paid exactly the same. Buying Charter Beef products changes that and supports better farming practices.</p>
+            <span className="kicker">Built by Roots of Nature. Supported by Charter.</span>
+            <h2 className="h-caps">The methodology sits with Caroline Grindrod.</h2>
+            <p className="dek">The Living Certificate is a methodology built by Caroline Grindrod of Roots of Nature. It is supported by Charter, but it is not Charter’s intellectual property.</p>
+            <p className="dek">Charter’s role is to help make the evidence visible in the market: connecting British regenerative meat, fifth-quarter products, product packaging and consumer traceability.</p>
           </div>
           <div className="media figure">
             <div className="ft-figure">
@@ -71,25 +86,24 @@ export default function LivingCertificatePage() {
           </div>
           <div className="col">
             <div className="rail">
-              <p className="rail-intro">The current system measures what farmers <em>do</em>. It rarely measures what they <strong>create</strong>.</p>
-              <h4>The shift</h4>
+              <p className="rail-intro">The current system measures what farmers <em>do</em>. The Living Certificate is designed to help show what farming <strong>creates</strong>.</p>
+              <h4>The distinction</h4>
               <ul className="shiftlist">
-                <li>From process to outcomes</li>
-                <li>From claims to evidence</li>
-                <li>From measured once to every year</li>
-                <li>From promises to proof on the pack</li>
+                <li>Methodology by Roots of Nature</li>
+                <li>Supported by Charter</li>
+                <li>Evidence connected to farms, batches and products</li>
+                <li>Proof made visible on the pack</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* WHAT GETS MEASURED */}
       <section className="band earth" id="measured">
         <div className="sec-head">
           <span className="kicker">What gets measured</span>
-          <h2 className="h-caps">Independent verification</h2>
-          <p className="home-first-drop-copy">Every Charter farm is assessed against measurable outcomes every year. As the land improves, the evidence improves and so do the rewards.</p>
+          <h2 className="h-caps">Evidence before claims</h2>
+          <p className="home-first-drop-copy">The standard is designed to connect farming practice, measurable outcomes and the food itself. As the evidence improves, the claim becomes clearer.</p>
         </div>
         <div className="measure-grid">
           {pillars.map((p) => (
@@ -105,19 +119,18 @@ export default function LivingCertificatePage() {
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
       <section className="band">
         <div className="ft-block">
           <div className="col">
             <span className="kicker">How it works</span>
-            <h2 className="h-caps">Measured. Verified. Published.</h2>
-            <p className="dek">Each result is linked directly to the farm and the production batch, then anchored to a tamper-resistant record: a living history of regenerative farming practices.</p>
+            <h2 className="h-caps">Measured. Reviewed. Made visible.</h2>
+            <p className="dek">The purpose is not to create another badge. The purpose is to connect the farm, the animal, the product and the evidence in a way consumers can understand.</p>
           </div>
           <div className="media figure">
             <div className="ft-figure">
               <Image src="/assets/scanning-product.png" alt="Scanning a Charter pack to open its record" fill sizes="(max-width: 1020px) 100vw, 42vw" />
               <div className="scrim" />
-              <div className="ghost">Verified</div>
+              <div className="ghost">Pack<br />Proof</div>
             </div>
           </div>
           <div className="col">
@@ -131,13 +144,12 @@ export default function LivingCertificatePage() {
         </div>
       </section>
 
-      {/* FOUNDING FARMERS */}
       <section className="band earth">
         <div className="ft-block">
           <div className="col">
-            <span className="kicker">Founding Farmers</span>
+            <span className="kicker">Founding group</span>
             <h2 className="h-caps">Built with the people doing the work</h2>
-            <p className="dek">The Living Certificate is being shaped alongside a growing group of farmers who believe outcomes matter more than labels. Quietly, patiently, one field at a time.</p>
+            <p className="dek">The methodology and market application are being shaped with farmers and practitioners who understand that a claim has to hold up in the field, not just on a label.</p>
           </div>
           <div className="media figure">
             <div className="ft-figure">
@@ -148,7 +160,7 @@ export default function LivingCertificatePage() {
           </div>
           <div className="col">
             <div className="rail">
-              <h4>Founding farms</h4>
+              <h4>Founding participants</h4>
               <ul className="small-list">
                 {foundingFarms.map(([f, loc]) => (<li key={f}><b>{f}</b> {loc}</li>))}
               </ul>
@@ -158,11 +170,10 @@ export default function LivingCertificatePage() {
         </div>
       </section>
 
-      {/* NEWSLETTER */}
       <section className="band slim">
         <div className="nl">
           <div className="nl-copy">
-            <h2 className="h-caps">Join the Quiet Revolution</h2>
+            <h2 className="h-caps">Follow the work</h2>
             <p>If you&rsquo;d like to follow our progress, join the mailing list below. We&rsquo;ll share occasional updates as we go.</p>
           </div>
           <form className="nl-form">

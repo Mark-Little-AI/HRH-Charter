@@ -55,7 +55,7 @@ export function HomeFarmersCarousel({ farmers }) {
               <div className="farm">{farmer.farm}</div>
               <div className="name">{farmer.name}</div>
               <div className="role">{farmer.role}</div>
-              <div className="status">{farmer.status}</div>
+              {farmer.status ? <div className="status">{farmer.status}</div> : null}
             </div>
           </article>
         ))}

@@ -404,17 +404,17 @@ p + p {
 }
 
 .home-hero-title {
-  max-width: none;
-  margin-top: 0;
+  max-width: min(1120px, calc(100vw - clamp(3rem, 8vw, 9rem)));
+  margin: 0 auto;
   color: var(--stone);
   font-family: var(--font-jost), system-ui, sans-serif;
-  font-size: clamp(1.9rem, 3.6vw, 4.2rem);
+  font-size: clamp(2rem, 4vw, 4.4rem);
   font-weight: 600;
   letter-spacing: 0;
-  line-height: 1.08;
+  line-height: 1.04;
   text-transform: none;
   text-shadow: 0 2px 28px rgba(30, 45, 61, 0.5);
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .hero-title-block {
@@ -432,7 +432,7 @@ p + p {
 }
 
 .hero-title-block .hero-subheadline {
-  max-width: none;
+  max-width: min(920px, calc(100vw - clamp(3rem, 8vw, 9rem)));
   margin-left: auto;
   margin-right: auto;
   margin-top: clamp(1rem, 1.8vw, 1.6rem);
@@ -441,7 +441,7 @@ p + p {
   font-weight: 600;
   line-height: 1.35;
   text-shadow: 0 2px 24px rgba(30, 45, 61, 0.5);
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .hero-shop-button {
@@ -497,8 +497,8 @@ p + p {
 
 .hero-copy-investor .hero-title-block .hero-subheadline {
   display: block;
-  width: max-content;
-  max-width: calc(100vw - clamp(3rem, 8vw, 9rem));
+  width: auto;
+  max-width: min(920px, calc(100vw - clamp(3rem, 8vw, 9rem)));
   margin-left: auto;
   margin-right: auto;
   text-align: center;

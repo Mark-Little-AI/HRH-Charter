@@ -5,13 +5,13 @@ export const products = [
     price: "£39.99",
     image: "/assets/pack-bone-broth.svg",
     lifestyleImage: "/assets/camping.png",
-    short: "Slow simmered bones, clean stock and proper depth. A first expression of whole animal value.",
+    short: "Slow simmered bones, clean stock and proper depth. A first expression of fifth-quarter value.",
     description:
-      "A rich, savoury broth from pasture raised cattle, cooked low and slow until the good bits have done their work.",
+      "A rich, savoury broth from pasture raised cattle, cooked low and slow to make better use of a valuable fifth-quarter ingredient.",
     ingredients: "Beef bones, filtered water, cider vinegar, sea salt. Final recipe to be confirmed.",
     provenance:
       "Sourced from named Scottish farms working to the Charter. Batch records will show the farm, field group and annual outcomes.",
-    certificate: "Scan the pack to see measured soil health, biodiversity and nutrient density records for the supplying farm."
+    certificate: "Scan the pack to see the proof record behind the supplying farm, batch and product."
   },
   {
     slug: "bullshot",
@@ -19,13 +19,13 @@ export const products = [
     price: "£9.99",
     image: "/assets/pack-bullshot.svg",
     lifestyleImage: "/assets/bull-shot.png",
-    short: "A bracing beef broth serve with backbone, made to give valuable cuts another route to market.",
+    short: "A bracing beef broth serve with backbone, made to give fifth-quarter ingredients another route to market.",
     description:
       "A savoury ready-to-drink broth serve built from proper stock, seasoning and a little theatre in the glass.",
     ingredients: "Beef broth, tomato, Worcestershire-style seasoning, lemon, pepper. Final recipe to be confirmed.",
     provenance:
       "Made from Charter cattle raised on farms with named fields, annual measurements and plain-English records.",
-    certificate: "Each batch links back to a Living Certificate, so the proof sits with the product rather than the promise."
+    certificate: "Each batch links back to a proof record, so the evidence sits with the product rather than the promise."
   },
   {
     slug: "biltong",
@@ -33,12 +33,12 @@ export const products = [
     price: "£9.99",
     image: "/assets/pack-biltong.svg",
     lifestyleImage: "/assets/restaurant.png",
-    short: "Air dried beef with bite, made from nourishing cuts that deserve more than commodity pricing.",
+    short: "Air dried beef with bite, made within a wider commitment to value more of every animal.",
     description:
       "Lean strips of pasture raised beef, cured and dried for a clean, deeply savoury snack.",
     ingredients: "Beef, vinegar, sea salt, coriander, black pepper. Final recipe to be confirmed.",
     provenance:
-      "A whole animal product that rewards more than the fashionable cuts.",
+      "Part of a whole-animal approach that rewards more than the fashionable cuts.",
     certificate: "Named farm proof follows the batch, from field outcomes to pack."
   }
 ];
