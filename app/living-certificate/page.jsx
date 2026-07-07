@@ -72,8 +72,8 @@ export default function LivingCertificatePage() {
       <section className="band" id="methodology">
         <div className="ft-block">
           <div className="col">
-            <span className="kicker">Built by Roots of Nature. Supported by Charter.</span>
-            <h2 className="h-caps">The methodology sits with Caroline Grindrod.</h2>
+            <span className="kicker">Roots of Nature methodology</span>
+            <h2 className="h-caps">Built by Caroline Grindrod.</h2>
             <p className="dek">The Living Certificate is a methodology built by Caroline Grindrod of Roots of Nature. It is supported by Charter, but it is not Charter’s intellectual property.</p>
             <p className="dek">Charter’s role is to help make the evidence visible in the market: connecting British regenerative meat, fifth-quarter products, product packaging and consumer traceability.</p>
           </div>
