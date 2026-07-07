@@ -43,7 +43,7 @@ export function SiteShell({ children }) {
 
     const timer = window.setTimeout(() => {
       setLaunchSignupOpen(true);
-    }, 15000);
+    }, 60000);
 
     return () => window.clearTimeout(timer);
   }, []);
