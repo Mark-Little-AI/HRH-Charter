@@ -15,10 +15,12 @@ const commitment = [
   ["Proof on the pack", "A record that travels with the food."]
 ];
 
+const updatedAssetBase = "/assets/charter-home/updated-pics-v2";
+
 // Image-to-farm pairing matches the home page carousel.
 const foundingGroup = [
   {
-    image: "/assets/charter-home/farmers/farmer-6.png",
+    image: `${updatedAssetBase}/eric-heath-belmont-farms.png`,
     region: "Bristol",
     farm: "Belmont Farms",
     name: "Eric Heath",
@@ -40,7 +42,7 @@ const foundingGroup = [
       "Look after the soil and the wildlife, and the farm looks after itself. The trick is being able to prove it."
   },
   {
-    image: "/assets/charter-home/farmers/eric-heath.png",
+    image: `${updatedAssetBase}/jock-gibson-edinvale-farm.png`,
     region: "Moray",
     farm: "Edinvale Farm",
     name: "Jock Gibson",
@@ -51,7 +53,7 @@ const foundingGroup = [
       "Britain produces some of the highest quality beef in the world but doesn’t fairly reward farmers. Charter is finally changing that."
   },
   {
-    image: "/assets/charter-home/farmers/farmer-4.png",
+    image: `${updatedAssetBase}/james-grant-rothiemurchus-estate.png`,
     region: "Cairngorms",
     farm: "Rothiemurchus Estate",
     name: "James Grant",
@@ -62,7 +64,7 @@ const foundingGroup = [
       "People want to know where their food comes from. We can go one further, and show them what it’s doing for the land."
   },
   {
-    image: "/assets/charter-home/farmers/farmer-1.png",
+    image: `${updatedAssetBase}/dunmaglass-estate.png`,
     region: "Inverness-shire",
     farm: "Dunmaglass Estate",
     name: "Scottish founding farm",
@@ -73,7 +75,7 @@ const foundingGroup = [
       "Regenerative farming is judged in the field, not the boardroom. If the land’s improving, the record should show it."
   },
   {
-    image: "/assets/charter-home/farmers/farmer-8.png",
+    image: `${updatedAssetBase}/balnagowen-aberarder.png`,
     region: "Scotland",
     farm: "Balnagowen & Aberarder",
     name: "Additional trial sites",
@@ -84,7 +86,7 @@ const foundingGroup = [
       "No two farms are the same. That’s exactly why the record has to tell the truth about each one."
   },
   {
-    image: "/assets/charter-home/farmers/munros.png",
+    image: `${updatedAssetBase}/munros-of-dingwall.png`,
     region: "Dingwall",
     farm: "Munro’s of Dingwall",
     name: "Strategic processing partner",
@@ -136,7 +138,7 @@ export default function FarmersPage() {
       {/* HERO */}
       <section className="hero sub-hero">
         <Image
-          src="/assets/library/farmer-3.png"
+          src={`${updatedAssetBase}/highland-cattle-hero-above-fold.jpg`}
           alt="Founding farmers with cattle on British upland pasture"
           fill
           priority
@@ -176,8 +178,8 @@ export default function FarmersPage() {
           <div className="media figure">
             <div className="ft-figure">
               <Image
-                src="/assets/charter-home/products/new-standard.png"
-                alt="Cattle grazing at sunrise on regenerative pasture"
+                src={`${updatedAssetBase}/cattle-field-healthy-ecosystem.jpg`}
+                alt="Cattle grazing in a healthy regenerative field ecosystem"
                 fill
                 sizes="(max-width: 1020px) 100vw, 42vw"
               />
@@ -263,7 +265,7 @@ export default function FarmersPage() {
           <div className="media figure">
             <div className="ft-figure">
               <Image
-                src="/assets/cow-2.png"
+                src={`${updatedAssetBase}/measured-ground.jpg`}
                 alt="Cattle on species-rich upland pasture"
                 fill
                 sizes="(max-width: 1020px) 100vw, 42vw"

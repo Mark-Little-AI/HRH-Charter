@@ -3,10 +3,11 @@ import Link from "next/link";
 import { HomeFarmersCarousel } from "@/components/HomeFarmersCarousel";
 
 const assetBase = "/assets/charter-home";
+const updatedAssetBase = `${assetBase}/updated-pics-v2`;
 
 const farmers = [
   {
-    image: `${assetBase}/farmers/farmer-6.png`,
+    image: `${updatedAssetBase}/eric-heath-belmont-farms.png`,
     alt: "Eric Heath of Belmont Farms",
     quote: "We’ve spent years showing that good farming creates value well beyond the carcass. Our Standard is the first thing that actually measures it.",
     who: "Eric Heath",
@@ -28,7 +29,7 @@ const farmers = [
     status: ""
   },
   {
-    image: `${assetBase}/farmers/eric-heath.png`,
+    image: `${updatedAssetBase}/jock-gibson-edinvale-farm.png`,
     alt: "Jock Gibson of Edinvale Farm",
     quote: "Britain produces some of the highest quality beef in the world but doesn’t fairly reward farmers. Charter is finally changing that, that ought to count for something.",
     who: "Jock Gibson",
@@ -39,7 +40,7 @@ const farmers = [
     status: ""
   },
   {
-    image: `${assetBase}/farmers/farmer-4.png`,
+    image: `${updatedAssetBase}/james-grant-rothiemurchus-estate.png`,
     alt: "James Grant of Rothiemurchus Estate with a Highland cow",
     quote: "People want to know where their food comes from. We can go one further, and show them what it’s doing for the land.",
     who: "James Grant",
@@ -50,7 +51,7 @@ const farmers = [
     status: ""
   },
   {
-    image: `${assetBase}/farmers/farmer-1.png`,
+    image: `${updatedAssetBase}/dunmaglass-estate.png`,
     alt: "Dunmaglass Estate — Highland cattle above the loch",
     quote: "Regenerative farming is judged in the field, not the boardroom. If the land’s improving, the record should show it.",
     who: "Dunmaglass Estate",
@@ -61,7 +62,7 @@ const farmers = [
     status: ""
   },
   {
-    image: `${assetBase}/farmers/farmer-8.png`,
+    image: `${updatedAssetBase}/balnagowen-aberarder.png`,
     alt: "Balnagowen and Aberarder Estates — cattle on the hill",
     quote: "No two farms are the same. That’s exactly why the record has to tell the truth about each one.",
     who: "Balnagowen & Aberarder",
@@ -72,7 +73,7 @@ const farmers = [
     status: ""
   },
   {
-    image: `${assetBase}/farmers/munros.png`,
+    image: `${updatedAssetBase}/munros-of-dingwall.png`,
     alt: "Munro’s of Dingwall — Highland cattle above the loch",
     quote: "If you want proper evidence, you need proper controls. Doing it the same way every time gives the data a backbone.",
     who: "Munro’s of Dingwall",
@@ -138,7 +139,7 @@ export default function HomePage() {
     <>
       <section className="hero hero-institutional">
         <Image
-          src="/assets/cow-hero-3-optimized.jpg"
+          src={`${updatedAssetBase}/highland-cattle-hero-above-fold.jpg`}
           alt="Highland cow in a Scottish landscape"
           fill
           priority
@@ -180,7 +181,7 @@ export default function HomePage() {
             </div>
             <div className="media figure">
               <div className="ft-figure">
-                <img src={`${assetBase}/products/new-standard.png`} alt="Cattle grazing at sunrise on regenerative pasture" />
+                <Image src={`${updatedAssetBase}/cattle-field-healthy-ecosystem.jpg`} alt="Cattle grazing in a healthy regenerative field ecosystem" fill sizes="(max-width: 1020px) 100vw, 42vw" />
                 <div className="scrim" />
                 <div className="ghost">Healthy<br />Ecosystem</div>
               </div>
