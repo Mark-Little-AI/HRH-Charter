@@ -3,7 +3,7 @@ import { AddToCartButton } from "@/components/AddToCartButton";
 
 export const metadata = {
   title: "Shop",
-  description: "The first products from Charter: Bone Broth, Bull Shot and Biltong. Regenerative meat, one field at a time."
+  description: "The first products from Charter begin with the fifth quarter: Bone Broth, Bull Shot and Biltong made from overlooked value across the animal."
 };
 
 const shopProducts = [
@@ -12,14 +12,14 @@ const shopProducts = [
     price: "£39.99",
     image: "/assets/charter-home/products/pack-bonebroth-approved.svg",
     alt: "Charter Bone Broth pouch",
-    description: "Made from beef bones simmered slowly over many hours, creating a rich stock with depth of flavour and natural collagen."
+    description: "Made from beef bones simmered slowly over many hours, creating depth, collagen and a better use for a valuable part of the animal."
   },
   {
     name: "Bull Shot",
     price: "£9.99",
     image: "/assets/charter-home/products/pack-bullshot-cutout.png",
     alt: "Charter Bull Shot box",
-    description: "A savoury beef drink made from slow-cooked stock. Warming and restorative, on its own or as part of a meal.",
+    description: "A savoury beef drink made from slow-cooked stock: warming, restorative and built from the fifth-quarter logic behind Charter.",
     box: true
   },
   {
@@ -27,7 +27,7 @@ const shopProducts = [
     price: "£9.99",
     image: "/assets/charter-home/products/pack-biltong-cutout.png",
     alt: "Charter Biltong pouch",
-    description: "Air-dried beef with a firm bite and deep, savoury flavour, made from carefully selected cuts."
+    description: "Air-dried beef with a firm bite and deep, savoury flavour, made as part of a wider commitment to value more of every animal."
   }
 ];
 
@@ -47,14 +47,14 @@ export default function ProductsPage() {
         <div className="shop-hero-inner">
           <span className="kicker-light">Products</span>
           <h1>The first drop</h1>
-          <p>Bone Broth, Bull Shot and Biltong — the first products from Charter.</p>
+          <p>Bone Broth, Bull Shot and Biltong — Charter’s first expressions of fifth-quarter value.</p>
         </div>
       </section>
 
       <section className="shop-band" id="shop" data-screen-label="Products">
         <div className="shop-head">
           <span className="eyebrow">Shop</span>
-          <h2>Regenerative meat,<br />one field at a time.</h2>
+          <h2>Fifth-quarter value,<br />one animal at a time.</h2>
         </div>
 
         <div className="shop-product-grid">

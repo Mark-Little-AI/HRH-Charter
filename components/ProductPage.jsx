@@ -41,9 +41,9 @@ export function ProductPage({ product, related }) {
           <p>{product.provenance}</p>
         </article>
         <article>
-          <p className="eyebrow">Living Certificate</p>
+          <p className="eyebrow">Proof record</p>
           <p>{product.certificate}</p>
-          <Link className="text-link" href="/living-certificate">See how proof works</Link>
+          <Link className="text-link" href="/living-certificate">See Our Standard</Link>
         </article>
       </section>
       <section className="section-block">

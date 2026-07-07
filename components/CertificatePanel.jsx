@@ -5,16 +5,16 @@ export function CertificatePanel() {
   return (
     <section className="certificate-panel" aria-labelledby="certificate-title">
       <div>
-        <p className="eyebrow">Living Certificate</p>
-        <h2 id="certificate-title">Proof, not promise.</h2>
+        <p className="eyebrow">Our Standard</p>
+        <h2 id="certificate-title">Proof on the pack.</h2>
         <p className="large-copy">
-          Every Charter farm receives a Living Certificate: a continuously updated record of measurable outcomes, connected directly to the food itself and visible on the pack.
+          Charter connects farm, batch and product evidence to the food itself, so the proof sits with the pack rather than the promise.
         </p>
         <p>
-          The permanent record sits underneath the experience. The point is not the technology. The point is proof that travels with the product.
+          The point is not the technology. The point is evidence that can travel with the product and be understood by the person buying it.
         </p>
       </div>
-      <div className="certificate-image" aria-label="Living Certificate scan preview">
+      <div className="certificate-image" aria-label="Proof record scan preview">
         <Image src="/assets/scanning-product.png" alt="A product being scanned to show provenance records" fill sizes="(max-width: 900px) 100vw, 360px" />
       </div>
       <div className="pillar-grid">
