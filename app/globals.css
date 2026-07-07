@@ -333,8 +333,8 @@ p + p {
   object-position: 50% center;
 }
 
-.hero > img.hero-cow-image {
-  object-position: 50% 100%;
+.hero-institutional > img.hero-cow-image {
+  object-position: 50% center;
 }
 
 .product-card-image img,
@@ -429,6 +429,10 @@ p + p {
   padding-inline: clamp(1.5rem, 4vw, 4.5rem);
   overflow: visible;
   transform: none;
+}
+
+.hero-institutional .hero-title-block {
+  transform: translateY(-10rem);
 }
 
 .home-hero-title span {
@@ -3050,7 +3054,7 @@ p + p {
 }
 
 .home-below .fcard .frame img.image-shift-left {
-  object-position: 0% center;
+  object-position: 100% center;
 }
 
 .home-below .photo-scrim {
