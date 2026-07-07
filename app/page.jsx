@@ -48,7 +48,8 @@ const farmers = [
     farm: "Rothiemurchus Estate",
     name: "James Grant",
     role: "Farm shop · Kitchen · Consumer demonstration",
-    status: ""
+    status: "",
+    imageClassName: "image-shift-left"
   },
   {
     image: `${updatedAssetBase}/dunmaglass-estate.png`,
@@ -140,6 +141,7 @@ export default function HomePage() {
       <section className="hero hero-institutional">
         <Image
           src={`${updatedAssetBase}/highland-cattle-hero-above-fold.jpg`}
+          className="hero-cow-image"
           alt="Highland cow in a Scottish landscape"
           fill
           priority

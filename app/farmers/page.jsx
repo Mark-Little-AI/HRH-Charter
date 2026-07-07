@@ -60,6 +60,7 @@ const foundingGroup = [
     role: "Farm shop · Kitchen · Consumer demonstration",
     status: "Founding farm",
     who: "James Grant",
+    imageClassName: "image-shift-left",
     quote:
       "People want to know where their food comes from. We can go one further, and show them what it’s doing for the land."
   },
@@ -139,6 +140,7 @@ export default function FarmersPage() {
       <section className="hero sub-hero">
         <Image
           src={`${updatedAssetBase}/highland-cattle-hero-above-fold.jpg`}
+          className="hero-cow-image"
           alt="Founding farmers with cattle on British upland pasture"
           fill
           priority
@@ -224,6 +226,7 @@ export default function FarmersPage() {
               <div className="frame">
                 <Image
                   src={farmer.image}
+                  className={farmer.imageClassName ?? undefined}
                   alt={`${farmer.who} — ${farmer.farm}`}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1020px) 50vw, 33vw"
