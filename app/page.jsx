@@ -140,9 +140,9 @@ export default function HomePage() {
     <>
       <section className="hero hero-institutional">
         <Image
-          src={`${updatedAssetBase}/Above the fold :farmers.jpg`}
+          src={`${updatedAssetBase}/highland-cattle-hero-above-fold.jpg`}
           className="hero-cow-image"
-          alt="Founding farmers with cattle on British upland pasture"
+          alt="Highland cow in a Scottish landscape"
           fill
           priority
           quality={86}

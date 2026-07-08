@@ -139,9 +139,9 @@ export default function FarmersPage() {
       {/* HERO */}
       <section className="hero sub-hero">
         <Image
-          src={`${updatedAssetBase}/highland-cattle-hero-above-fold.jpg`}
+          src={`${updatedAssetBase}/Above the fold :farmers.jpg`}
           className="hero-cow-image"
-          alt="Highland cow in a Scottish landscape"
+          alt="Founding farmers with cattle on British upland pasture"
           fill
           priority
           sizes="100vw"
