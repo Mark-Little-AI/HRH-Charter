@@ -3461,7 +3461,7 @@ p + p {
 
 .shop-hero h1 {
   margin: 18px 0 0;
-  color: #fff;
+  color: rgba(247, 245, 239, 0.68);
   font-family: var(--font-jost), Arial, sans-serif;
   font-size: clamp(44px, 7vw, 104px);
   font-weight: 600;
@@ -3875,6 +3875,10 @@ p + p {
     min-height: 320px;
   }
 
+  .home-below .ft-figure .ghost {
+    color: rgba(247, 245, 239, 0.68);
+  }
+
   .home-below .carousel {
     grid-auto-columns: min(82vw, 360px);
     gap: 22px;
@@ -4156,7 +4160,7 @@ p + p {
 }
 .sub-hero .kicker { color: #ecc9b6; }
 .sub-hero .lc-kicker-rust { color: var(--clay); }
-.sub-hero .h-caps { color: #fff; max-width: 18ch; }
+.sub-hero .h-caps { color: rgba(247, 245, 239, 0.68); max-width: 18ch; }
 .sub-hero-sub {
   max-width: 52ch;
   margin: 20px 0 30px;
