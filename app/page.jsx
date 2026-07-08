@@ -63,7 +63,7 @@ const farmers = [
     status: ""
   },
   {
-    image: `${updatedAssetBase}/balnagowen-aberarder-hi-res.png`,
+    image: `${updatedAssetBase}/Balnagowen & Aberarder - HI RES v2.png`,
     alt: "Balnagowen and Aberarder Estates — cattle on the hill",
     quote: "No two farms are the same. That’s exactly why the record has to tell the truth about each one.",
     who: "Balnagowen & Aberarder",

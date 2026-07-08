@@ -76,7 +76,7 @@ const foundingGroup = [
       "Regenerative farming is judged in the field, not the boardroom. If the land’s improving, the record should show it."
   },
   {
-    image: `${updatedAssetBase}/balnagowen-aberarder-hi-res.png`,
+    image: `${updatedAssetBase}/Balnagowen & Aberarder - HI RES v2.png`,
     region: "Scotland",
     farm: "Balnagowen & Aberarder",
     name: "Additional trial sites",
@@ -268,16 +268,16 @@ export default function FarmersPage() {
           <div className="media figure">
             <div className="ft-figure">
               <Image
-                src={`${updatedAssetBase}/measured-ground.jpg`}
-                alt="Cattle on species-rich upland pasture"
+                src={`${updatedAssetBase}/Open Gate - Join our movement.png`}
+                alt="Open gate leading into regenerative farmland"
                 fill
                 sizes="(max-width: 1020px) 100vw, 42vw"
               />
               <div className="scrim" />
               <div className="ghost">
-                Join the
+                Join our
                 <br />
-                Charter
+                Movement
               </div>
             </div>
           </div>
