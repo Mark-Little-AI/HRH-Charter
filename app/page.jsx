@@ -154,7 +154,7 @@ export default function HomePage() {
               Celebrating the fifth quarter.
             </h1>
             <p className="hero-subheadline">
-              Regenerative British meat, making more of every animal.
+              Regenerative British beef, making more of every animal.
             </p>
             <Link className="hero-shop-button" href="#shop">
               Shop Now
