@@ -63,7 +63,7 @@ const farmers = [
     status: ""
   },
   {
-    image: `${updatedAssetBase}/balnagowen-aberarder.png`,
+    image: `${updatedAssetBase}/balnagowen-aberarder-hi-res.png`,
     alt: "Balnagowen and Aberarder Estates — cattle on the hill",
     quote: "No two farms are the same. That’s exactly why the record has to tell the truth about each one.",
     who: "Balnagowen & Aberarder",
@@ -151,12 +151,11 @@ export default function HomePage() {
         <div className="hero-copy hero-copy-investor" aria-labelledby="home-hero-title">
           <div className="hero-title-block">
             <h1 id="home-hero-title" className="home-hero-title">
-              The Fifth Quarter, revalued.
+              Celebrating the fifth quarter.
             </h1>
             <p className="hero-subheadline">
-              Creating more value from every regenerative animal and the overlooked cuts that deserve a place on the plate.
+              Regenerative British meat, making more of every animal.
             </p>
-            <Link className="hero-shop-button" href="/products">Shop Now</Link>
           </div>
         </div>
       </section>
@@ -229,7 +228,7 @@ export default function HomePage() {
               <div className="ft-figure">
                 <img src={`${assetBase}/products/whole-animal.png`} alt="Beef cuts laid out — from prime steaks to mince, marrow and offal" />
                 <div className="scrim" />
-                <div className="ghost">Fifth<br />Quarter</div>
+                <div className="ghost">Fighting<br />Waste</div>
               </div>
             </div>
             <div className="col">

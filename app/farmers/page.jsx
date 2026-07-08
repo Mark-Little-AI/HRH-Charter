@@ -76,7 +76,7 @@ const foundingGroup = [
       "Regenerative farming is judged in the field, not the boardroom. If the land’s improving, the record should show it."
   },
   {
-    image: `${updatedAssetBase}/balnagowen-aberarder.png`,
+    image: `${updatedAssetBase}/balnagowen-aberarder-hi-res.png`,
     region: "Scotland",
     farm: "Balnagowen & Aberarder",
     name: "Additional trial sites",
