@@ -58,7 +58,7 @@ export default function LivingCertificatePage() {
   return (
     <div className="home-below">
       <section className="hero sub-hero">
-        <Image src="/assets/scanning-product.png" alt="A Charter pack being scanned to reveal its provenance record" fill priority sizes="100vw" />
+        <Image src="/assets/charter-home/updated-pics-v2/QR Code scanning.png" alt="A Charter QR code being scanned to reveal its provenance record" fill priority sizes="100vw" />
         <div className="sub-hero-inner">
           <span className="kicker lc-kicker-rust">Our Standard</span>
           <h1 className="h-caps">Proof on the pack.</h1>
@@ -128,7 +128,7 @@ export default function LivingCertificatePage() {
           </div>
           <div className="media figure">
             <div className="ft-figure">
-              <Image src="/assets/scanning-product.png" alt="Scanning a Charter pack to open its record" fill sizes="(max-width: 1020px) 100vw, 42vw" />
+              <Image src="/assets/charter-home/updated-pics-v2/QR Code scanning.png" alt="Scanning a Charter QR code to open its record" fill sizes="(max-width: 1020px) 100vw, 42vw" />
               <div className="scrim" />
               <div className="ghost">Pack<br />Proof</div>
             </div>
