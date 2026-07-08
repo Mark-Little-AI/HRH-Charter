@@ -140,9 +140,9 @@ export default function HomePage() {
     <>
       <section className="hero hero-institutional">
         <Image
-          src={`${updatedAssetBase}/highland-cattle-hero-above-fold.jpg`}
+          src={`${updatedAssetBase}/Above the fold :farmers.jpg`}
           className="hero-cow-image"
-          alt="Highland cow in a Scottish landscape"
+          alt="Founding farmers with cattle on British upland pasture"
           fill
           priority
           quality={86}
@@ -156,6 +156,9 @@ export default function HomePage() {
             <p className="hero-subheadline">
               Regenerative British meat, making more of every animal.
             </p>
+            <Link className="hero-shop-button" href="#shop">
+              Shop Now
+            </Link>
           </div>
         </div>
       </section>
