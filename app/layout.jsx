@@ -18,23 +18,23 @@ const spectral = Spectral({
 export const metadata = {
   metadataBase: new URL("https://charterfarms.co.uk"),
   title: {
-    default: "CHARTER | British Regenerative Meat",
+    default: "CHARTER | The New Standard For Regenerative Meat",
     template: "%s | CHARTER"
   },
   description:
-    "The new standard for British regenerative meat, defined by the farmers doing the work.",
+    "Celebrating the fifth quarter and the cuts that deserve to be on our plate.",
   openGraph: {
-    title: "CHARTER | The Future Standard For Regenerative Meat",
+    title: "CHARTER | The New Standard For Regenerative Meat",
     description:
-      "The new standard for British regenerative meat, defined by the farmers doing the work.",
+      "Celebrating the fifth quarter and the cuts that deserve to be on our plate.",
     url: "https://charterfarms.co.uk",
     siteName: "CHARTER",
     images: [
       {
-        url: "/og-charter.png",
-        width: 1200,
-        height: 630,
-        alt: "CHARTER regenerative farming with brand wordmark"
+        url: "/assets/charter-home/updated-pics-v2/OpenGraph Link Preview Image.png",
+        width: 1920,
+        height: 1080,
+        alt: "CHARTER regenerative meat OpenGraph preview"
       }
     ],
     locale: "en_GB",
@@ -42,9 +42,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "CHARTER | British Regenerative Meat",
-    description: "The new standard for British regenerative meat, defined by the farmers doing the work.",
-    images: ["/og-charter.png"]
+    title: "CHARTER | The New Standard For Regenerative Meat",
+    description: "Celebrating the fifth quarter and the cuts that deserve to be on our plate.",
+    images: ["/assets/charter-home/updated-pics-v2/OpenGraph Link Preview Image.png"]
   },
   icons: {
     icon: [
