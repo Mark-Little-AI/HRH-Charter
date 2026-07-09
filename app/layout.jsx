@@ -1,6 +1,7 @@
 import { Jost, Spectral } from "next/font/google";
 import "./globals.css";
 import { SiteShell } from "@/components/SiteShell";
+import TrafficTracker from "@/components/TrafficTracker";
 
 const jost = Jost({
   subsets: ["latin"],
@@ -63,6 +64,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${jost.variable} ${spectral.variable}`}>
       <body>
         <SiteShell>{children}</SiteShell>
+        <TrafficTracker />
       </body>
     </html>
   );
