@@ -41,17 +41,16 @@ function trackPageView() {
 
   const body = JSON.stringify(payload);
 
-  if (navigator.sendBeacon) {
-    navigator.sendBeacon(ENDPOINT, new Blob([body], { type: "application/json" }));
-    return;
-  }
-
   fetch(ENDPOINT, {
     method: "POST",
     headers: { "content-type": "application/json" },
     body,
     keepalive: true,
-  }).catch(() => {});
+  }).catch(() => {
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon(ENDPOINT, new Blob([body], { type: "application/json" }));
+    }
+  });
 }
 
 export default function TrafficTracker() {
