@@ -229,7 +229,7 @@ export default function HomePage() {
             </div>
             <div className="media figure">
               <div className="ft-figure">
-                <img src={`${assetBase}/products/whole-animal.png`} alt="Beef cuts laid out — from prime steaks to mince, marrow and offal" />
+                <Image src={`${updatedAssetBase}/Whole Animal v2.png`} alt="Beef cuts laid out — from prime steaks to mince, marrow and offal" fill sizes="(max-width: 1020px) 100vw, 42vw" />
                 <div className="scrim" />
                 <div className="ghost">Fighting<br />Waste</div>
               </div>
