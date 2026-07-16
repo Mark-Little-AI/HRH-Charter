@@ -3313,14 +3313,9 @@ p + p {
 }
 
 .home-below .pcard .pack img[src$="pack-bonebroth-approved.svg"],
-.home-below .pcard .pack img[src$="pack-bonebroth-approved.webp"] {
-  mix-blend-mode: multiply;
-}
-
 .home-below .pcard .pack img[src$="pack-bonebroth-approved.webp"],
-.shop-pack-image[src$="pack-bonebroth-approved.webp"] {
-  transform: scaleX(1.5);
-  transform-origin: center center;
+.home-below .pcard .pack img[src$="pack-bonebroth-approved-cropped.webp"] {
+  mix-blend-mode: multiply;
 }
 
 .home-below .pcard .pname {
@@ -3559,7 +3554,8 @@ p + p {
 }
 
 .shop-pack-image[src$="pack-bonebroth-approved.svg"],
-.shop-pack-image[src$="pack-bonebroth-approved.webp"] {
+.shop-pack-image[src$="pack-bonebroth-approved.webp"],
+.shop-pack-image[src$="pack-bonebroth-approved-cropped.webp"] {
   mix-blend-mode: multiply;
 }
 

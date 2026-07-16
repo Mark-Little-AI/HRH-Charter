@@ -10,7 +10,7 @@ const shopProducts = [
   {
     name: "Bone Broth",
     price: "£39.99",
-    image: "/assets/charter-home/optimised/pack-bonebroth-approved.webp",
+    image: "/assets/charter-home/optimised/pack-bonebroth-approved-cropped.webp",
     alt: "Charter Bone Broth pouch",
     description: "Made from beef bones simmered slowly over many hours, creating depth, collagen and a better use for a valuable part of the animal."
   },

@@ -112,7 +112,7 @@ const farmers = [
 const products = [
   {
     name: "Bone Broth",
-    image: `${optimisedAssetBase}/pack-bonebroth-approved.webp`,
+    image: `${optimisedAssetBase}/pack-bonebroth-approved-cropped.webp`,
     alt: "Charter Bone Broth kraft pouch",
     href: "/products",
     packClassName: "pack-shot-pouch",
