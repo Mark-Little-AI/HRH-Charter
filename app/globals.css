@@ -3322,6 +3322,7 @@ p + p {
   height: 50%;
   max-height: 50%;
   align-self: center;
+  transform: translateY(25%);
 }
 
 .home-below .pcard .pname {
@@ -3569,6 +3570,7 @@ p + p {
   height: 50%;
   max-height: 50%;
   align-self: center;
+  transform: translateY(25%);
 }
 
 .newsletter-status {
