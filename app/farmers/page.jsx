@@ -31,17 +31,6 @@ const foundingGroup = [
       "We’ve spent years showing that good farming creates value well beyond the carcass. The Charter is the first thing that helps make it visible."
   },
   {
-    image: `${optimisedAssetBase}/farmer-caroline-grindrod.webp`,
-    region: "South Lakeland",
-    farm: "Roots of Nature",
-    name: "Caroline Grindrod",
-    role: "Regenerative farming mentor · Methodology partner",
-    status: "Methodology partner",
-    who: "Caroline Grindrod",
-    quote:
-      "Look after the soil and the wildlife, and the farm looks after itself. The trick is being able to prove it."
-  },
-  {
     image: `${optimisedAssetBase}/farmer-jock-gibson-edinvale.webp`,
     region: "Moray",
     farm: "Edinvale Farm",
