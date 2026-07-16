@@ -3319,8 +3319,9 @@ p + p {
 }
 
 .home-below .pcard .pack img[src$="pack-tallow-cutout.webp"] {
-  transform: scale(0.5);
-  transform-origin: center bottom;
+  height: 50%;
+  max-height: 50%;
+  align-self: flex-end;
 }
 
 .home-below .pcard .pname {
@@ -3565,8 +3566,9 @@ p + p {
 }
 
 .shop-pack-image[src$="pack-tallow-cutout.webp"] {
-  transform: scale(0.5);
-  transform-origin: center bottom;
+  height: 50%;
+  max-height: 50%;
+  align-self: flex-end;
 }
 
 .newsletter-status {
