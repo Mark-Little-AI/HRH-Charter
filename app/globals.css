@@ -3321,7 +3321,7 @@ p + p {
 .home-below .pcard .pack img[src$="pack-tallow-cutout.webp"] {
   height: 50%;
   max-height: 50%;
-  align-self: flex-end;
+  align-self: center;
 }
 
 .home-below .pcard .pname {
@@ -3568,7 +3568,7 @@ p + p {
 .shop-pack-image[src$="pack-tallow-cutout.webp"] {
   height: 50%;
   max-height: 50%;
-  align-self: flex-end;
+  align-self: center;
 }
 
 .newsletter-status {
