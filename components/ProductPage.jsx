@@ -14,7 +14,7 @@ export function ProductPage({ product, related }) {
     <div className="product-page">
       <section className="product-hero">
         <div className="product-hero-image">
-          <Image src={product.lifestyleImage ?? product.image} alt={`${product.name} from CHARTER`} fill priority sizes="(max-width: 900px) 100vw, 52vw" />
+          <Image src={product.lifestyleImage ?? product.image} alt={`${product.name} from CHARTER`} fill priority sizes="(max-width: 900px) 100vw, 720px" />
         </div>
         <div className="product-buy-box">
           <p className="eyebrow">First Drop</p>

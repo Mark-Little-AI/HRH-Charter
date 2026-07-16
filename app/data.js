@@ -4,7 +4,7 @@ export const products = [
     name: "Bone Broth",
     price: "£39.99",
     image: "/assets/pack-bone-broth.svg",
-    lifestyleImage: "/assets/camping.png",
+    lifestyleImage: "/assets/charter-home/optimised/product-bone-broth-lifestyle.webp",
     short: "Slow simmered bones, clean stock and proper depth. A first expression of fifth-quarter value.",
     description:
       "A rich, savoury broth from pasture raised cattle, cooked low and slow to make better use of a valuable fifth-quarter ingredient.",
@@ -18,7 +18,7 @@ export const products = [
     name: "Bull Shot",
     price: "£9.99",
     image: "/assets/pack-bullshot.svg",
-    lifestyleImage: "/assets/bull-shot.png",
+    lifestyleImage: "/assets/charter-home/optimised/product-bullshot-lifestyle.webp",
     short: "A bracing beef broth serve with backbone, made to give fifth-quarter ingredients another route to market.",
     description:
       "A savoury ready-to-drink broth serve built from proper stock, seasoning and a little theatre in the glass.",
@@ -32,7 +32,7 @@ export const products = [
     name: "Biltong",
     price: "£9.99",
     image: "/assets/pack-biltong.svg",
-    lifestyleImage: "/assets/restaurant.png",
+    lifestyleImage: "/assets/charter-home/optimised/product-biltong-lifestyle.webp",
     short: "Air dried beef with bite, made within a wider commitment to value more of every animal.",
     description:
       "Lean strips of pasture raised beef, cured and dried for a clean, deeply savoury snack.",
@@ -70,7 +70,7 @@ export const article = {
   slug: "regenerative-farming-practices",
   title: "Regenerative farming practices: proof from the ground up",
   author: "Giles Hayward, Founder",
-  image: "/assets/farmer-2.png",
+  image: "/assets/charter-home/optimised/blog-regenerative-farming-cover.webp",
   avatar: "/assets/giles-hayward.png",
   excerpt:
     "A plain-English look at how soil, grass, cattle and records can work together without turning dinner into a lecture."

@@ -10,14 +10,14 @@ const shopProducts = [
   {
     name: "Bone Broth",
     price: "£39.99",
-    image: "/assets/charter-home/products/pack-bonebroth-approved.svg",
+    image: "/assets/charter-home/optimised/pack-bonebroth-approved.webp",
     alt: "Charter Bone Broth pouch",
     description: "Made from beef bones simmered slowly over many hours, creating depth, collagen and a better use for a valuable part of the animal."
   },
   {
     name: "Bull Shot",
     price: "£9.99",
-    image: "/assets/charter-home/products/pack-bullshot-cutout.png",
+    image: "/assets/charter-home/optimised/pack-bullshot-cutout.webp",
     alt: "Charter Bull Shot box",
     description: "A savoury beef drink made from slow-cooked stock: warming, restorative and built from the fifth-quarter logic behind Charter.",
     box: true
@@ -25,7 +25,7 @@ const shopProducts = [
   {
     name: "Biltong",
     price: "£9.99",
-    image: "/assets/charter-home/products/pack-biltong-cutout.png",
+    image: "/assets/charter-home/optimised/pack-biltong-cutout.webp",
     alt: "Charter Biltong pouch",
     description: "Air-dried beef with a firm bite and deep, savoury flavour, made as part of a wider commitment to value more of every animal."
   }
@@ -37,7 +37,7 @@ export default function ProductsPage() {
       <section className="shop-hero" data-screen-label="Hero">
         <Image
           className="shop-hero-image"
-          src="/assets/charter-home/updated-pics-v2/shop hero v2.png"
+          src="/assets/charter-home/optimised/shop-hero-v3.webp"
           alt="Charter beef marbling and cattle on the hill"
           fill
           priority
@@ -65,6 +65,8 @@ export default function ProductsPage() {
                   className={product.box ? "shop-pack-image is-box" : "shop-pack-image"}
                   src={product.image}
                   alt={product.alt}
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="shop-product-name">{product.name}</div>
