@@ -3319,8 +3319,8 @@ p + p {
 
 .home-below .pcard .pack img[src$="pack-bonebroth-approved.webp"],
 .shop-pack-image[src$="pack-bonebroth-approved.webp"] {
-  transform: scale(1.5);
-  transform-origin: center bottom;
+  transform: scaleX(1.5);
+  transform-origin: center center;
 }
 
 .home-below .pcard .pname {
