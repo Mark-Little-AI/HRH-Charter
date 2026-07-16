@@ -229,7 +229,7 @@ export default function HomePage() {
             </div>
             <div className="media figure">
               <div className="ft-figure">
-                <Image src={`${updatedAssetBase}/Whole Animal v2.png`} alt="Beef cuts laid out — from prime steaks to mince, marrow and offal" fill sizes="(max-width: 1020px) 100vw, 42vw" />
+                <Image src={`${updatedAssetBase}/mark_little_cmo_make_an_image_like_this_showing_cuts_of_beef__70feba39-7eef-4115-9024-c5386316e450_1.png`} alt="Beef cuts laid out — from prime steaks to mince, marrow and offal" fill sizes="(max-width: 1020px) 100vw, 42vw" />
                 <div className="scrim" />
                 <div className="ghost">Fighting<br />Waste</div>
               </div>
