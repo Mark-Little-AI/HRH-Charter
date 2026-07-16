@@ -37,7 +37,7 @@ export default function ProductsPage() {
       <section className="shop-hero" data-screen-label="Hero">
         <Image
           className="shop-hero-image"
-          src="/assets/charter-home/products/shop-hero.png"
+          src="/assets/charter-home/updated-pics-v2/shop hero v2.png"
           alt="Charter beef marbling and cattle on the hill"
           fill
           priority
