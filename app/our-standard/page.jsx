@@ -4,20 +4,20 @@ import Link from "next/link";
 const pillars = [
   {
     title: "Soil Health",
-    image: "/assets/living-certificate/soil-health-principles-clean.png",
-    alt: "Soil health principles diagram",
+    image: "/assets/charter-home/updated-pics-v2/Soil Health.jpg",
+    alt: "Soil health in regenerative pasture",
     body: "Indicators of soil improvement tracked over time, forming the biological foundation beneath the claim."
   },
   {
     title: "Biodiversity",
-    image: "/assets/living-certificate/biodiversity-diagram.png",
-    alt: "Biodiversity diagram showing genetic, species and ecosystem diversity",
+    image: "/assets/charter-home/updated-pics-v2/biodiversity.jpg",
+    alt: "Biodiversity on regenerative farmland",
     body: "Ecological assessment of habitats, species richness and resilience, connected to the farm itself."
   },
   {
     title: "Nutrient Density",
-    image: "/assets/living-certificate/nutrient-density-lab.png",
-    alt: "Meat sample being tested in a laboratory",
+    image: "/assets/charter-home/updated-pics-v2/Nutrient Density.jpg",
+    alt: "Nutrient density and food quality evidence",
     body: "Laboratory testing used to understand what is actually in the food and how that changes over time."
   },
   {

@@ -15,7 +15,7 @@ Open [http://localhost:3000](http://localhost:3000).
 
 - `/`
 - `/products`
-- `/living-certificate`
+- `/our-standard`
 - `/products/bone-broth`
 - `/products/bullshot`
 - `/products/biltong`
