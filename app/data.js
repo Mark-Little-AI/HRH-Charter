@@ -28,15 +28,15 @@ export const products = [
     certificate: "Each batch links back to a proof record, so the evidence sits with the product rather than the promise."
   },
   {
-    slug: "biltong",
-    name: "Biltong",
+    slug: "tallow",
+    name: "Tallow",
     price: "£9.99",
-    image: "/assets/pack-biltong.svg",
-    lifestyleImage: "/assets/charter-home/optimised/product-biltong-lifestyle.webp",
-    short: "Air dried beef with bite, made within a wider commitment to value more of every animal.",
+    image: "/assets/charter-home/optimised/pack-tallow-cutout.webp",
+    lifestyleImage: "/assets/charter-home/optimised/pack-tallow-cutout.webp",
+    short: "Pure rendered beef tallow with rich flavour, made within a wider commitment to value more of every animal.",
     description:
-      "Lean strips of pasture raised beef, cured and dried for a clean, deeply savoury snack.",
-    ingredients: "Beef, vinegar, sea salt, coriander, black pepper. Final recipe to be confirmed.",
+      "Pure rendered beef tallow with a rich, clean flavour and exceptional cooking performance.",
+    ingredients: "Rendered beef tallow. Final recipe to be confirmed.",
     provenance:
       "Part of a whole-animal approach that rewards more than the fashionable cuts.",
     certificate: "Named farm proof follows the batch, from field outcomes to pack."

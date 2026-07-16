@@ -3318,6 +3318,13 @@ p + p {
   mix-blend-mode: multiply;
 }
 
+.home-below .pcard .pack img[src$="pack-tallow-cutout.webp"] {
+  height: 50%;
+  max-height: 50%;
+  align-self: center;
+  transform: translateY(25%);
+}
+
 .home-below .pcard .pname {
   color: var(--navy);
   font-size: 16px;
@@ -3557,6 +3564,13 @@ p + p {
 .shop-pack-image[src$="pack-bonebroth-approved.webp"],
 .shop-pack-image[src$="pack-bonebroth-approved-cropped.webp"] {
   mix-blend-mode: multiply;
+}
+
+.shop-pack-image[src$="pack-tallow-cutout.webp"] {
+  height: 50%;
+  max-height: 50%;
+  align-self: center;
+  transform: translateY(15%);
 }
 
 .newsletter-status {

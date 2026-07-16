@@ -23,8 +23,8 @@ const notes = [
     meta: "Beef · 5 min read",
     title: "Whole animal and why a butcher thinks in carcasses",
     excerpt: "Where value sits across the animal, and how using more of it changes the maths for a farm.",
-    avatar: "/assets/charter-home/farmers/caroline-grindrod.png",
-    author: "Caroline Grindrod"
+    avatar: "/assets/charter-home/giles-hayward.png",
+    author: "Giles Hayward"
   },
   {
     href: "#",
