@@ -116,12 +116,12 @@ const products = [
     description: "A savoury beef drink made from slow-cooked stock. Warming, restorative and built from the same fifth-quarter logic behind Charter."
   },
   {
-    name: "Biltong",
-    image: `${optimisedAssetBase}/pack-biltong-cutout.webp`,
-    alt: "Charter Biltong kraft pouch",
+    name: "Tallow",
+    image: `${optimisedAssetBase}/pack-tallow-cutout.webp`,
+    alt: "Charter Tallow pack shot",
     href: "/products",
     packClassName: "pack-shot-pouch",
-    description: "Air-dried beef with a firm bite and deep, savoury flavour. Made as part of a wider commitment to value more of every animal."
+    description: "Pure rendered beef tallow with a rich, clean flavour and exceptional cooking performance. Made as part of a wider commitment to value more of every animal."
   }
 ];
 
@@ -215,7 +215,7 @@ export default function HomePage() {
               <h2 className="h-caps">Value from the overlooked parts of the carcass</h2>
               <p>Charter starts with the fifth quarter: the bones, fat, marrow, offal and other valuable parts of the animal too often treated as byproducts.</p>
               <p>These parts carry nutritional, culinary and economic value. Used properly, they create better returns from the same animal without asking farmers to produce more.</p>
-              <p>Bone broth, bull shot and biltong are the first expressions of that approach: products that turn overlooked value into something useful, traceable and commercially viable.</p>
+              <p>Bone broth, bull shot and tallow are the first expressions of that approach: products that turn overlooked value into something useful, traceable and commercially viable.</p>
             </div>
             <div className="media figure">
               <div className="ft-figure">
@@ -241,7 +241,7 @@ export default function HomePage() {
           <div className="sec-head">
             <span className="kicker">The Fifth Quarter</span>
             <h2 className="h-caps">The First Drop</h2>
-            <p className="home-first-drop-copy">The first Charter products begin with the fifth quarter: parts of the animal that are nutrient-rich, useful and too often undervalued.<br />Bone broth, bull shot and biltong show how overlooked value can become better food, better economics and clearer proof for consumers.</p>
+            <p className="home-first-drop-copy">The first Charter products begin with the fifth quarter: parts of the animal that are nutrient-rich, useful and too often undervalued.<br />Bone broth, bull shot and tallow show how overlooked value can become better food, better economics and clearer proof for consumers.</p>
           </div>
           <div className="prod-grid">
             {products.map((product) => (

@@ -3,7 +3,7 @@ import { AddToCartButton } from "@/components/AddToCartButton";
 
 export const metadata = {
   title: "Shop",
-  description: "The first products from Charter begin with the fifth quarter: Bone Broth, Bull Shot and Biltong made from overlooked value across the animal."
+  description: "The first products from Charter begin with the fifth quarter: Bone Broth, Bull Shot and Tallow made from overlooked value across the animal."
 };
 
 const shopProducts = [
@@ -23,11 +23,11 @@ const shopProducts = [
     box: true
   },
   {
-    name: "Biltong",
+    name: "Tallow",
     price: "£9.99",
-    image: "/assets/charter-home/optimised/pack-biltong-cutout.webp",
-    alt: "Charter Biltong pouch",
-    description: "Air-dried beef with a firm bite and deep, savoury flavour, made as part of a wider commitment to value more of every animal."
+    image: "/assets/charter-home/optimised/pack-tallow-cutout.webp",
+    alt: "Charter Tallow pack shot",
+    description: "Pure rendered beef tallow with a rich, clean flavour and exceptional cooking performance. Made as part of a wider commitment to value more of every animal."
   }
 ];
 
@@ -47,7 +47,7 @@ export default function ProductsPage() {
         <div className="shop-hero-inner">
           <span className="kicker-light">Products</span>
           <h1>The first drop</h1>
-          <p>Bone Broth, Bull Shot and Biltong — Charter’s first expressions of fifth-quarter value.</p>
+          <p>Bone Broth, Bull Shot and Tallow — Charter’s first expressions of fifth-quarter value.</p>
         </div>
       </section>
 
