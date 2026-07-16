@@ -1257,7 +1257,15 @@ p + p {
   max-width: 520px;
 }
 
-.newsletter-form label span {
+.newsletter-form .field {
+  display: grid;
+  flex: 1 1 280px;
+  gap: 0.35rem;
+  max-width: 520px;
+}
+
+.newsletter-form label span,
+.newsletter-form .field label {
   font-size: 0.72rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -1280,6 +1288,10 @@ p + p {
 }
 
 .newsletter-form.compact label {
+  flex-basis: 210px;
+}
+
+.newsletter-form.compact .field {
   flex-basis: 210px;
 }
 
@@ -3300,7 +3312,9 @@ p + p {
   height: 100%;
 }
 
-.home-below .pcard .pack img[src$="pack-bonebroth-approved.svg"] {
+.home-below .pcard .pack img[src$="pack-bonebroth-approved.svg"],
+.home-below .pcard .pack img[src$="pack-bonebroth-approved.webp"],
+.home-below .pcard .pack img[src$="pack-bonebroth-approved-cropped.webp"] {
   mix-blend-mode: multiply;
 }
 
@@ -3539,8 +3553,29 @@ p + p {
   height: 100%;
 }
 
-.shop-pack-image[src$="pack-bonebroth-approved.svg"] {
+.shop-pack-image[src$="pack-bonebroth-approved.svg"],
+.shop-pack-image[src$="pack-bonebroth-approved.webp"],
+.shop-pack-image[src$="pack-bonebroth-approved-cropped.webp"] {
   mix-blend-mode: multiply;
+}
+
+.newsletter-status {
+  flex-basis: 100%;
+  margin: 12px 0 0;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+
+.newsletter-form .newsletter-status {
+  margin-top: 10px;
+}
+
+.newsletter-status-success {
+  color: var(--moss-dark);
+}
+
+.newsletter-status-error {
+  color: #9f3419;
 }
 
 .shop-product-name,

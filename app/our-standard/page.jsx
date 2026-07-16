@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { NewsletterSignupForm } from "@/components/NewsletterSignupForm";
 
 const pillars = [
   {
@@ -179,13 +180,7 @@ export default function LivingCertificatePage() {
             <h2 className="h-caps">Follow the work</h2>
             <p>If you&rsquo;d like to follow our progress, join the mailing list below. We&rsquo;ll share occasional updates as we go.</p>
           </div>
-          <form className="nl-form">
-            <div className="field">
-              <label htmlFor="nl-email">Email address</label>
-              <input id="nl-email" type="email" placeholder="name@example.com" required />
-            </div>
-            <button type="submit">Sign up</button>
-          </form>
+          <NewsletterSignupForm inputId="our-standard-newsletter-email" source="our-standard-newsletter" />
         </div>
       </section>
     </div>
