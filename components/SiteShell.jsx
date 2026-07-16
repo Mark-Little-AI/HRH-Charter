@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { createContext, useCallback, useEffect, useState } from "react";
 import { LaunchSignupPopup, hasDismissedLaunchPopup, markLaunchPopupDismissed } from "@/components/LaunchSignupPopup";
+import { NewsletterSignupForm } from "@/components/NewsletterSignupForm";
 
 function Wordmark() {
   const returnHome = (event) => {
@@ -132,24 +133,7 @@ function Footer({ openSignup, openContact, openDesignAssets }) {
 }
 
 export function NewsletterForm({ compact = false }) {
-  const [signedUp, setSignedUp] = useState(false);
-
-  return (
-    <form
-      className={compact ? "newsletter-form compact" : "newsletter-form"}
-      onSubmit={(event) => {
-        event.preventDefault();
-        setSignedUp(true);
-      }}
-    >
-      <label>
-        <span>Email address</span>
-        <input type="email" name="email" placeholder="name@example.com" required />
-      </label>
-      <button type="submit">Sign up</button>
-      {signedUp ? <p role="status">You are on the list. Good work.</p> : null}
-    </form>
-  );
+  return <NewsletterSignupForm className="newsletter-form" compact={compact} inputId="modal-newsletter-email" source="modal-newsletter" />;
 }
 
 function Modal({ message, onClose }) {

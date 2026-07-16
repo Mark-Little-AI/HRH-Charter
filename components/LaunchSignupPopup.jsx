@@ -21,6 +21,7 @@ export function LaunchSignupPopup({ open, onClose }) {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const dialogRef = useRef(null);
   const previousFocusRef = useRef(null);
 
@@ -64,7 +65,7 @@ export function LaunchSignupPopup({ open, onClose }) {
 
   if (!open) return null;
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const trimmedEmail = email.trim();
 
@@ -78,10 +79,29 @@ export function LaunchSignupPopup({ open, onClose }) {
       return;
     }
 
-    // TODO: Wire this into Charter's email capture provider when the mailing-list backend is selected.
     setError("");
-    setSubmitted(true);
-    window.sessionStorage.setItem(SESSION_DISMISSED_KEY, "true");
+    setSubmitting(true);
+
+    try {
+      const response = await fetch("/api/newsletter-signup", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ email: trimmedEmail, source: "launch-popup", page: window.location.pathname })
+      });
+
+      const result = await response.json().catch(() => ({}));
+
+      if (!response.ok) {
+        throw new Error(result.error || "Sorry, something went wrong. Please try again.");
+      }
+
+      setSubmitted(true);
+      window.sessionStorage.setItem(SESSION_DISMISSED_KEY, "true");
+    } catch (error) {
+      setError(error.message || "Sorry, something went wrong. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -124,9 +144,10 @@ export function LaunchSignupPopup({ open, onClose }) {
                   aria-invalid={error ? "true" : "false"}
                   aria-describedby={error ? "launch-email-error launch-email-note" : "launch-email-note"}
                   onChange={(event) => setEmail(event.target.value)}
+                  disabled={submitting}
                   required
                 />
-                <button type="submit">Stay in the loop</button>
+                <button type="submit" disabled={submitting}>{submitting ? "Sending…" : "Stay in the loop"}</button>
               </div>
               {error ? (
                 <p id="launch-email-error" className="launch-popup-error">

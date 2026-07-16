@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { HomeFarmersCarousel } from "@/components/HomeFarmersCarousel";
+import { NewsletterSignupForm } from "@/components/NewsletterSignupForm";
 
 const assetBase = "/assets/charter-home";
 const optimisedAssetBase = `${assetBase}/optimised`;
@@ -277,13 +278,7 @@ export default function HomePage() {
               <p>Sign up for updates from Charter.</p>
               <p>Notes from the farms, news from the land, new products, and opportunities to support better farming across Britain.</p>
             </div>
-            <form className="nl-form">
-              <div className="field">
-                <label htmlFor="nl-email">Email address</label>
-                <input id="nl-email" type="email" placeholder="name@example.com" required />
-              </div>
-              <button type="button">Sign up</button>
-            </form>
+            <NewsletterSignupForm inputId="home-newsletter-email" source="home-newsletter" />
           </div>
         </section>
       </div>
