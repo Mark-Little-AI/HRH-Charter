@@ -26,6 +26,38 @@ function buildRow({ email, source, page, request }) {
   };
 }
 
+async function postToMailerLite(row) {
+  const apiKey = process.env.MAILERLITE_API_KEY;
+  if (!apiKey) return null;
+
+  const groups = (process.env.MAILERLITE_GROUP_ID || "")
+    .split(",")
+    .map((groupId) => groupId.trim())
+    .filter(Boolean);
+
+  const payload = {
+    email: row.email,
+    ...(groups.length ? { groups } : {})
+  };
+
+  const response = await fetch("https://connect.mailerlite.com/api/subscribers", {
+    method: "POST",
+    headers: {
+      accept: "application/json",
+      authorization: `Bearer ${apiKey}`,
+      "content-type": "application/json"
+    },
+    body: JSON.stringify(payload)
+  });
+
+  if (!response.ok) {
+    const detail = await response.text().catch(() => "");
+    throw new Error(`MailerLite signup failed: ${response.status} ${detail}`.trim());
+  }
+
+  return { mode: "mailerlite" };
+}
+
 async function postToWebhook(row) {
   const webhookUrl = process.env.GOOGLE_SHEETS_WEBHOOK_URL;
   if (!webhookUrl) return null;
@@ -118,10 +150,10 @@ export async function POST(request) {
       request
     });
 
-    const result = (await postToWebhook(row)) || (await postWithServiceAccount(row));
+    const result = (await postToMailerLite(row)) || (await postToWebhook(row)) || (await postWithServiceAccount(row));
 
     if (!result) {
-      console.error("newsletter-signup is missing Google Sheets configuration");
+      console.error("newsletter-signup is missing MailerLite or Google Sheets configuration");
       return json(
         { error: "Sorry, sign up is temporarily unavailable. Please try again later." },
         { status: 503 }
