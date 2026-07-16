@@ -4,20 +4,23 @@ import Link from "next/link";
 const pillars = [
   {
     title: "Soil Health",
-    image: "/assets/living-certificate/soil-health-principles-clean.png",
-    alt: "Soil health principles diagram",
+    image: "/assets/charter-home/updated-pics-v2/Soil Health.jpg",
+    alt: "Soil health in regenerative pasture",
+    imageClassName: "measured-evidence-image",
     body: "Indicators of soil improvement tracked over time, forming the biological foundation beneath the claim."
   },
   {
     title: "Biodiversity",
-    image: "/assets/living-certificate/biodiversity-diagram.png",
-    alt: "Biodiversity diagram showing genetic, species and ecosystem diversity",
+    image: "/assets/charter-home/updated-pics-v2/biodiversity.jpg",
+    alt: "Biodiversity on regenerative farmland",
+    imageClassName: "measured-evidence-image",
     body: "Ecological assessment of habitats, species richness and resilience, connected to the farm itself."
   },
   {
     title: "Nutrient Density",
-    image: "/assets/living-certificate/nutrient-density-lab.png",
-    alt: "Meat sample being tested in a laboratory",
+    image: "/assets/charter-home/updated-pics-v2/Nutrient Density.jpg",
+    alt: "Nutrient density and food quality evidence",
+    imageClassName: "measured-evidence-image",
     body: "Laboratory testing used to understand what is actually in the food and how that changes over time."
   },
   {
@@ -109,7 +112,7 @@ export default function LivingCertificatePage() {
           {pillars.map((p) => (
             <article className="mcard" key={p.title}>
               <div className="ft-figure">
-                <Image src={p.image} alt={p.alt} fill sizes="(max-width: 640px) 100vw, (max-width: 1020px) 50vw, 25vw" />
+                <Image className={p.imageClassName} src={p.image} alt={p.alt} fill sizes="(max-width: 640px) 100vw, (max-width: 1020px) 50vw, 25vw" />
                 <div className="scrim" />
               </div>
               <div className="pname">{p.title}</div>

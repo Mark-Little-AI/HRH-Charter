@@ -4139,6 +4139,10 @@ p + p {
   height: 100%;
   object-fit: contain;
 } /* next/image fill already does this; kept for safety */
+.home-below .mcard .ft-figure img.measured-evidence-image {
+  object-fit: cover;
+  transform: scale(1.04);
+}
 .home-below .mcard .scrim { display: none; }
 .home-below .mcard .pname { margin-top: 20px; }
 .home-below .mcard .pdesc { margin-top: 8px; }

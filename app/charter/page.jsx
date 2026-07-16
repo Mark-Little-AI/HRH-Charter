@@ -79,7 +79,7 @@ export default function CharterPage() {
           Our Standard connects the Charter to an evidence record for each farm, batch and product.
         </p>
         <div className="lc-actions">
-          <Link className="underlined-button" href="/living-certificate">Explore Our Standard</Link>
+          <Link className="underlined-button" href="/our-standard">Explore Our Standard</Link>
           <Link className="underlined-button" href="/farmers">Meet The Founding Farmers</Link>
         </div>
       </section>

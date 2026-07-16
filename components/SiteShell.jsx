@@ -58,7 +58,7 @@ export function SiteShell({ children }) {
           <Wordmark />
         </div>
         <nav className={menuOpen ? "primary-nav is-open" : "primary-nav"} aria-label="Primary navigation">
-          <Link href="/living-certificate" onClick={() => setMenuOpen(false)}>Our Standard</Link>
+          <Link href="/our-standard" onClick={() => setMenuOpen(false)}>Our Standard</Link>
           <Link href="/farmers" onClick={() => setMenuOpen(false)}>Farmers</Link>
           <div className="nav-wordmark">
             <Wordmark />

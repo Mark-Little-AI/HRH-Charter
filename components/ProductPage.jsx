@@ -43,7 +43,7 @@ export function ProductPage({ product, related }) {
         <article>
           <p className="eyebrow">Proof record</p>
           <p>{product.certificate}</p>
-          <Link className="text-link" href="/living-certificate">See Our Standard</Link>
+          <Link className="text-link" href="/our-standard">See Our Standard</Link>
         </article>
       </section>
       <section className="section-block">
