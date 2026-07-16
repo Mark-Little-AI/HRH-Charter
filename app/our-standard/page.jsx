@@ -33,7 +33,7 @@ const pillars = [
 ];
 
 const steps = [
-  ["Methodology", "The Living Certificate methodology is built by Caroline Grindrod of Roots of Nature."],
+  ["Methodology", "The Regenerative Hubs Standard combines biodiversity measurement, nutrient density analysis and full farm-to-shelf traceability."],
   ["Farm evidence", "Breed, grazing, forage, biodiversity, soil and product evidence are gathered through the year."],
   ["Review", "Results are reviewed and connected to the farm, batch and product."],
   ["Consumer proof", "Charter helps the evidence travel to consumers through product, pack and traceability."]
@@ -49,11 +49,11 @@ const foundingFarms = [
 export const metadata = {
   title: "Our Standard",
   description:
-    "Charter is the consumer face of the Living Certificate: British regenerative meat with proof on the pack. The methodology is built by Caroline Grindrod of Roots of Nature, supported by Charter.",
+    "Charter is the consumer face of the Regenerative Hubs Standard, connecting British regenerative meat, nutrient-rich food and transparent proof from farm to shelf.",
   openGraph: {
     title: "Our Standard | CHARTER",
     description:
-      "The Living Certificate methodology is built by Caroline Grindrod of Roots of Nature and supported by Charter as the consumer-facing route to market.",
+      "The Regenerative Hubs Standard combines biodiversity measurement, nutrient density analysis and full farm-to-shelf traceability.",
     images: [{ url: "/og-charter.png" }]
   }
 };
@@ -67,7 +67,7 @@ export default function LivingCertificatePage() {
           <span className="kicker lc-kicker-rust">Our Standard</span>
           <h1 className="h-caps">Proof on the pack.</h1>
           <p className="sub-hero-sub">
-            Charter is the consumer face of the Living Certificate — British regenerative meat, with the proof on the pack.
+            Charter is the consumer face of the Regenerative Hubs Standard — connecting British regenerative meat, nutrient-rich food and transparent proof from farm to shelf.
           </p>
           <Link className="hero-shop-button" href="#methodology">How it works</Link>
         </div>
@@ -77,9 +77,9 @@ export default function LivingCertificatePage() {
         <div className="ft-block">
           <div className="col">
             <span className="kicker">Roots of Nature methodology</span>
-            <h2 className="h-caps">Built by Caroline Grindrod.</h2>
-            <p className="dek">The Living Certificate is a methodology built by Caroline Grindrod of Roots of Nature.</p>
-            <p className="dek">Charter’s role is to help make the evidence visible in the market: connecting British regenerative meat, fifth-quarter products, product packaging and consumer traceability.</p>
+            <h2 className="h-caps">Built through expert collaboration.</h2>
+            <p className="dek">The Regenerative Hubs Standard brings together Edacious for nutrient density, SGS for biodiversity measurement and GoTrace (Chainparency) for full farm-to-shelf traceability.</p>
+            <p className="dek">Charter makes this evidence visible in the market, helping consumers understand what matters to them while enabling individual farmers and Charter fifth-quarter products to demonstrate ongoing improvements in nature-friendly outcomes and nutrient-rich final products.</p>
           </div>
           <div className="media figure">
             <div className="ft-figure">
@@ -93,7 +93,7 @@ export default function LivingCertificatePage() {
               <p className="rail-intro">The current system measures what farmers <em>do</em>. The Living Certificate is designed to help show what farming <strong>creates</strong>.</p>
               <h4>The distinction</h4>
               <ul className="shiftlist">
-                <li>Methodology by Roots of Nature</li>
+                <li>Regenerative Hubs Standard</li>
                 <li>Supported by Charter</li>
                 <li>Evidence connected to farms, batches and products</li>
                 <li>Proof made visible on the pack</li>
