@@ -180,8 +180,8 @@ export default function FarmersPage() {
           <div className="media figure">
             <div className="ft-figure">
               <Image
-                src={`${updatedAssetBase}/cattle-field-healthy-ecosystem.jpg`}
-                alt="Cattle grazing in a healthy regenerative field ecosystem"
+                src={`${updatedAssetBase}/from the ground up v2.png`}
+                alt="Regenerative cattle and pasture representing a British standard written in the field"
                 fill
                 sizes="(max-width: 1020px) 100vw, 42vw"
               />
