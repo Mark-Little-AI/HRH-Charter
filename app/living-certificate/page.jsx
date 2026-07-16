@@ -130,7 +130,7 @@ export default function LivingCertificatePage() {
             <div className="ft-figure">
               <Image src="/assets/charter-home/updated-pics-v2/QR Code scanning.png" alt="Scanning a Charter QR code to open its record" fill sizes="(max-width: 1020px) 100vw, 42vw" />
               <div className="scrim" />
-              <div className="ghost">Pack<br />Proof</div>
+              <div className="ghost">Proof on<br />Pack</div>
             </div>
           </div>
           <div className="col">
@@ -153,7 +153,7 @@ export default function LivingCertificatePage() {
           </div>
           <div className="media figure">
             <div className="ft-figure">
-              <Image src="/assets/library/farmer-3.png" alt="Founding farmers with Highland cattle" fill sizes="(max-width: 1020px) 100vw, 42vw" />
+              <Image src="/assets/charter-home/updated-pics-v2/farmer with cow.png" alt="Farmer with cow in a regenerative farming field" fill sizes="(max-width: 1020px) 100vw, 42vw" />
               <div className="scrim" />
               <div className="ghost">One Field<br />at a Time</div>
             </div>
