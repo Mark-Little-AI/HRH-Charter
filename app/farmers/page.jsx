@@ -15,12 +15,12 @@ const commitment = [
   ["Proof on the pack", "A record that travels with the food."]
 ];
 
-const updatedAssetBase = "/assets/charter-home/updated-pics-v2";
+const optimisedAssetBase = "/assets/charter-home/optimised";
 
 // Image-to-farm pairing matches the home page carousel.
 const foundingGroup = [
   {
-    image: `${updatedAssetBase}/eric-heath-belmont-farms.png`,
+    image: `${optimisedAssetBase}/farmer-eric-heath-belmont.webp`,
     region: "Bristol",
     farm: "Belmont Farms",
     name: "Eric Heath",
@@ -31,7 +31,7 @@ const foundingGroup = [
       "We’ve spent years showing that good farming creates value well beyond the carcass. The Charter is the first thing that helps make it visible."
   },
   {
-    image: "/assets/charter-home/farmers/caroline-grindrod.png",
+    image: `${optimisedAssetBase}/farmer-caroline-grindrod.webp`,
     region: "South Lakeland",
     farm: "Roots of Nature",
     name: "Caroline Grindrod",
@@ -42,7 +42,7 @@ const foundingGroup = [
       "Look after the soil and the wildlife, and the farm looks after itself. The trick is being able to prove it."
   },
   {
-    image: `${updatedAssetBase}/jock-gibson-edinvale-farm.png`,
+    image: `${optimisedAssetBase}/farmer-jock-gibson-edinvale.webp`,
     region: "Moray",
     farm: "Edinvale Farm",
     name: "Jock Gibson",
@@ -53,7 +53,7 @@ const foundingGroup = [
       "Britain produces some of the highest quality beef in the world but doesn’t fairly reward farmers. Charter is finally changing that."
   },
   {
-    image: `${updatedAssetBase}/james-grant-rothiemurchus-estate.png`,
+    image: `${optimisedAssetBase}/farmer-james-grant-rothiemurchus.webp`,
     region: "Cairngorms",
     farm: "Rothiemurchus Estate",
     name: "James Grant",
@@ -65,7 +65,7 @@ const foundingGroup = [
       "People want to know where their food comes from. We can go one further, and show them what it’s doing for the land."
   },
   {
-    image: `${updatedAssetBase}/dunmaglass-estate.png`,
+    image: `${optimisedAssetBase}/farmer-dunmaglass-estate.webp`,
     region: "Inverness-shire",
     farm: "Dunmaglass Estate",
     name: "Scottish founding farm",
@@ -76,7 +76,7 @@ const foundingGroup = [
       "Regenerative farming is judged in the field, not the boardroom. If the land’s improving, the record should show it."
   },
   {
-    image: `${updatedAssetBase}/Balnagowen & Aberarder - HI RES v2.png`,
+    image: `${optimisedAssetBase}/farmer-balnagowen-aberarder.webp`,
     region: "Scotland",
     farm: "Balnagowen & Aberarder",
     name: "Additional trial sites",
@@ -87,7 +87,7 @@ const foundingGroup = [
       "No two farms are the same. That’s exactly why the record has to tell the truth about each one."
   },
   {
-    image: `${updatedAssetBase}/munros-of-dingwall.png`,
+    image: `${optimisedAssetBase}/farmer-munros-of-dingwall.webp`,
     region: "Dingwall",
     farm: "Munro’s of Dingwall",
     name: "Strategic processing partner",
@@ -98,7 +98,7 @@ const foundingGroup = [
       "If you want proper evidence, you need proper controls. Doing it the same way every time gives the data a backbone."
   },
   {
-    image: "/assets/charter-home/farmers/hrh.png",
+    image: `${optimisedAssetBase}/farmer-hrh.webp`,
     region: "Scotland",
     farm: "Highland Regenerative Hubs",
     name: "Technology & coordination",
@@ -109,7 +109,7 @@ const foundingGroup = [
       "The evidence should travel with the food. Make a claim, and let people see what sits behind it."
   },
   {
-    image: "/assets/charter-home/farmers/saos.png",
+    image: `${optimisedAssetBase}/farmer-saos.webp`,
     region: "Scotland",
     farm: "Scottish Agriculture Organisation Society",
     name: "Douglas Bowden-Smith",
@@ -139,7 +139,7 @@ export default function FarmersPage() {
       {/* HERO */}
       <section className="hero sub-hero">
         <Image
-          src={`${updatedAssetBase}/Above the fold :farmers.jpg`}
+          src={`${optimisedAssetBase}/farmers-hero-above-fold.webp`}
           className="hero-cow-image"
           alt="Founding farmers with cattle on British upland pasture"
           fill
@@ -180,10 +180,10 @@ export default function FarmersPage() {
           <div className="media figure">
             <div className="ft-figure">
               <Image
-                src={`${updatedAssetBase}/from the ground up v2.png`}
+                src={`${optimisedAssetBase}/from-the-ground-up-v2.webp`}
                 alt="Regenerative cattle and pasture representing a British standard written in the field"
                 fill
-                sizes="(max-width: 1020px) 100vw, 42vw"
+                sizes="(max-width: 1020px) 100vw, 540px"
               />
               <div className="scrim" />
               <div className="ghost">
@@ -229,7 +229,7 @@ export default function FarmersPage() {
                   className={farmer.imageClassName ?? undefined}
                   alt={`${farmer.who} — ${farmer.farm}`}
                   fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1020px) 50vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1020px) 50vw, 360px"
                 />
                 <div className="photo-scrim" />
                 <div className="quote">
@@ -268,10 +268,10 @@ export default function FarmersPage() {
           <div className="media figure">
             <div className="ft-figure">
               <Image
-                src={`${updatedAssetBase}/Open Gate - Join our movement.png`}
+                src={`${optimisedAssetBase}/open-gate-join-movement.webp`}
                 alt="Open gate leading into regenerative farmland"
                 fill
-                sizes="(max-width: 1020px) 100vw, 42vw"
+                sizes="(max-width: 1020px) 100vw, 540px"
               />
               <div className="scrim" />
               <div className="ghost">

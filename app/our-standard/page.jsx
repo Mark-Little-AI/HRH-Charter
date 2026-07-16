@@ -4,28 +4,28 @@ import Link from "next/link";
 const pillars = [
   {
     title: "Soil Health",
-    image: "/assets/charter-home/updated-pics-v2/Soil Health.jpg",
+    image: "/assets/charter-home/optimised/soil-health-card.webp",
     alt: "Soil health in regenerative pasture",
     imageClassName: "measured-evidence-image",
     body: "Indicators of soil improvement tracked over time, forming the biological foundation beneath the claim."
   },
   {
     title: "Biodiversity",
-    image: "/assets/charter-home/updated-pics-v2/biodiversity.jpg",
+    image: "/assets/charter-home/optimised/biodiversity-card.webp",
     alt: "Biodiversity on regenerative farmland",
     imageClassName: "measured-evidence-image",
     body: "Ecological assessment of habitats, species richness and resilience, connected to the farm itself."
   },
   {
     title: "Nutrient Density",
-    image: "/assets/charter-home/updated-pics-v2/Nutrient Density.jpg",
+    image: "/assets/charter-home/optimised/nutrient-density-card.webp",
     alt: "Nutrient density and food quality evidence",
     imageClassName: "measured-evidence-image",
     body: "Laboratory testing used to understand what is actually in the food and how that changes over time."
   },
   {
     title: "Eating Quality",
-    image: "/assets/living-certificate/eating-quality-plate.png",
+    image: "/assets/charter-home/optimised/eating-quality-card.webp",
     alt: "Sliced beef served on a plate",
     body: "Assessment of flavour, tenderness and the experience on the plate, because a standard has to matter to the person eating the food."
   }
@@ -61,7 +61,7 @@ export default function LivingCertificatePage() {
   return (
     <div className="home-below">
       <section className="hero sub-hero">
-        <Image src="/assets/charter-home/updated-pics-v2/QR Code scanning.png" alt="A Charter QR code being scanned to reveal its provenance record" fill priority sizes="100vw" />
+        <Image src="/assets/charter-home/optimised/our-standard-qr-hero.webp" alt="A Charter QR code being scanned to reveal its provenance record" fill priority sizes="100vw" />
         <div className="sub-hero-inner">
           <span className="kicker lc-kicker-rust">Our Standard</span>
           <h1 className="h-caps">Proof on the pack.</h1>
@@ -82,7 +82,7 @@ export default function LivingCertificatePage() {
           </div>
           <div className="media figure">
             <div className="ft-figure">
-              <Image src="/assets/charter-home/updated-pics-v2/measured-ground.jpg" alt="Measured ground on a regenerative farm" fill sizes="(max-width: 1020px) 100vw, 42vw" />
+              <Image src="/assets/charter-home/optimised/measured-ground.webp" alt="Measured ground on a regenerative farm" fill sizes="(max-width: 1020px) 100vw, 540px" />
               <div className="scrim" />
               <div className="ghost">Measured<br />Ground</div>
             </div>
@@ -112,7 +112,7 @@ export default function LivingCertificatePage() {
           {pillars.map((p) => (
             <article className="mcard" key={p.title}>
               <div className="ft-figure">
-                <Image className={p.imageClassName} src={p.image} alt={p.alt} fill sizes="(max-width: 640px) 100vw, (max-width: 1020px) 50vw, 25vw" />
+                <Image className={p.imageClassName} src={p.image} alt={p.alt} fill sizes="(max-width: 640px) 100vw, (max-width: 1020px) 50vw, 260px" />
                 <div className="scrim" />
               </div>
               <div className="pname">{p.title}</div>
@@ -131,7 +131,7 @@ export default function LivingCertificatePage() {
           </div>
           <div className="media figure">
             <div className="ft-figure">
-              <Image src="/assets/charter-home/updated-pics-v2/QR Code scanning.png" alt="Scanning a Charter QR code to open its record" fill sizes="(max-width: 1020px) 100vw, 42vw" />
+              <Image src="/assets/charter-home/optimised/our-standard-qr-hero.webp" alt="Scanning a Charter QR code to open its record" fill sizes="(max-width: 1020px) 100vw, 540px" />
               <div className="scrim" />
               <div className="ghost">Proof on<br />Pack</div>
             </div>
@@ -156,7 +156,7 @@ export default function LivingCertificatePage() {
           </div>
           <div className="media figure">
             <div className="ft-figure">
-              <Image src="/assets/charter-home/updated-pics-v2/farmer with cow.png" alt="Farmer with cow in a regenerative farming field" fill sizes="(max-width: 1020px) 100vw, 42vw" />
+              <Image src="/assets/charter-home/optimised/farmer-with-cow.webp" alt="Farmer with cow in a regenerative farming field" fill sizes="(max-width: 1020px) 100vw, 540px" />
               <div className="scrim" />
               <div className="ghost">One Field<br />at a Time</div>
             </div>

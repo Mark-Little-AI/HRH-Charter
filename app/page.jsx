@@ -3,11 +3,11 @@ import Link from "next/link";
 import { HomeFarmersCarousel } from "@/components/HomeFarmersCarousel";
 
 const assetBase = "/assets/charter-home";
-const updatedAssetBase = `${assetBase}/updated-pics-v2`;
+const optimisedAssetBase = `${assetBase}/optimised`;
 
 const farmers = [
   {
-    image: `${updatedAssetBase}/eric-heath-belmont-farms.png`,
+    image: `${optimisedAssetBase}/farmer-eric-heath-belmont.webp`,
     alt: "Eric Heath of Belmont Farms",
     quote: "We’ve spent years showing that good farming creates value well beyond the carcass. Our Standard is the first thing that actually measures it.",
     who: "Eric Heath",
@@ -18,7 +18,7 @@ const farmers = [
     status: ""
   },
   {
-    image: `${assetBase}/farmers/caroline-grindrod.png`,
+    image: `${optimisedAssetBase}/farmer-caroline-grindrod.webp`,
     alt: "Caroline Grindrod of Roots of Nature",
     quote: "Look after the soil and the wildlife, and the farm looks after itself. The trick is being able to prove it.",
     who: "Caroline Grindrod",
@@ -29,7 +29,7 @@ const farmers = [
     status: ""
   },
   {
-    image: `${updatedAssetBase}/jock-gibson-edinvale-farm.png`,
+    image: `${optimisedAssetBase}/farmer-jock-gibson-edinvale.webp`,
     alt: "Jock Gibson of Edinvale Farm",
     quote: "Britain produces some of the highest quality beef in the world but doesn’t fairly reward farmers. Charter is finally changing that, that ought to count for something.",
     who: "Jock Gibson",
@@ -40,7 +40,7 @@ const farmers = [
     status: ""
   },
   {
-    image: `${updatedAssetBase}/james-grant-rothiemurchus-estate.png`,
+    image: `${optimisedAssetBase}/farmer-james-grant-rothiemurchus.webp`,
     alt: "James Grant of Rothiemurchus Estate with a Highland cow",
     quote: "People want to know where their food comes from. We can go one further, and show them what it’s doing for the land.",
     who: "James Grant",
@@ -52,7 +52,7 @@ const farmers = [
     imageClassName: "image-shift-left"
   },
   {
-    image: `${updatedAssetBase}/dunmaglass-estate.png`,
+    image: `${optimisedAssetBase}/farmer-dunmaglass-estate.webp`,
     alt: "Dunmaglass Estate — Highland cattle above the loch",
     quote: "Regenerative farming is judged in the field, not the boardroom. If the land’s improving, the record should show it.",
     who: "Dunmaglass Estate",
@@ -63,7 +63,7 @@ const farmers = [
     status: ""
   },
   {
-    image: `${updatedAssetBase}/Balnagowen & Aberarder - HI RES v2.png`,
+    image: `${optimisedAssetBase}/farmer-balnagowen-aberarder.webp`,
     alt: "Balnagowen and Aberarder Estates — cattle on the hill",
     quote: "No two farms are the same. That’s exactly why the record has to tell the truth about each one.",
     who: "Balnagowen & Aberarder",
@@ -74,7 +74,7 @@ const farmers = [
     status: ""
   },
   {
-    image: `${updatedAssetBase}/munros-of-dingwall.png`,
+    image: `${optimisedAssetBase}/farmer-munros-of-dingwall.webp`,
     alt: "Munro’s of Dingwall — Highland cattle above the loch",
     quote: "If you want proper evidence, you need proper controls. Doing it the same way every time gives the data a backbone.",
     who: "Munro’s of Dingwall",
@@ -85,7 +85,7 @@ const farmers = [
     status: "Processing partner"
   },
   {
-    image: `${assetBase}/farmers/hrh.png`,
+    image: `${optimisedAssetBase}/farmer-hrh.webp`,
     alt: "The Highland Regenerative Hubs founding group",
     quote: "The evidence should travel with the food. Make a claim, and let people see what sits behind it.",
     who: "Highland Regenerative Hubs",
@@ -96,7 +96,7 @@ const farmers = [
     status: "Technology partner"
   },
   {
-    image: `${assetBase}/farmers/saos.png`,
+    image: `${optimisedAssetBase}/farmer-saos.webp`,
     alt: "Douglas Bowden-Smith, Scottish Agriculture Organisation Society",
     quote: "Collect the data properly, share it clearly — practical enough for farmers, credible enough for the market.",
     who: "Douglas Bowden-Smith",
@@ -111,7 +111,7 @@ const farmers = [
 const products = [
   {
     name: "Bone Broth",
-    image: `${assetBase}/products/pack-bonebroth-approved.svg`,
+    image: `${optimisedAssetBase}/pack-bonebroth-approved.webp`,
     alt: "Charter Bone Broth kraft pouch",
     href: "/products",
     packClassName: "pack-shot-pouch",
@@ -119,7 +119,7 @@ const products = [
   },
   {
     name: "Bull Shot",
-    image: `${assetBase}/products/pack-bullshot-cutout.png`,
+    image: `${optimisedAssetBase}/pack-bullshot-cutout.webp`,
     alt: "Charter Bull Shot kraft box",
     href: "/products",
     packClassName: "pack-shot-box",
@@ -127,7 +127,7 @@ const products = [
   },
   {
     name: "Biltong",
-    image: `${assetBase}/products/pack-biltong-cutout.png`,
+    image: `${optimisedAssetBase}/pack-biltong-cutout.webp`,
     alt: "Charter Biltong kraft pouch",
     href: "/products",
     packClassName: "pack-shot-pouch",
@@ -140,12 +140,12 @@ export default function HomePage() {
     <>
       <section className="hero hero-institutional">
         <Image
-          src={`${updatedAssetBase}/highland-cattle-hero-above-fold.jpg`}
+          src={`${optimisedAssetBase}/home-hero-highland-cattle.webp`}
           className="hero-cow-image"
           alt="Highland cow in a Scottish landscape"
           fill
           priority
-          quality={86}
+          quality={82}
           sizes="100vw"
         />
         <div className="hero-copy hero-copy-investor" aria-labelledby="home-hero-title">
@@ -185,7 +185,7 @@ export default function HomePage() {
             </div>
             <div className="media figure">
               <div className="ft-figure">
-                <Image src={`${updatedAssetBase}/cattle-field-healthy-ecosystem.jpg`} alt="Cattle grazing in a healthy regenerative field ecosystem" fill sizes="(max-width: 1020px) 100vw, 42vw" />
+                <Image src={`${optimisedAssetBase}/cattle-field-healthy-ecosystem.webp`} alt="Cattle grazing in a healthy regenerative field ecosystem" fill sizes="(max-width: 1020px) 100vw, 540px" />
                 <div className="scrim" />
                 <div className="ghost">Healthy<br />Ecosystem</div>
               </div>
@@ -229,7 +229,7 @@ export default function HomePage() {
             </div>
             <div className="media figure">
               <div className="ft-figure">
-                <Image src={`${updatedAssetBase}/mark_little_cmo_make_an_image_like_this_showing_cuts_of_beef__70feba39-7eef-4115-9024-c5386316e450_1.png`} alt="Beef cuts laid out — from prime steaks to mince, marrow and offal" fill sizes="(max-width: 1020px) 100vw, 42vw" />
+                <Image src={`${optimisedAssetBase}/fighting-waste-beef-cuts.webp`} alt="Beef cuts laid out — from prime steaks to mince, marrow and offal" fill sizes="(max-width: 1020px) 100vw, 540px" />
                 <div className="scrim" />
                 <div className="ghost">Fighting<br />Waste</div>
               </div>
@@ -258,7 +258,7 @@ export default function HomePage() {
               <article className="pcard" key={product.name}>
                 <div className="pack">
                   <div className="pack-photo">
-                    <img className={product.packClassName} src={product.image} alt={product.alt} />
+                    <img className={product.packClassName} src={product.image} alt={product.alt} loading="lazy" decoding="async" />
                   </div>
                 </div>
                 <div className="pname">{product.name}</div>
