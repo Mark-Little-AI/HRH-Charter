@@ -84,17 +84,6 @@ const farmers = [
     name: "Technology & coordination",
     role: "Shared data platform · testing logistics",
     status: "Technology partner"
-  },
-  {
-    image: `${optimisedAssetBase}/farmer-saos.webp`,
-    alt: "Douglas Bowden-Smith, Scottish Agriculture Organisation Society",
-    quote: "Collect the data properly, share it clearly — practical enough for farmers, credible enough for the market.",
-    who: "Douglas Bowden-Smith",
-    region: "Scotland",
-    farm: "Scottish Agriculture Organisation Society (SAOS)",
-    name: "Douglas Bowden-Smith",
-    role: "ADOPT Project Facilitator",
-    status: "Project partner"
   }
 ];
 

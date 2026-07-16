@@ -96,17 +96,6 @@ const foundingGroup = [
     who: "Highland Regenerative Hubs",
     quote:
       "The evidence should travel with the food. Make a claim, and let people see what sits behind it."
-  },
-  {
-    image: `${optimisedAssetBase}/farmer-saos.webp`,
-    region: "Scotland",
-    farm: "Scottish Agriculture Organisation Society",
-    name: "Douglas Bowden-Smith",
-    role: "ADOPT Project Facilitator",
-    status: "Project partner",
-    who: "Douglas Bowden-Smith",
-    quote:
-      "Collect the data properly, share it clearly — practical enough for farmers, credible enough for the market."
   }
 ];
 

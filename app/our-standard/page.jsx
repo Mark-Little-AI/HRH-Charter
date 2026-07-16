@@ -89,7 +89,7 @@ export default function LivingCertificatePage() {
           </div>
           <div className="col">
             <div className="rail">
-              <p className="rail-intro">The current system measures what farmers <em>do</em>. The Living Certificate is designed to help show what farming <strong>creates</strong>.</p>
+              <p className="rail-intro">The current system measures what farmers <em>do</em>. Our approach is designed to help show what farming <strong>creates</strong>.</p>
               <h4>The distinction</h4>
               <ul className="shiftlist">
                 <li>Regenerative Hubs Standard</li>
