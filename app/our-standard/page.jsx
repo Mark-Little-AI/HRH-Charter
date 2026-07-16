@@ -40,7 +40,6 @@ const steps = [
 ];
 
 const foundingFarms = [
-  ["Roots of Nature", "Methodology lead · Caroline Grindrod"],
   ["Belmont Farms", "Bristol"],
   ["Dunmaglass Estate", "Inverness-shire"],
   ["Edinvale Farm", "Moray"]
@@ -76,7 +75,7 @@ export default function LivingCertificatePage() {
       <section className="band" id="methodology">
         <div className="ft-block">
           <div className="col">
-            <span className="kicker">Roots of Nature methodology</span>
+            <span className="kicker">Regenerative Hubs Standard</span>
             <h2 className="h-caps">Built through expert collaboration.</h2>
             <p className="dek">The Regenerative Hubs Standard brings together Edacious for nutrient density, SGS for biodiversity measurement and GoTrace (Chainparency) for full farm-to-shelf traceability.</p>
             <p className="dek">Charter makes this evidence visible in the market, helping consumers understand what matters to them while enabling individual farmers and Charter fifth-quarter products to demonstrate ongoing improvements in nature-friendly outcomes and nutrient-rich final products.</p>

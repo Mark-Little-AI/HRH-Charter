@@ -19,17 +19,6 @@ const farmers = [
     status: ""
   },
   {
-    image: `${optimisedAssetBase}/farmer-caroline-grindrod.webp`,
-    alt: "Caroline Grindrod of Roots of Nature",
-    quote: "Look after the soil and the wildlife, and the farm looks after itself. The trick is being able to prove it.",
-    who: "Caroline Grindrod",
-    region: "South Lakeland",
-    farm: "Roots of Nature",
-    name: "Caroline Grindrod",
-    role: "Regenerative farming mentor · Methodology partner",
-    status: ""
-  },
-  {
     image: `${optimisedAssetBase}/farmer-jock-gibson-edinvale.webp`,
     alt: "Jock Gibson of Edinvale Farm",
     quote: "Britain produces some of the highest quality beef in the world but doesn’t fairly reward farmers. Charter is finally changing that, that ought to count for something.",
