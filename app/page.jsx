@@ -73,17 +73,6 @@ const farmers = [
     name: "Strategic processing partner",
     role: "Identical slaughter conditions for fair comparison",
     status: "Processing partner"
-  },
-  {
-    image: `${optimisedAssetBase}/farmer-hrh.webp`,
-    alt: "The Highland Regenerative Hubs founding group",
-    quote: "The evidence should travel with the food. Make a claim, and let people see what sits behind it.",
-    who: "Highland Regenerative Hubs",
-    region: "Scotland",
-    farm: "Highland Regenerative Hubs",
-    name: "Technology & coordination",
-    role: "Shared data platform · testing logistics",
-    status: "Technology partner"
   }
 ];
 
@@ -208,7 +197,7 @@ export default function HomePage() {
             </div>
             <div className="media figure">
               <div className="ft-figure">
-                <Image src={`${optimisedAssetBase}/fighting-waste-beef-cuts.webp`} alt="Beef cuts laid out — from prime steaks to mince, marrow and offal" fill sizes="(max-width: 1020px) 100vw, 540px" />
+                <Image src={`${optimisedAssetBase}/beef-tallow-2.webp`} alt="Jar of rendered beef tallow on a wooden board" fill sizes="(max-width: 1020px) 100vw, 540px" />
                 <div className="scrim" />
                 <div className="ghost">Fighting<br />Waste</div>
               </div>

@@ -85,17 +85,6 @@ const foundingGroup = [
     who: "Munro’s of Dingwall",
     quote:
       "If you want proper evidence, you need proper controls. Doing it the same way every time gives the data a backbone."
-  },
-  {
-    image: `${optimisedAssetBase}/farmer-hrh.webp`,
-    region: "Scotland",
-    farm: "Highland Regenerative Hubs",
-    name: "Technology & coordination",
-    role: "Shared data platform · testing logistics",
-    status: "Technology partner",
-    who: "Highland Regenerative Hubs",
-    quote:
-      "The evidence should travel with the food. Make a claim, and let people see what sits behind it."
   }
 ];
 
