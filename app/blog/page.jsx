@@ -60,7 +60,7 @@ export default function BlogPage() {
               <img className="blog-avatar" src="/assets/charter-home/giles-hayward.png" alt="Giles Hayward" />
               <div className="blog-who">Giles Hayward<span>Author</span></div>
             </div>
-            <p className="blog-excerpt">A plain-English look at how soil, grass, cattle and records can work together — and why measuring outcomes, not intentions, changes what good farming is worth.</p>
+            <p className="blog-excerpt">A plain-English look at how soil, grass, cattle and records can work together - and why measuring outcomes, not intentions, changes what good farming is worth.</p>
             <LaunchSignupButton className="link-u">Read the note</LaunchSignupButton>
           </div>
         </article>
