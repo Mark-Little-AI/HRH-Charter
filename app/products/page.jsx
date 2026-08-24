@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { AddToCartButton } from "@/components/AddToCartButton";
+import { heroPlaceholders } from "@/app/image-placeholders";
 
 export const metadata = {
   title: "Shop",
@@ -41,6 +42,8 @@ export default function ProductsPage() {
           alt="Charter beef marbling and cattle on the hill"
           fill
           priority
+          placeholder="blur"
+          blurDataURL={heroPlaceholders.shop}
           sizes="100vw"
         />
         <div className="shop-hero-scrim" />

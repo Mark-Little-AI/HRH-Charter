@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { fallbackHeroPlaceholder } from "@/app/image-placeholders";
 import { useContext, useState } from "react";
 import { LaunchSignupContext } from "@/components/SiteShell";
 import { ProductCard } from "@/components/ProductCard";
@@ -14,7 +15,7 @@ export function ProductPage({ product, related }) {
     <div className="product-page">
       <section className="product-hero">
         <div className="product-hero-image">
-          <Image src={product.lifestyleImage ?? product.image} alt={`${product.name} from CHARTER`} fill priority sizes="(max-width: 900px) 100vw, 720px" />
+          <Image src={product.lifestyleImage ?? product.image} alt={`${product.name} from CHARTER`} fill priority placeholder="blur" blurDataURL={fallbackHeroPlaceholder} sizes="(max-width: 900px) 100vw, 720px" />
         </div>
         <div className="product-buy-box">
           <p className="eyebrow">First Drop</p>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { HomeFarmersCarousel } from "@/components/HomeFarmersCarousel";
 import { NewsletterSignupForm } from "@/components/NewsletterSignupForm";
+import { heroPlaceholders } from "@/app/image-placeholders";
 
 const assetBase = "/assets/charter-home";
 const optimisedAssetBase = `${assetBase}/optimised`;
@@ -114,6 +115,8 @@ export default function HomePage() {
           fill
           priority
           quality={82}
+          placeholder="blur"
+          blurDataURL={heroPlaceholders.home}
           sizes="100vw"
         />
         <div className="hero-copy hero-copy-investor" aria-labelledby="home-hero-title">
