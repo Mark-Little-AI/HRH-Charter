@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { heroPlaceholders } from "@/app/image-placeholders";
 import { NewsletterSignupForm } from "@/components/NewsletterSignupForm";
 
 const pillars = [
@@ -61,12 +62,12 @@ export default function LivingCertificatePage() {
   return (
     <div className="home-below">
       <section className="hero sub-hero">
-        <Image src="/assets/charter-home/optimised/our-standard-qr-hero.webp" alt="A Charter QR code being scanned to reveal its provenance record" fill priority sizes="100vw" />
+        <Image src="/assets/charter-home/optimised/our-standard-qr-hero.webp" alt="A Charter QR code being scanned to reveal its provenance record" fill priority placeholder="blur" blurDataURL={heroPlaceholders.standard} sizes="100vw" />
         <div className="sub-hero-inner">
           <span className="kicker lc-kicker-rust">Our Standard</span>
           <h1 className="h-caps">Proof on the pack.</h1>
           <p className="sub-hero-sub">
-            Charter is the consumer face of the Regenerative Hubs Standard — connecting British regenerative meat, nutrient-rich food and transparent proof from farm to shelf.
+            Charter is the consumer face of the Regenerative Hubs Standard - connecting British regenerative meat, nutrient-rich food and transparent proof from farm to shelf.
           </p>
           <Link className="hero-shop-button" href="#methodology">How it works</Link>
         </div>

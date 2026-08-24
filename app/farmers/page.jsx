@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { heroPlaceholders } from "@/app/image-placeholders";
 
 const measured = [
   ["Farming System", "Breed, diet, grazing rotation and finishing."],
@@ -111,6 +112,8 @@ export default function FarmersPage() {
           alt="Founding farmers with cattle on British upland pasture"
           fill
           priority
+          placeholder="blur"
+          blurDataURL={heroPlaceholders.farmers}
           sizes="100vw"
         />
         <div className="sub-hero-inner">
