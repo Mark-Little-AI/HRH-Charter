@@ -8,7 +8,7 @@ export const metadata = {
   openGraph: {
     title: article.title,
     description: article.excerpt,
-    images: [{ url: article.image }]
+    images: [{ url: "/og-charter.png" }]
   }
 };
 

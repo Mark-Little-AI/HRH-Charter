@@ -32,10 +32,10 @@ export const metadata = {
     siteName: "CHARTER",
     images: [
       {
-        url: "/assets/charter-home/updated-pics-v2/2.png",
-        width: 1920,
-        height: 1080,
-        alt: "CHARTER regenerative meat OpenGraph preview"
+        url: "/og-charter.png",
+        width: 1200,
+        height: 630,
+        alt: "CHARTER — Better Farmers. Better Land. Better Beef."
       }
     ],
     locale: "en_GB",
@@ -45,7 +45,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "CHARTER | The New Standard For Regenerative Meat",
     description: "Celebrating the fifth quarter and the cuts that deserve to be on our plate.",
-    images: ["/assets/charter-home/updated-pics-v2/2.png"]
+    images: ["/og-charter.png"]
   },
   icons: {
     icon: [
