@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 const SESSION_DISMISSED_KEY = "charterLaunchPopupDismissed";
@@ -125,7 +126,17 @@ export function LaunchSignupPopup({ open, onClose }) {
         ) : (
           <>
             <p className="launch-popup-kicker">Charter</p>
-            <h2 id="launch-popup-title">Launching late 2026.</h2>
+            <div className="launch-popup-intro">
+              <h2 id="launch-popup-title">Launching late 2026.</h2>
+              <div className="launch-popup-image">
+                <Image
+                  src="/assets/charter-home/optimised/cows-road.webp"
+                  alt="Highland cattle standing on a farm track in the Highlands"
+                  fill
+                  sizes="170px"
+                />
+              </div>
+            </div>
             <div id="launch-popup-copy" className="launch-popup-copy">
               <p>We’re building Charter to help establish a new standard for British regenerative meat, starting with the fifth quarter: the useful, nutrient-rich parts of the animal too often treated as byproducts.</p>
               <p>If you’d like to follow our progress, join the mailing list below. We’ll share occasional updates as we go.</p>

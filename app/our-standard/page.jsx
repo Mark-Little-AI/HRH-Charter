@@ -83,7 +83,7 @@ export default function LivingCertificatePage() {
           </div>
           <div className="media figure">
             <div className="ft-figure">
-              <Image src="/assets/charter-home/optimised/measured-ground.webp" alt="Measured ground on a regenerative farm" fill sizes="(max-width: 1020px) 100vw, 540px" />
+              <Image src="/assets/charter-home/optimised/cows-purple-heather.webp" alt="Highland cattle grazing among purple heather" fill sizes="(max-width: 1020px) 100vw, 540px" />
               <div className="scrim" />
               <div className="ghost">Measured<br />Ground</div>
             </div>

@@ -1512,6 +1512,24 @@ p + p {
   text-transform: none;
 }
 
+.launch-popup-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 170px;
+  gap: 1.25rem;
+  align-items: end;
+}
+
+.launch-popup-image {
+  position: relative;
+  height: 96px;
+  overflow: hidden;
+}
+
+.launch-popup-image img {
+  object-fit: cover;
+  object-position: 50% 62%;
+}
+
 .launch-popup-copy {
   display: grid;
   gap: 0.75rem;
@@ -2532,6 +2550,15 @@ p + p {
 }
 
 @media (max-width: 640px) {
+  .launch-popup-intro {
+    grid-template-columns: minmax(0, 1fr) 110px;
+    gap: 0.75rem;
+  }
+
+  .launch-popup-image {
+    height: 82px;
+  }
+
   .site-header {
     min-height: 78px;
     padding-inline: 0.85rem;
