@@ -109,12 +109,12 @@ export default function HomePage() {
     <>
       <section className="hero hero-institutional">
         <Image
-          src={`${optimisedAssetBase}/cows-green-heather.webp`}
+          src={`${assetBase}/updated-pics-v2/highland-cattle-hero-above-fold.jpg`}
           className="hero-cow-image"
-          alt="Highland cattle grazing among green heather in the Highlands"
+          alt="Highland cow facing the camera in Scottish pasture"
           fill
           priority
-          quality={82}
+          quality={95}
           placeholder="blur"
           blurDataURL={heroPlaceholders.home}
           sizes="100vw"
@@ -122,10 +122,10 @@ export default function HomePage() {
         <div className="hero-copy hero-copy-investor" aria-labelledby="home-hero-title">
           <div className="hero-title-block">
             <h1 id="home-hero-title" className="home-hero-title">
-              Celebrating the fifth quarter.
+              Nutrient-dense British beef.
             </h1>
             <p className="hero-subheadline">
-              Regenerative & British: Making more of every animal.
+              Nature-friendly farming practices for better nutrition.
             </p>
             <Link className="hero-shop-button" href="#shop">
               Shop Now
