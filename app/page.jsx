@@ -122,10 +122,10 @@ export default function HomePage() {
         <div className="hero-copy hero-copy-investor" aria-labelledby="home-hero-title">
           <div className="hero-title-block">
             <h1 id="home-hero-title" className="home-hero-title">
-              Celebrating the fifth quarter.
+              Nutrient-dense British beef.
             </h1>
             <p className="hero-subheadline">
-              Regenerative & British: Making more of every animal.
+              Nature-friendly farming practices for better nutrition.
             </p>
             <Link className="hero-shop-button" href="#shop">
               Shop Now
