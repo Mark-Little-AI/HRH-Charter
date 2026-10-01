@@ -6,14 +6,16 @@ import TrafficTracker from "@/components/TrafficTracker";
 const jost = Jost({
   subsets: ["latin"],
   variable: "--font-jost",
-  weight: ["300", "400", "500"]
+  weight: ["300", "400", "500"],
+  preload: false
 });
 
 const spectral = Spectral({
   subsets: ["latin"],
   variable: "--font-spectral",
   weight: ["400", "600", "700"],
-  style: ["normal", "italic"]
+  style: ["normal", "italic"],
+  preload: false
 });
 
 export const metadata = {
