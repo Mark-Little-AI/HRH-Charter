@@ -42,6 +42,7 @@ export default function ProductsPage() {
           alt="Charter beef marbling and cattle on the hill"
           fill
           priority
+          unoptimized
           placeholder="blur"
           blurDataURL={heroPlaceholders.shop}
           sizes="100vw"

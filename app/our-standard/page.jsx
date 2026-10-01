@@ -62,7 +62,7 @@ export default function LivingCertificatePage() {
   return (
     <div className="home-below">
       <section className="hero sub-hero">
-        <Image src="/assets/charter-home/optimised/our-standard-qr-hero.webp" alt="A Charter QR code being scanned to reveal its provenance record" fill priority placeholder="blur" blurDataURL={heroPlaceholders.standard} sizes="100vw" />
+        <Image src="/assets/charter-home/optimised/our-standard-qr-hero.webp" alt="A Charter QR code being scanned to reveal its provenance record" fill priority unoptimized placeholder="blur" blurDataURL={heroPlaceholders.standard} sizes="100vw" />
         <div className="sub-hero-inner">
           <span className="kicker lc-kicker-rust">Our Standard</span>
           <h1 className="h-caps">Proof on the pack.</h1>

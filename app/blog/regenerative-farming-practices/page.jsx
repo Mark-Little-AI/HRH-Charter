@@ -24,7 +24,7 @@ export default function ArticlePage() {
         </div>
       </header>
       <div className="article-image">
-        <Image src={article.image} alt="Highland cattle in a Scottish field" fill priority placeholder="blur" blurDataURL={fallbackHeroPlaceholder} sizes="100vw" />
+        <Image src={article.image} alt="Highland cattle in a Scottish field" fill priority unoptimized placeholder="blur" blurDataURL={fallbackHeroPlaceholder} sizes="100vw" />
       </div>
       <div className="article-body">
         <p>
