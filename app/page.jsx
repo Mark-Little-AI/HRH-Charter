@@ -109,12 +109,12 @@ export default function HomePage() {
     <>
       <section className="hero hero-institutional">
         <Image
-          src={`${optimisedAssetBase}/home-hero-highland-cattle.webp`}
+          src={`${assetBase}/updated-pics-v2/highland-cattle-hero-above-fold.jpg`}
           className="hero-cow-image"
           alt="Highland cow facing the camera in Scottish pasture"
           fill
           priority
-          quality={82}
+          quality={95}
           placeholder="blur"
           blurDataURL={heroPlaceholders.home}
           sizes="100vw"
