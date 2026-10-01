@@ -109,9 +109,9 @@ export default function HomePage() {
     <>
       <section className="hero hero-institutional">
         <Image
-          src={`${optimisedAssetBase}/cows-green-heather.webp`}
+          src={`${optimisedAssetBase}/home-hero-highland-cattle.webp`}
           className="hero-cow-image"
-          alt="Highland cattle grazing among green heather in the Highlands"
+          alt="Highland cow facing the camera in Scottish pasture"
           fill
           priority
           quality={82}
