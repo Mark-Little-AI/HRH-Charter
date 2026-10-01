@@ -335,7 +335,7 @@ p + p {
 
 .hero-institutional > img.hero-cow-image {
   object-position: 50% center;
-  filter: brightness(1.25);
+  filter: brightness(1.5);
 }
 
 .product-card-image img,
