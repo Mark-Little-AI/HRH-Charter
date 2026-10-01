@@ -112,6 +112,7 @@ export default function FarmersPage() {
           alt="Founding farmers with cattle on British upland pasture"
           fill
           priority
+          unoptimized
           placeholder="blur"
           blurDataURL={heroPlaceholders.farmers}
           sizes="100vw"
